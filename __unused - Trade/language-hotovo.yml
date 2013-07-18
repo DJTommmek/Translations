@@ -1,0 +1,44 @@
+request:
+  new:
+    self: "Pozadal jsi &other_player o obchod!"
+    other: "&other_player te pozadal o obchod!"
+  in_trade: "&other_player s tebou obchoduje!"
+  ignoring:
+    is_ignoring: "&other_player neprijima nabidky!"
+    enabled: "Nyni neprijimas zadne nabidky!"
+    disabled: "Nyni prijimas prichozi nabidky!"
+  please_wait: "Pockej, nez &other_player prijme tvoji zadost!"
+  no_permission: "Nemas pravo s nekym obchodovat!"
+  no_response: "&other_player neodpovida na tvoji nabidku!"
+  no_cross_world: "Nemuzes obchodovat s hracem v jinem svete!"
+  no_cross_gamemode: "Nemuzes obchodovat s hracem, ktery ma jiny gamemode!"
+  must_see: "Hrac, se kterym obchodujes, musi byt videt!"
+  refused: "&other_player odmitl tvoji nabidku!"
+  player_not_requested: "Nikdo te o obchod nepozadal. Pokud chces sam nekoho pozadat, napis /trade <nick>"
+  player_not_found: "Hrac nenalezen."
+trade:
+  start: "Nyni obchodujes s &other_player!"
+  help: "Pro prijeti obchodu klikni na zelenou vlnu. Pokud nechces obchodovat, klikni na cervenou vlnu."
+  accept:
+    self: "Prijal jsi obchod!"
+    other: "&other_player prijal obchod!"
+  deny:
+    self: "Zakazal jsi obchod!"
+    other: "&other_player zakazal obchod!"
+  refuse:
+    self: "Odmitl jsi obchod."
+    other: "&other_player odmitl obchod!"
+  offer_changed: "&other_player zmenil svoji nabidku."
+  cannot_use_slot: "Nemuzes pouzit tenhle slot. Pouzij levou stranu!"
+  currency:
+    add:
+      self: "Pridal jsi k nabidce &amount! Current balance: &balance"
+      other: "&other_player pridal k nabidce &amount!"
+      cant: "Nemuzes pridat &amount!"
+    remove:
+      self: "Odebral jsi z nabidky &amount! Current balance: &balance"
+      other: "&other_player odebral z nabidky &amount!"
+      cant: "Nemuzes odebrat &amount!"
+    no_ballance: "Nemas &amount!"
+  error: "Behem obchodu zrejme doslo k chybe. Kontaktuj prosim admina. Tvoje penize i itemy ti byly vraceny." 
+    

@@ -1,0 +1,171 @@
+join:
+  register: '{RED}Pro hrani se musis registrovat prikazem {YELLOW}/reg <heslo>{RED}.'
+  login: '{RED}Prihlas se prikazem {YELLOW}/login <heslo>{RED}.'
+  resume: '{BRIGHTGREEN}Vitej zpet, byl jsi overen a muzes pokracovat bez prihlaseni.'
+  error:
+    lockout: Prekrocil jsi maximalni pocet pokusu o prihlaseni. Znovu muzes zkusit za 1 hodinu.
+    name: Tve jmeno obsahuje nepovolene znaky.
+    online: Jiz jsi ve hre! Pockej par vterin.
+register:
+  usage: '{RED}Spravne pouziti prikazu je {YELLOW}/register <heslo>{RED}.'
+  success: '{BRIGHTGREEN}Tva registrace probehla uspesne!{NEWLINE}{BRIGHTGREEN}Nyni
+    se muzes prihlasit prikazem {YELLOW}/login <heslo>'
+  error:
+    disabled: '{RED}Registrace ve hre neni povolena. {NEWLINE}{RED}Pokud zde chces
+      hrat, vypln test na {YELLOW}www.mc-miners.eu/prava{RED}.'
+    registered: '{RED}Tvuj ucet jiz je registrovany.'
+    limit: '{RED}Nemuzes zaregistrovat vice uctu!'
+    password: '{RED}Tve heslo je prilis kratke. Musi mit minimalne {PWMINLENGTH} znaku!'
+    email: '{RED}Nespravny email!'
+    general: '{RED}Neco se stalo pri tve registraci. Tuto zpravu oznam adminum i s
+      tim co jsi delal.'
+login:
+  usage: '{RED}Spravne pouziti prikazu je {YELLOW}/l <heslo>'
+  success: '{BRIGHTGREEN}Nyni jsi uspesne prihlasen!'
+  error:
+    registered: '{RED}Nemuzes se prihlasit bez toho, aniz by ses registroval!'
+    authenticated: '{RED}Jiz jsi prihlasen!'
+    password: '{RED}Nespravne heslo!'
+    active: '{RED}Tvuj ucet neni aktivovan!'
+    general: '{RED}Neco se stalo pri tvem prihlasovani. Tuto zpravu oznam adminum
+      i s tim co jsi delal.'
+logout:
+  success: '{BRIGHTGREEN}Byl jsi uspesne odhlasen!'
+  error:
+    logged: '{RED}Nejsi prihlasen!'
+    general: '{RED}Neco se stalo pri tvem odhlasovani. Tuto zpravu oznam adminum i
+      s tim co jsi delal.'
+quit:
+  success: '{BRIGHTGREEN}Byl jsi uspesne odpojen.'
+  error:
+    logged: '{RED}Nejsi prihlasen!'
+    general: '{RED}Ooops! Neco se behem odpojovani pokazilo.'
+changepw:
+  usage: '{RED}Spravne pouziti prikazu pro zmenu hesla je {YELLOW}/chpw <stare
+    heslo> <nove heslo>'
+  success: '{BRIGHTGREEN}Heslo bylo uspesne zmeneno!'
+  error:
+    disabled: '{RED}Zmena hesla neni povolena.'
+    logged: '{RED}Nejsi prihlasen!'
+    incorrect: '{RED}Zadal jsi nespravne puvodni heslo!'
+    invalid: '{RED}Tve nove heslo neni mozne pouzit!'
+    general: '{RED}Neco se stalo pri tvem odhlasovani. Tuto zpravu oznam adminum i
+      s tim co jsi delal.'
+authurl:
+  registration: '{RED}Registrace pres AuthURL je vypnuta.'
+  changepw: '{RED}AuthURL nepodporuje zmenu hesla'
+misc:
+  illegal: '{GRAY}Pro jakoukoli cinnost musis byt prihlasen!'
+  timeout: Tvuj cas pro prihlaseni vyprsel!
+  strikeout: Zadal jsi prilis mnohokrat spatne sve heslo!
+  reloaded: '{RED}Server (plugin) byl restartovan, musis se znovu prihlasit.'
+admin:
+  permission: Nemas pravo pouzit tento prikaz!
+  debug: Debugging level set to %s
+  register:
+    usage: '{RED}Spravne pouziti prikazu je {YELLOW}/xauth register <hrac> <heslo>
+      [email]'
+    success: '{BRIGHTGREEN}Byl uspesne vytvoren ucet pro: {WHITE}{TARGET}'
+    error:
+      registered: '{RED}Tento hrac jiz je registrovan!'
+      general: '{RED}Something went wrong while creating an account for {TARGET}'
+  changepw:
+    usage: '{RED}Spravne pouziti pro zmenu ciziho hesla je {YELLOW}/xauth changepw
+      <hrac> <nove heslo>'
+    success: '{BRIGHTGREEN}Heslo pro hrace {TARGET} bylo uspesne zmeneno.'
+    error:
+      registered: '{RED}Tento hrac se jeste ani nezaregistroval!'
+      general: '{RED}Something went wrong while changing {TARGET}''s password!'
+  logout:
+    usage: '{RED}Spravne pouziti prikazu pro odhlaseni ciziho hrace je {YELLOW}/xauth
+      logout <hrac>'
+    error:
+      logged: '{TARGET} {RED}neni ani prihlasen!'
+      general: '{RED}Something went wrong while logging this player out!'
+    success:
+      player: '{TARGET} {BRIGHTGREEN}Byl uspesne odhlasen!'
+      target: '{BRIGHTGREEN}Byl jsi odhlasen!'
+  unregister:
+    usage: '{RED}Spravne pouziti pro odregistrovani ciziho hrace je {YELLOW}/xauth
+      unregister <hrac>'
+    error:
+      registered: '{RED}Tento hrac se jeste ani nezaregistroval!'
+      general: '{RED}Something went wrong while unregistering this player!'
+    success:
+      player: '{TARGET} {BRIGHTGREEN}byl uspesne odregistrovan!'
+      target: '{RED}Byl jsi odhlasen a odregistrovan!'
+  location:
+    usage: '{RED}Spravne pouziti prikazu pro zmenu mista pro prihlasovani je {YELLOW}/xauth
+      location set|remove [global]'
+    set:
+      error:
+        global: '{RED}Misto pro prihlasovani je jiz vybrano.{NEWLINE}{RED}Nejdrive
+          jej musis odstranit.'
+        general: '{RED}Something went wrong while setting this location!'
+      success:
+        regular: '{BRIGHTGREEN}Teleport location for this world set to your location!'
+        global: '{BRIGHTGREEN}Global teleport location set to your location!'
+    remove:
+      error:
+        noglobal: '{RED}A global teleport location is not set!'
+        notset: '{RED}Tento svet nema nadefinovany spawn!'
+        global: '{RED}Globalni teleport je jiz urcen v tomto svete.{NEWLINE}{RED}Pouzij
+          {YELLOW}/xauth location remove global'
+        general: '{RED}Something went wrong while removing this location!'
+      success:
+        regular: '{BRIGHTGREEN}Pozice pro teleport po prihlaseni byla uspesne odstranena!'
+        global: '{BRIGHTGREEN}Globalni pozice pro prihlasovani byla odstranena!'
+  reload: '{BRIGHTGREEN}Plugin xAuth byl restartovan.'
+  activate:
+    usage: '{RED}Spravne pouziti prikazu pro aktivaci hrace je {YELLOW}/xauth activate
+      <hrac>'
+    error:
+      registered: '{RED}Tento hrac neni registrovan!'
+      registeredM: '{RED}{TARGET} aren''t registered!'
+      active: '{RED}Tento hrac jiz je aktivovan!'
+      activeM: '{RED}The accounts for {TARGET} are already active!'
+      general: '{RED}Something went wrong while activating this player!'
+      generalM: '{RED}Something went wrong while activating the accounts!'
+    success: '{BRIGHTGREEN}{TARGET} Byl uspesne aktivovan!'
+    successM: '{BRIGHTGREEN}{TARGET} accounts have been activated!'
+  profile:
+    usage: '{RED}Correct Usage: /xauth profile [player]'
+    error:
+      registered: '{RED}This player is not registered!'
+      console: '{RED}Invalid argument count.'
+      general: '{RED}Something went wrong while executing this command!'
+    success: '{BRIGHTGREEN}{TARGET}''s profile!'
+  lock:
+    usage: '{RED}Correct Usage: /xauth lock <player>'
+    error:
+      registered: '{RED}Hrac {TARGET} neni registrovan!'
+      registeredM: '{RED}Hraci {TARGET} nejsou registrovani!'
+      locked: '{RED}Ucet hrace {TARGET} jiz je uzamkly!'
+      lockedM: '{RED}Ucty hracu {TARGET} jiz jsou uzamceny!'
+      general: '{RED}Something went wrong while locking the account {TARGET}!'
+      generalM: '{RED}Something went wrong while locking the accounts!'
+    success: '{BRIGHTGREEN}The account for {TARGET} has been locked!'
+    successM: '{BRIGHTGREEN}{TARGET} accounts have been locked!'
+  count:
+    usage: '{RED}Correct Usage: /xauth count <all|active|locked>'
+    error:
+      general: '{RED}Something went wrong while counting the accounts!'
+    successAll: '{BRIGHTGREEN}{TARGET} accounts are currently registered'
+    successA: '{BRIGHTGREEN}{TARGET} accounts are currently active'
+    successL: '{BRIGHTGREEN}{TARGET} accounts are currently locked'
+  config:
+    usage: '{RED}Spravne pouziti prikazu pro zmenu nektere polozky v configu je {NEWLINE}{YELLOW}/xauth
+      config <poznamka> <hodnota>'
+    error:
+      exist: '{RED}Toto nastaveni v configu neni!'
+      int: '{RED}Toto nastaveni musi byt zadane v cisle!'
+      invalid: '{RED}Toto nastaveni nemuze byt aktivovano pres zapnuty server!'
+    success: '{BRIGHTGREEN}Konfigurace probehla uspesne!'
+    value: '{BRIGHTGREEN}%s: {WHITE}%s'
+version:
+  current-version: '{BRIGHTGREEN}xAuth version: %s'
+  update-available: '{BRIGHTGREEN}New version %s available. Check your server.log
+    for download instructions.'
+  no-update-needed: '{BRIGHTGREEN}Latest xAuth version %s is installed. No update
+    needed.'
+  success: '{BRIGHTGREEN}Latest xAuth version is %s'

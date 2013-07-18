@@ -1,0 +1,53 @@
+# Messages for iConomy
+# 
+# 
+# There are variables in this file.
+# A variable has a plus sign in front of it (+balance = User's balance)
+# 
+# There are also colors in this file.
+# Available is: <black>, <navy>, <green>, <teal>, <red>, <purple>, <gold>,
+# <gray>,<silver>, <blue>, <white>, <lime>, <aqua>, <rose>, <pink>, <yellow>
+
+tag:
+  money: '<gold>[iConomy]<silver> '
+personal:
+  balance: '<silver>Balance: <gold>+balance'
+  reset: <silver>Your account has been reset.
+  set: <silver>Your balance has been changed to <gold>+amount
+  debit: <silver>Your account had <gold>+amount<silver> debited.
+  credit: <gold>+amount<silver> was credited into your account.
+  status: <silver>Account status is currently <gold>+status<silver>.
+player:
+  set: <silver>+name's balance has been changed to <gold>+amount
+  balance: '<silver>+name''s Balance: <gold>+balance'
+  reset: <gold>+name's <silver>account has been reset.
+  credit: <gold>+name's <silver>account had <gold>+amount<silver> credited.
+  debit: <gold>+name's <silver>account had <gold>+amount<silver> debited.
+  status: <gold>+name's <silver>account status is <gold>+status<silver>.
+payment:
+  self: <silver>Sorry, you cannot send money to yourself.
+  to: <silver>You have sent <gold>+amount<silver> to <gold>+name<silver>.
+  from: <gold>+name<silver> has sent you <gold>+amount<silver>.
+statistics:
+  opening: <silver>-----[ <gold>iConomy Stats <silver>]-----
+  total: '<gray>Total +currency: <gold>+amount'
+  average: '<gray>Average +currency: <gold>+amount'
+  accounts: '<gray>Total Accounts: <gold>+amount'
+interest:
+  announcement: +amount <silver>gained from interest.
+accounts:
+  empty: <silver>Deleted <gold>all<silver> accounts.
+  purge: <silver>All inactive accounts were purged.
+  create: <silver>Created account with the name <gold>+name<silver>.
+  remove: '<silver>Deleted account: <gold>+name<silver>.'
+  status: <silver>Account status is now <gold>+status<silver>.
+top:
+  opening: <silver>-----[<gold>Wealthiest Accounts<silver>]-----
+  item: <silver>+i. <gold>+name - +amount
+error:
+  online: <silver>Sorry, nobody else is online.
+  exists: <silver>Account already exists.
+  create: <silver>Could not create account with the name <gold>+name<silver>.
+  remove: <silver>Could not remove account with the name <gold>+name<silver>.
+  account: <silver>Account <gold>+name<silver> does not exist.
+  funds: <silver>Sorry, you do not have enough funds to do that.

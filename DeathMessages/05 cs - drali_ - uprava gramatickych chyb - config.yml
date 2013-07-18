@@ -1,0 +1,363 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Plugin Name: Death Messages
+# Author: Goty
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+### Description: Change the Default Bukkit Death Messages as you Wish, including colors, victim name, killer name and weapon/material/name...  also Join and Leave Messages.
+### Plugin Version: 
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created.
+Version: 2.4.1
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+
+#====================================== Death Message Settings ======================================#
+### Disable ALL Death Messages (and Generic Messages) in worlds (CASE SENSITIVE):
+Disabled_Worlds:
+- Event
+- NoSpam_world
+
+### Enable/Disable ONLY PvP Messages in the server.
+Disable_PvP_Messages: false
+
+#====================================== Generic Messages ======================================#
+### Enable/Disable all Generic Messages; if disabled, will totally turn off the listeners, so this part will not affect performance.
+# (YOU HAVE TO RELOAD or STOP/START THE SERVER FOR THIS OPTION TO HAVE EFFECT)
+Generic_Messages: false
+
+### On Player FIRST Join Message:
+Player_First_Join: '&6The Player &b%player &6has joined the Server for FIRST TIME!'
+
+### On Player Join Message:
+Player_Join: '&aThe Player &b%player &ahas joined the Server!'
+  
+### On Player Leave/Disconnect Message:
+Player_Disconect: '&cThe Player &b%player &chas left the Server!'
+
+### On Player Kick Message:
+Player_Kick: '&cThe Player &b%player &chas been Kicked!'
+
+#====================================== Death Messages ======================================#
+### Change those TAGS as you wish.
+# %player = Player (victim) name
+# %killer = Player Assasin name (only for player kills, PvP)
+# %weapon_material = Material name of the weapon wielded by the killer(only for player kills, PvP)
+# %weapon_name = Meta display name of the weapon, instead of the material one, if there's no name it'll show the material one.
+# %world = World name in which the player died, can be used in any message.
+
+### Don't forget to use bukkit colors if you want ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold
+
+### Some Examples:
+# Example for Creeper Message = '&2%player &Elikes to hug &CCreepers&E, he is a pill of dust now...'
+# Example for PvP Message = '&2%player &Ewas slain by &Ckiller&E, wielding his mighty &C%weapon'
+
+### TAKE CARE ABOUT SPECIAL CHARACTERS OR NON-ENGLISH ONES! THE BUKKIT YAML PARSER DON'T ALLOWS THEM! CHECK THE PLUGIN PAGE TO USE VARIABLES INSTEAD TO SHOW THEM!
+
+### Finally, you can add/modify/remove all the random messages you wish, when a death occurs, a random message from the list will be chosen.
+# REMEMBER, THERE'RE NOT ONLY 2 POSSIBLE RANDOM MESSAGES, ADD/REMOVE ALL YOU WISH! INFINITE POSSIBILITIES!
+
+### Mob Causes
+Blaze:
+  - '&3%player &7byl usmazen Blazem'
+  - '&3%player &7chtel byt s blazem kamarad.'
+  - '&7Blaze te uznal vynnym z neznalosty prafopysu, tak te upalyl &3%player.'
+CaveSpider:
+  - '&3%player&7 narazil v jeskyni na pavoucka'
+  - '&3%player&7 bude vecne spat v siti.'
+  - '&3%player&7 mel ve sklepe pavoucky'
+  - '&3%player&7 potkal Aragoga!'
+  - '&3%player&7 byl zaskocen jeskynnim pavoukem!'
+  - '&3%player&7 zapomnel, kam az muze pavouk skocit!'
+  - '&3%player&7 co jsi cekal za tou spoustou pavucin?'
+  - '&3%player&7 chtel byt Spidermanem.'
+  - '&3%player&7 tvrdil, ze pavouci nekousou...'
+  - '&7I ten pavouk vedel, ze tvuj pravopis zaslouzi smrt &3%player.'
+Creeper:
+  - '&7Tssssssssss, &3%player&7!'
+  - '&3%player&7 objevil maleho, zeleneho.... Bum.'
+  - '&3%player&7 sel, pak se ozvala rana, a uz nebyl...'
+  - '&3%player&7 zkousel ochocit creepera.'
+  - '&3%player&7, nezabijes-li creepera, udela to on.'
+  - '&3%player&7 jedna dve, creeper jde, tri a ctyri, k tobe miri...'
+  - '&3%player&7 bylo ticho, pak rana a opet ticho.'
+  - '&3%player&7, ten creeper ti dal ranu z milosti za tvou gramatiku.'
+EnderDragon:
+  - '&3%player&7 skoncil v Konci.'
+  - '&3%player&7, podivat se nahoru by mozna pomohlo.. byl tam drak'
+  - '&7Ne, ty draci vejce nedostanes, &3%player&7.'
+  - '&3%player&7 se prave dostal z Konce tou rychlejsi cestou.'
+  - '&3%player&7 si nikdy neprecte zaverecne titulky!'
+Enderman:
+  - '&3%player&7 se krive podival na endermana.'
+  - '&3%player&7 vrhl dlouhy pohled na toho dlouheho!'
+  - '&3%player&7, nadavat jim do carodejnic se nevyplaci.'
+  - '&3%player&7 nevezmes jmeno Endermana nadarmo.'
+  - '&3%player&7 i v Endu umej pravopis lip nez ty... Trestem je smrt.'
+Ghast:
+  - '&3%player&7, to, co slysis, nejsou deti, to byl Ghast'
+  - '&7Hrace &3%player&7 zabil Ghast!'
+  - '&3%player&7 neodpalil Ghastovu ohnivou kouli pryc!'
+  - '&3%player&7 ten strasny rev je tvoje ucitelka cestiny, zabila te za y.'
+Giant:
+  - '&3%player&7 byl zadupan do zeme!'
+  - '&3%player&7 je na placicku'
+IronGolem:
+  - '&3%player&7 dostal ranu zeleznou pesti!'
+  - '&3%player&7 byl zabit dyni se ctyrmi zelezy'
+  - '&7Hrace &3%player&7 zabil golem.'
+  - '&3%player&7 si dovoloval na vesnicany.'
+  - '&3%player&7 by nemel podcenovat mistni policejni jednotku.'
+  - '&3%player&7 objevil Ironmena.'
+MagmaCube:
+  - '&3%player&7 byl zaskocen lavovou priserou'
+  - '&7Hrace &3%player&7 sezrala cervena krychle.'
+  - '&7Hrac &3%player&7 uz asi nebude mit rad cervene krychle.'
+  - '&3%player&7 to nevis, ze harmonyka je podle vzoru gramatyka?'
+PigZombie:
+  - '&7Hrace &3%player&7 porazilo mrtve prase.'
+  - '&3%player&7, sahani na pigzombie neni dobry napad.'
+  - '&3%player&7, on ten zlatej mec dobrovolne neda.'
+  - '&3%player&7 stoji ti to za ty zlaty nugety?'
+  - '&3%player&7, pigzombie opet zvitezil.'
+  - '&3%player&7 i to blby prase vi, zes tam napsal spatne I.'
+Silverfish:
+  - 'Hrace &3%player&7 zabila silverfish!'
+  - 'Hrace &3%player&7 zaskocilo to, co vylezlo z kamene'
+  - '&3%player&7 se zadusil silverfishy.'
+  - '&7Oni jsou ve zdech, vykrikl &3%player&7 a zemrel'
+  - '&3%player&7 nema rad zlate (stribrne) rybky.'
+  - '&3%player&7 ta banda sylverfyshu bila dost cytlyva na chibni osloveny.'
+SkeletonArcher:
+  - '&7Hrac &3%player&7 byl zastrelen skeletonem!'
+  - '&3%player&7 byl na spatne strane luku.'
+  - '&3%player&7 mel kostru ve skrini...'
+  - '&3%player&7 se nevyhnul sipu!'
+  - '&7Skeleton: Headshot, &3%player&7!'
+  - '&3%player&7 specialne pro tebe mel ten skeleton sip ve tvaru Y.'
+SkeletonMelee:
+  - '&3%player&7 mel kostru ve skrini...'
+  - '&7Skeleton: pouzil BASH na &3%player&7!'
+  - '&7Skeletonovi dosly sipy, tak te ufackoval &3%player&7!'
+Slime:
+  - '&7Slime objevil hrace &3%player&7. A slime vyhral.'
+  - '&3%player&7 si hral se slimem. Ale slimovi se to nelibilo.'
+  - '&3%player&7 se stal soucasti slizu.'
+  - '&3%player&7 si chtel privydelat Slimebally, ale jaksi se mu to nepovedlo.'
+Spider:
+  - '&3%player&7 narazil na pavoucka'
+  - '&3%player&7 bude vecne spat v siti.'
+  - '&3%player&7 potkal Aragoga!'
+  - '&3%player&7 zapomnel, kam az muze pavouk skocit!'
+  - '&3%player&7 je jako moucha v pavucincce.'
+  - '&3%player&7 byl zaskocen pavoukem!'
+  - '&3%player&7 chtel byt Spidermanem.'
+  - '&3%player&7 tvrdil, ze pavouci nekousou...'
+Witch:
+  - '&3%player&7 potkal Witch. Ta zarvala. A pak zarval &3%player&7...'
+  - '&3%player&7 si hral s carodejnicemi'
+  - '&3%player&7 byl proklet'
+Wolf:
+  - '&3%player&7 nakrmil vlka.'
+  - '&3%player&7 nevyl s vlky.'
+  - '&3%player&7 hladil sviste proti srsti.'
+  - '&3%player&7 nastval smecku vlku.'
+  - '&3%player&7 mel ses rozmyslet predem, jestli budes s vlky vit nebo vyt.'
+Zombie:
+  - '&3%player&7 dostal pesti od zombie!'
+  - '&7Hrace &3%player&7 kousla zombie!'
+  - '&7Hrace &3%player&7 snedla mrtvola!'
+  - '&3%player&7 by mel investovat do samopalu.'
+### Wither
+Wither:
+  - '&3%player &7vybouchl'
+  - '&3%player &7potkal trihlavou potvurku'
+WitherEffect:
+  - '&7Od withera neuteces, &3%player!' 
+### Wither Skeleton
+WitherSkeleton:
+  - '&3%player &7byl zabit &CWither Skeletonem'
+### PvP Causes
+PvPFist:
+  - '&3%killer&7 ufackoval &3%player&7 k smrti.'
+  - '&3%killer&7 podal ruku &3%player&7 ale prilis rychle a mnohokrat.'
+PvPWeapon:
+  - '&3%killer&7 zabil &3%player&7'
+  - '&3%killer&7 sejmul &3%player&7&7!'
+  - '&3%killer&7 dorazil &3%player&7!'
+  - '&3%killer&7 rozmasiroval &3%player&7!'
+# Weapon Tag NOT APLICABLE
+PvPBow:
+  - '&3%killer&7 sejmul &3%player&7 svym lukem!'
+  - '&3%killer&7 vystrelil na &3%player&7 svym lukem!'
+  - '&3%player&7 byl zabit &3%killer&7! Spise jeho lukem, teda jeho sipy...'
+Thorns:
+  - '&2%player &Ezemrel, kdyz se pokousel sejmout &C%killer'
+  - '&2%player &Eradeji spachal sebevrazdu, kdyz se mu nedarilo zabit &C%killer'
+### Other Causes
+TNT:
+  - '&7Davej pozor &3%player&7, TNT boucha!'
+  - '&7Nevsiml si nekdo, ze si &3%player&7 hraje s dynamitem?.'
+  - '&3%player&7 se rozprskl!'
+  - '&3%player&7 mel radsi prestrihnout cerveny dratek!'
+  - '&3%player&7 se (krvave) zacervenal.'
+  - '&3%player&7 plasil kurata rachejtlemi!'
+  - '&3%player&7 skakal panaka na minovem poli!'
+  - '&7Hraci &3%player&7 se zasekla hlava v mikrovlnce!'
+  - '&3%player&7 objevil prskavky Chucka Norrise'
+Cactus:
+  - '&3%player&7 se tulil ke kaktusu!'
+  - '&3%player&7 zabloudil ve skleniku se sukulenty'
+  - '&3%player&7 objimal kaktus.'
+  - '&3%player&7, my vime, ze mas kaktusy rad, ale neprehanis to trochu?'
+  - '&3%player&7 by se mel chovat u kaktusu opatrneji!'
+  - '&3%player&7 se osklive popichal!'
+  - '&3%player&7 zjistil, ze kaktus neni kamarad!'
+  - '&3%player&7 se pichl o trn a upadl do vecneho spanku!'
+  - '&3%player&7 sel po pousti poslepu.'
+  - '&3%player&7 nabehl na neco zeleneho, ale trava to nebyla.'
+Anvil:
+  - '&3%player &7, spadla ti na hlavu kovadlina!'
+  - '&3%player &7nenapadlo te, ze takovy kus zeleza nebude levitovat?'
+# Dispenser only has 1 message for deaths, but i added another one if player dies from a fireball ;)
+DispenserArrow:
+  - '&3%player&7 byl zastrelen dispenserem naplneny sipy.'
+  - '&3%player&7 si mysli, ze je Indiana Jones.'
+  - '&3%player&7 se nechal nachytat.'
+DispenserFireball:
+  - '&3%player&7 byl zastrelen dispenserem naplneny ohnivymi koulemi.'
+  - '&3%player&7 si mysli, ze je Indiana Jones.'
+  - '&3%player&7 se nechal nachytat.'
+Drowning:
+  - '&3%player&7 se utopil'
+  - '&3%player&7 splynul s morem!'
+  - '&3%player&7 je 20 000 mil pod morem.'
+  - '&3%player&7 klesl az na samotne dno'
+  - '&3%player&7 se potapel bez potapeciho pristroje!'
+  - '&3%player&7 nejspis zatahoval kurzy plavani.'
+  - '&7Plice hrace &3%player&7 byly uspesne naplneny H20.'
+  - '&3%player&7 zapomenel na svou denni davku vzduchu!'
+  - '&3%player&7 si prohlizi rybicky!'
+  - '&3%player&7 spadl ze surfu!'
+  - '&3%player&7 (ne)chodil po vode.'
+  - '&3%player&7 ma novy rekord pro zadrzovani dechu pod vodou.'
+  - '&3%player&7 hledal Nema.'
+PotionofHarming:
+  - '&3%player&7 poznal Silu.'
+  - '&3%player&7 byl zabit magii.'
+# In Minecraft you can't die from normal Poison, you just get to half heart, anyway it a Poison Potion hits you when u're with low health and kills you or by other plugins this could happen.
+Fall:
+  - '&3%player&7 zakopl a spadl... z utesu.'
+  - '&3%player&7 skocil Bungee bez lana.'
+  - '&3%player&7 nerozepnul padak.'
+  - '&3%player&7 se naucil letat... skoro...'
+  - '&7Ano, &3%player&7, gravitace funguje.'
+  - '&3%player&7 overoval Isaacuv objev.'
+  - '&3%player&7 polibil zem.'
+  - '&3%player&7 na nas z vysky.'
+  - '&3%player&7 se priblizil k zemi!'
+  - '&3%player&7 sletel dolu.'
+  - '&3%player&7 mel zebrik az k nebeske vysi.'
+  - '&7Nahoru vylezes, dole te najdem, ze, &3%player&7?'
+  - '&3%player&7: Banzaaaiii!'
+  - '&3%player&7 skocil na spek reklame na Redbull!'
+  - '&3%player&7 priste mavej rukama a rikej si: Jsem orel!'
+  - '&3%player&7 se rozplacl'
+Poison:
+  - '&3%player&7 snedl, co nemel!'
+  - '&7Drahy &3%player&7, ta lebka na te lahvicce nebyla nadarmo...'
+  - '&3%player&7 byl u Marysi na kafi!'
+  - '&3%player&7 neni travicka, jako travicka!'
+# Direct exposure to a fire block
+FireBlock:
+  - '&3%player&7 se pripekl.'
+  - '&3%player&7 byl zapalen!'
+  - '&3%player&7 za nekoho strcil ruku do ohne'
+  - '&3%player&7 - novy, krupavejsi!'
+  - '&7Kdo pujcil &3%player&7 zapalky?'
+  - '&3%player&7 strcil ruce do topinkovace!'
+  - '&3%player&7 uhorel!'
+  - '&3%player&7 skakal pres ohen az si propalil mokasiny!'
+# Death caused by burns after leaving a Fire Block or Lava Block.
+FireEffect:
+  - '&3%player&7 uhorel!'
+  - '&3%player&7 - novy, krupavejsi!'
+  - '&7Do zlatova opeceny &3%player&7.'
+  - '&3%player&7 zkousel depilaci plamenem.'
+  - '&3%player&7 chytla koudel u zadku.'
+  - '&3%player&7 se tak dlouho zapalovala lytka, az vzplanul cely.'
+Lava:
+  - '&3%player&7 chtel byt obsidianem.'
+  - '&3%player&7 pozoroval sopku zblizka.'
+  - '&7No tak, &3%player&7, neprehanis ty horky koupele?'
+  - '&3%player&7 si dal horkou koupel!'
+  - '&3%player&7 se smocil ve spatnem bazenu.'
+  - '&3%player&7! Tohle byla lava!'
+# You usually get 'went up in flames' like cause of death by a thunder, now you can specify what you want, anyway if the fire kills you first the cause will still being the fire.
+Lightning:
+  - '&7Hrace &3%player&7 sezehl paprsek smrti.'
+  - '&3%player&7 byl nabit elektrinou.'
+  - '&3%player&7 poznal Diuv hnev.'
+Starvation:
+  - '&3%player&7 umrel hlady.'
+  - '&3%player&7 si zapomnel zabalit svacinu.'
+  - '&3%player&7 asi nemel na jidlo.'
+  - '&3%player&7 se stal kostlivcem.'
+Suffocation:
+  - '&3%player&7 se zasekl ve zdi.'
+  - '&3%player&7 zkamenel'
+  - '&3%player&7 je pod drnem (doslova).'
+  - '&3%player&7 vytvari fosilie.'
+  - '&3%player&7 zabloudil cestou do stredu Zeme.'
+  - '&3%player&7 ocuchava kytickam korinky.'
+# Suicide message is only possible when player uses /suicide or /kill to himself.
+  - '&3%player &7splynul se zdi...'
+
+Suicide:
+  - '&3%player&7 vzal veci do vlastnich rukou.'
+  - '&3%player&7: Nashledanou, kruty svete!'
+  - '&7Odpocivej v pokoji &3%player&7.'
+  - '&3%player&7 se zhoupnul na tramu.'
+  - '&3%player&7 si hral se ziletkou v koupelne.'
+  - '&3%player&7 omrzelo zdejsi byti.'
+Void:
+  - '&3%player&7 spadl mimo svet.'
+  - '&3%player&7 prozkoumava bedrock zespodu.'
+  - '&3%player&7 zemrel ve Voidu.'
+  - '&3%player&7 veril, ze pod bedrockem je dalsi svet.'
+  - '&3%player&7 nezastavil ani bedrock.'
+  - '&3%player&7 malem dosahl Warp 10.'
+  - '&3%player&7 zkousel prekrocit rychlost svetla.'
+  - '&3%player&7 miloval volny pad.'
+  - '&3%player&7 prekrocil horizont udalosti.'
+# Weird causes like killed by EnderPearl, Eggs and Snowballs.
+# Snowmans can't kill players cause Snowballs have no damage, anyway some servers change this mechanic for fun (like my server), so i added it too.
+Others:
+  - '&3%player&7 zemrel z neznamych duvodu.'
+  - '&3%player&7 zemrel na seslost vekem.'
+  - '&3%player&7 se vyparil.'
+  - '&3%player&7 zemrel.'
+  - '&3%player&7 byl zabit Chuckem Norrisem.'
+  - '&3%player&7 potkal Herobrina!'
+  - '&3%player&7 bezel s nozem v ruce... Ted uz nebezi.'
+  - '&7Hrace &3%player&7 zasahlo padajici piano.'
+  - '&3%player&7 si zapomnel oblect skafandr.'
+  - '&3%player&7 byl zabit... mel lagy...'
+  - '&3%player&7: Hej, prave me napadl vtip o herobr... eeeee...'
+Snowman:
+  - '&3%player&7 zledovatel snowmanem...'
+  - '&3%player&7 zledovatel snehulakem...'
+  - '&3%player&7 se stal snehulakem...'    
+    ## Rest of the Causes, command causes will be showed here, like /kill or /suicide case doesn't have a damager.
+Unknown:
+  - '&3%player&7 zemrel z neznamych duvodu.'
+  - '&3%player&7 zemrel na seslost vekem.'
+  - '&3%player&7 se vyparil.'
+  - '&3%player&7 zemrel.'
+  - '&3%player&7 byl zabit Chuckem Norrisem.'
+  - '&3%player&7 potkal Herobrina!'
+  - '&3%player&7 bezel s nozem v ruce... Ted uz nebezi.'
+  - '&7Hrace &3%player&7 zasahlo padajici piano.'
+  - '&3%player&7 si zapomnel oblect skafandr.'
+  - '&3%player&7 byl zabit... mel lagy...'
+  - '&3%player&7: Hej, prave me napadl vtip o herobr... eeeee...'
+### DON'T USE, EXPERIMENTAL - NEXT VERSION
+# PvPPotion:'&2%player &Ewas killed by &C%killer'

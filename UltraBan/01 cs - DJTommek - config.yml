@@ -1,0 +1,124 @@
+Messages:
+  Ban:
+    MsgToVictim: '&7%admin%&6 te zabanoval(a): Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&5%admin%&7 zabanoval(a) &5%victim% &7. Duvod: &4%reason%!''
+    Failed: '&5%victim% &7is jiz je zabanovan(a)!'
+    Denied: '&cYour ban attempt has been denied!'
+    Emo: '&cSam sebe zabanovat nemuzes!'
+    Login: '&7%admin%&6 te zabanoval(a)! Duvod: &7%reason%&6! Pro dalsi informace jdi na IRC a ptej se &7%admin%&6.'
+  CheckBan:
+    Header: '&6Bylo nalezeno &7%amt%&6 zaznamu pro &7%victim%&6.'
+    None: '&4%victim%&c nema zadny zaznam.'
+  Clean:
+    Complete: '&6Odstraneno &7%amt%&6 player.dat souboru.'
+  DupeIP:
+    Failed: '&cNelze zjistit IP adresu hrace &4%victim%&c!'
+    Header: '&6IP adresa &7%victim%&6: &7%ip% !'
+    Completed: '&aVyhledavani ukonceno!'
+  Empty:
+    MsgToVictim: '&7%admin%&6 vycisil(a) tvuj inventar!'
+    MsgToSender: '&7%admin%&6 vycistil(a) inventar hrace &7%victim%&6!'
+    Online: '&4%victim%&c musi byt online.'
+  Export:
+    Failed: '&cExport banlistu nebyl uspesny.'
+    Completed: '&aExport banlistu byl uspesne proveden.'
+  History:
+    Header: '&6Banlist ma celkem &7%amt%&6 zaznamu.'
+    Failed: '&cNenalezen zadny zaznam v Banlistu.'
+  Import:
+    Loading: '&cNacitani...'
+    Failed: '&cImport nebyl uspesny.'
+    Completed: '&aImport byl uspesne dokoncen.'
+  InvOf:
+    Failed: '&cHrac nenalezen.'
+    Console: '&cTento prikaz musi byt napsan nekym ve hre.'
+  IPBan:
+    MsgToVictim: '&7%admin%&6 zabanoval(a) tvou IP adresu: Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&5%admin%&7 zabanoval(a) IP adresu &5%victim% &7. Duvod: &4%reason%!''
+    IPNotFound: '&cIP addresa nebyla nalezenea. &6Misto IPbanu je pro hrace &7%victim%&6 pouzit obycejny ban!'
+    Failed: '&4%victim%&c je jiz zabanovan.'
+    Denied: '&cTvuj IP ban byl zamitnut!'
+    Emo: '&cSvou IP nemuzes zabanovat!'
+    Login: '&7%admin%&6 ti zabanoval(a) IP adresu! Duvod: &7%reason%&6! Pro dalsi informace jdi na IRC a ptej se &7%admin%&6.'
+  Jail:
+    MsgToVictim: '&7%admin%&6 te poslal(a) do vezeni: Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&5%admin%&7 poslal hrace &5%victim%&7 do vezeni. Duvod: &4%reason%!''
+    SetJail: '&aVezeni bylo nastaveno!'
+    SetRelease: '&aMisto propusteni bylo nastaveno!'
+    Failed: '&4%victim%&c jiz je ve vezeni.'
+    Online: '&cAby mohl(a) byt &4%victim%&c poslan(a) do vezeni, musi byt online.'
+    Denied: '&cPozadavek na poslani do vezeni byl zamitnut!'
+    Emo: '&cSam sebe do vezeni poslat nemuzes!'
+    PlaceMsg: '&cKdyz jsi ve vezeni, nemuzes pokladat zadne bloky!'
+    PlaceMsg: '&cKdyz jsi ve vezeni, nemuzes nicit zadne bloky!'
+  Kick:
+    MsgToAll: '&7%admin%&6 vyhodil kazdeho ze serveru. Duvod: &7%reason%&6!'
+    MsgToVictim: '&7%admin%&6 te vyhodil ze serveru. Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&5%admin%&7 vyhodil hrace &5%victim%&7. Duvod: &4%reason%!'
+    Online: '&4%victim%&c musi byt online.'
+    Denied: '&cTvuj pozadavek na vyhozeni byl zamitnut!'
+    Emo: '&cNemuzes vyhodit sam sebe!'
+  Lockdown:
+    Start: '&cServer byl uzavren verejnosti.'
+    End: '&aServer byl opet otevren verejnosti.'
+    Status: '&cServer je odemcen verejnosti.'
+    LoginMsg: '&4Server je docasne uzavren, pravdepodobne probiha testovani.&c Zkus to pozdeji.'
+  Mute:
+    MuteMsgToSender: '&7%victim%&6 jsi zakazal(a) psat zpravy do chatu'
+    MuteMsgToVictim: '&4Bylo ti zakazano psat zpravy do chatu!'
+    UnmuteMsgToSender: '&7%victim%&6 jsi opet povolil psat zpravy do chatu.'
+    UnmuteMsgToVictim: '&aBylo ti povoleno psat zpravy do chatu.'
+    Denied: '&cPozadavek na zakaz psani zprav do chatu byl zamitnut!'
+    Emo: '&cNemuzes sam sobe zakazat psat zpravy do chatu!'
+    Chat: '&cMas zakazano psat zpravy do chatu.'
+  Pardon:
+    Msg: '&7%admin%&6 propustil &7%victim%&6 z vezeni.'
+  PermaBan:
+    MsgToVictim: '&7%admin%&6 ti dal permaban (nezrusitelny ban). Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&5%admin%&7 dal permaban (nezrusitelny ban) hraci &5%victim%&7. Duvod: &4%reason%!'
+    Failed: '&4%victim%&c je jiz zabanovan.'
+    Online: '&4%victim%&c musi byt online.'
+    Denied: '&cPozadavek na permaban byl zamitnut!'
+    Emo: '&cNemuzes zabanovat sam sebe!'
+  Spawn:
+    MsgToVictim: '&cByl jsi poslan na spawn!'
+    MsgToSender: '&7%victim%&6 je nyni na spawnu!'
+    Failed: '&4%victim%&c musi byt online.'
+  Starve:
+    MsgToVictim: '&cZacal jsi hladovet!'
+    MsgToSender: '&6%victim%&7 nyni hladovi!'
+    Failed: '&4%victim%&c neni online.'
+    Denied: '&cTvuj pozadavek byl zamitnut!'
+    Emo: '&cNemuzes nechat hladovet sam sebe!'
+  TempBan:
+    MsgToVictim: '&7%admin%&6 te zabanoval(a) po dobu &7%amt% %mode%&6. Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&7%admin%&6 zabanoval &7%victim%&6 po dobu &7%amt% %mode%&6. Duvod: &7%reason%&6!'
+    Failed: '&4%victim%&c jiz je zabanovan!'
+    Denied: '&cTvuj pozadavek na tempban byl zamitnut!'
+    Emo: '&cSam sebe nemuzes zabanovat!'
+    Login: '&7%admin%&6 te zabanoval po dobu &7%time%&6. Duvod: &7%reason%&6!'
+  TempIpBan:
+    MsgToVictim: '&7%admin%&6 ti po dobu &7%amt% %mode%&6 zabanoval IP adresu. Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&7%admin%&6 po dobu &7%amt% %mode% zabanoval IP adresu &7%victim%&6. Duvod: &7%reason%&6!'
+    Failed: '&4%victim%&c jiz je zabanovan!'
+    Denied: '&cPozadavek na docasny IPban byl zamitnut!'
+    Emo: '&cNemuzes zabanovat sam sebe!'
+    IPNotFound: '&cIP adresa hrace &7%victim%&6 nebyla nalezena.&6 Misto IP banu bude pouzit normalni ban.'
+  TempJail:
+    MsgToVictim: '&7%admin%&6 te na dovu &7%amt% %mode%&6 poslal do vezeni. Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&7%admin%&6 te na dobu &7%amt% %mode% poslal do vezeni &7%victim%&6. Duvod: &7%reason%&6!'
+    Failed: '&4%victim%&c jiz je ve vezeni!'
+    Denied: '&cPozadavek na poslani do vezeni byl zamitnut!'
+    Emo: '&cNemuzes poslat do vezeni sam sebe!'
+  Unban:
+    MsgToBroadcast: '&7%admin%&6 odbanoval hrace &7%victim%&6!'
+    PermaBanned: '&cPozadavek na unban byl zamitnut, &7%victim%&c ma permaban.'
+    Failed: '&4%victim%&c jiz je odbanovan!'
+  Warn:
+    MsgToVictim: '&7%admin%&6 ti poslal varovani. Duvod: &7%reason%&6!'
+    MsgToBroadcast: '&7%admin%&6 varoval hrace &7%victim%&6. Duvod: &7%reason%&6!'
+    Denied: '&cTvuj pozadavek na varovani byl zamitnut!'
+    Emo: '&cNemuzes varovat sam sebe!'
+  MaxWarn:
+    MsgToBroadcast: '&7%victim%&6 dosahl maximalniho poctu varovani (5), dostava tydenni ban!'
+  Permission: '&c[UB] Na tento prikaz nemas pravo.'

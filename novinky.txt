@@ -1,0 +1,124 @@
+﻿    Novinky:
+craftbukkit aktualizace
+nether quartz v obchodech
+obchodnici na sb maji jmena
+tablist
+antijoinbot
+ref system
+kovadliny by opet mely fungovat, potreba overit
+Pet je helper
+Dafelix odesel
+vyhlášení hlasování
+
+
+od 15.4
+    antijoinbot
+    fórum - sekce Novinky
+    opraven text mcMMO (schopnost opravování)
+    oprava logování přijatých SMS za VIP
+    okamžitá změna práv na webu při změně skupiny (není potřeba se připojovat do hry)
+    připsání VIP (ne přepsání)
+    zprovozněné vyzvedávání odměn za pozvání hráče (ref)
+    todo list dostal automatické přizpůsobení výšky textového pole (+ shoutbox)
+    js. se načítá při každém načtení stránky (kvůli shoutboxu)
+    zobrazuje se datum, kdy jsem naposledy hlasoval (určeno podle nicku, ne IP)
+    cookies je nyní v poli (array)
+    zobrazuje se jestli jsem přihlášen trvale nebo ne
+    přidány další informace do patičky stránky
+    přidán lock účtu
+    při uzavření webu je možnost mít povolené určité IP adresy
+    log todo dokončen
+    v TODO se zobrazuje posledních 10 akcí
+    opravena závažná chyba u hopperů
+    netherrack v SB shopu
+    groupadnnouncer
+    přidány kategorie do To-Do
+    aktualizován webhelp
+    aktualizována cracklá verze MC na webu
+    opravena chybka, kdy se zobrazuje náhodný znak před textem při přidělení odměny za hlas
+    konzole neukazuje prázdné řádky
+    konzole opět zvýrazňuje odpojení hráčů (žlutě)
+    na webu v sekci pro Vedení je nově stránka Informace
+    opraveny chybky v menu (border)
+    přidána mapa stránek
+od 1.5.
+    spuštěna PVP aréna
+    opravena chybka kdy se zobrazovalo "vytvořil DŮLEŽITÝ úkol" vždy, i když důležitý nebyl
+    zakázány skilly pro sekeru, serm, neozbrojeny a lukostrelba na svete Event
+    povoleno ubírat život hráčům ve tvé alianci na světě Event
+    opravena chybka v ověřování VIP, kdy to bralo v potaz i již expirované VIP
+    
+    upravena funkce pro datum (nahrazení mezery za nedělitelnou mezeru)
+    v tools opraven datum
+    smazán obchod v CraftCity, kde se prodával kyblík s vodou za 0 SB
+    aktualizovány informace (např. přidána pvparéna, opraveny některé již zastaralé části textů, mnoho zkratek a cizích významů)
+    dodány příkazy do pvp i mobarény
+    mírně změněn text v záhlaví webu (a ještě jednou změněn)
+    nastaven cooldown pro příkazy s websendem
+    doplněn tutoriál k hutnictví v mcmmo (vaclavz)
+    server byl aktualizován (signshop, creativecontrol, Multiverse, Multiverse-inventories, Scavenger, BKCommonLib, ProtocolLib, Plugman, ShopKeepers, TrainCarts a Vault)
+    menší úprava překladu mcmmo
+    aktualizován seznam pluginů v /pl
+    aktualizovány configy v CreativeControl
+    opraveno nepřidělování odměn hráčům v default skupině
+    
+    do sekce Vedení přidáno Nastavení, kde je možno prohlížet a upravovat hlavní konfigurační soubor
+    do sekce Oznámení přidána možnost vybrat barvu daného oznámení (červená, žlutá nebo zelená)
+    server aktualizovan na 1.5.2 (aktualizovany pluginy BKCommonLib, cncp, craftbook, creativecontrol, DeathMessages, MobArena, OpenInv, ShopKeepers, WorldEdit)
+    do menu pro Vedení přidána položka, Anketa - Výsledky
+    aktualizován minecraft klient pro server
+    na stránce Oznámení přidáno přiznávání aktuální barvy (červená, žlutá nebo zelená) a není ji potřeba vždy po jakékoli úpravě daného oznámení vybírat znovu
+    aktualizována Mapa stránek o Tools a Nastavení
+    přidány Scoreboards do hry
+    přidán nolagg
+    upraveny crony a jejich logování do souboru (přidán příkaz pro nolagg - jednou za hodinu, 60 vteřinový test)
+    přidáno zachraňování XP a lvl po smrti pro +VIP a výše
+    opraven a přesunut script pro degradaci VIP
+    v todo upraven odkaz v logu, kdy splněný úkol vedl na stejnou stránku, nyní vede na V-todo-done
+    v todo přidán odkaz pro nový úkol (bylo nutno přidat nový SQL dotaz)
+    přidáno právo pro automatické aktivování AFK (doteď chybělo)
+    v banlistu přidána možnost odbanovat daného hráče (příkaz může provést buď ten, kdo zabanoval nebo Admin)
+    
+    opraveno dědictví permission skupin
+      opravena chyba, kdy Moderátor má práva jako VIP + pár navíc ale nemá práva Helpera
+    opravena chyba při nezachraňování inventářů (bude ještě další update)
+      opravena chyba, kdy se musel hráč při smrti na skyblocku teleportovat na spawn, poté na skyblock, na spawn a zpět na skyblock aby se věci obnovily (scavenger)
+    opravena chybka, kdy na admina nepůsobily žádné PWN filtry
+    
+    vypnuty cedulky koupit, prodat na Skyblocku
+    upraveny překlady essentials a pvparena(nahozeno)
+    opravena chybka kdy automatické zprávy byly nastaveny jednou za 180 minut (myslel jsem že to jsou vteřiny)
+    vytvořen alias příkaz /warnles <nick> jako /warn <nick> poskozovani Lesovny
+    pokud není daný úkol pro nikoho přiřazen, tak má majitele možnost nastavit ho pro někoho jiného
+    
+    <noscript> v consoli a notification
+    přidána funce console_format($text)
+    v konzoli přibyla možnost načíst jiný log
+    v konzoli lze načíst aktuální log bez automatického refreshe a lze refreshovat pomocí tlačítka
+    seznam logů se načítá v opačném pořadí (od aktuálního, poté od nejnovějšího až po nejstarší)
+    ucet-historie byl hodně upraven, především načítání starších logů v signshopu
+    přidány příkazy k spleef aréně a vytvořen krátký popis do pvp a mobarény
+    odebrány bloky a předměty z blacklistu na Creative světě v pluginu CreativeControl
+    vytvořená funkce mail_send
+    doplněn webhelp o datum, console_format a mail_send
+    CraftIRC nyní loguje chat i do konzole!
+    vozíky ze cedulkových spawnerů neztrácení rychlost
+    úspěšný test u práva navíc využívá update tabulky online_players
+    unikátní číslo v doručence VIP bylo zvýšeno na 5 místné
+    upravena funkce aplayer: změna proměnné $skupina na $group, nastavena jako defaultní "default" a pokud se jedná o +VIP, před nickem je přidáno plus
+    upravena funkce anick: return aplayer($nick, skupina($nick));
+    změna v Single-první vlna jde po 10 vteřinách
+    
+    blokováno posílání záporných částek
+    zrušena ochrana posílání dvou stejných příkazů nebo dvou stejných zpráv po sobě (kvůli nechtěnému poslání zprávy v alianci a tím znemožnění odeslání této zprávy i v global chatu)
+    aktualizován deathmessages na 2.5.1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    maydy - mozna multiucet

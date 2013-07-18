@@ -1,0 +1,11 @@
+Hutnictví (Smelting)
+
+Jedná se o pasivní skill související s Těžením. Je přímo závislý na úrovni skilu Těžení. Má 4 základní vlastnosti. Informace o jeho úrovni viz /hutnictvi nebo podle originálu /smelting. 
+
+Efektivita paliva - zvyšuje účinnost paliva používaného v pecích. Maximální úroveň je 4x. Tzn. na jedno uhlí, které běžné vypálí 8 kusů lze při maximální úrovni vypálit půl stacku. (Toto bohužel zatím nefunguje a stále platí 8 na jedno uhlí.)
+
+Dvojite vypalovani - V závislosti na úrovni hutnictví se úměrně s levelem zvyšuje šance na získání 2 ingotů při vypalování rudy v peci. Vzhledem k tomu, že tyto skilly jsou vázané na konkrétního hráče, je potřeba rudu do pece vložit ručně, nikoliv skrz hopper. Z pece ovšem je již možno vypálenou rudu hopperem odebírat. Dokonce je to vhodnější, jelikož při vložení celého stacku rudy a šanci 100% se pálení zastaví v půlce. Bez využití hopperu na výstupu je pak lepší vkládat pouze půl stacku rudy.
+
+Zvýšené expy při pálení - Zvyšuje množství expů obdržených při vypalování v peci. Maximální úroveň je 6x více expů. Pozor, opět hopper není vhodná kombinace, jelikož expy jsou přičteny při vybírání předmětů. Pokud je vyberete hopperem, nedostanete ani kuličku.
+
+Žárová těžba - s touto schopností se setkáte nejčastěji. Projevuje se hláškou **Ruda se zarem sama vypalila!** v chatu a namísto rudy vám rovnou vypadne ingot. Předpokládám, že úměrně Dvojitému vypalování padají pak ingoty rovnou dva.

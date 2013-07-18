@@ -1,0 +1,94 @@
+general:
+    enable-usage-stat-collection: true
+    text-color: a
+    text-color-2: f
+    enable-color-codes: true
+    charset: UTF-8
+    show-title-on-held-change: true
+    require-book-to-copy: false
+    make-real-copy: false
+    auto-chat-mode: true
+    drop-bookshelf-on-break: false
+    keep-all-books-loaded: true
+    use-spout-features: false
+    use-deny-perms: false
+    save-bookcases-in-world-folders: false
+    check-worldguard: false
+    use-full-filenames: true
+    clean-interval: 600
+    remove-delay: 300
+    stack-by-data-fn: a
+    
+formatting:
+    indent-size: 2
+    line-length: 55
+    page-length: 10
+    
+strings:
+    must-hold-book: 'Pro psani musis v ruce drzet nejakou knihu.'
+    usage-start: Pouzij prikaz /%c <nazev> pro napsani nazvu knihy.'
+    usage-write: 'Pouzij prikaz /%c <text> pro pridani textu do knihy.
+        Muzes pouzit :: Pro novy odstavec textu.
+        Levym klikem umistis knihu do knihovnicky.
+        Napis /%c -help pro podrobnejsi napovedu.'
+    usage-read: 'Pravym klikem si knihu prectes.'
+    new-book-created: 'Byla vytvorena nova kniha: %t'
+    
+    placed-book: 'Kniha ulozena do knihovnicky:'
+    copied-book: 'Zkopirovana kniha:'
+    removed-book: 'Odstranena kniha:'
+    cannot-destroy: Nemuzes znicit cizi knihovnicku!
+    placed-book-fail: Tady knihu polozit nemuzes.
+    command-invalid: Neplatny prikaz.
+    no-permission: Nemas pravo.
+    
+    write-done: 'Napsal jsi: %t'
+    write-fail: Nemuzes psat do knihy ktera neni tvoje.
+    
+    command-help: help
+    command-help-text: "Specialni prikazy:\n \
+        \ /%c -chat -- prepinani chatu a psani do knihy\n \ 
+        \ /%c -read <page> -- Prectes urcitou stranu\n \
+        \ /%c -undo -- vrati zpet posledni akci\n \
+        \ /%c -erase <text> -- smaze urcity text\n \
+        \ /%c -replace <stary text> -> <novy text> -- nahradi urcity text\n \
+        \ /%c -title <novy nazev> -- zmeni nazev knihy\n
+
+    command-get: get
+    command-get-done: 'Dostal jsi knihu: '
+    command-get-fail: Nemuzes dostat knihu.
+    
+    command-id: id
+    command-id-done: 'ID Knihy v ruce: '
+    command-id-fail: V ruce nedrzis zadnou knihu.
+        
+    command-read: read
+    
+    command-title: title
+    command-title-done: "Nazev knihy zmenen: "
+    
+    command-author: author
+    command-author-done: "Autor byl zmenen: "
+    
+    command-undo: undo
+    command-undo-done: Byla vracena posledni akce.
+    command-undo-fail: Neni co vratit zpet.
+    
+    command-erase: erase
+    command-erase-done: Text byl smazan.
+    
+    command-replace: replace
+    command-replace-done: Text byl nahrazen.
+    command-replace-fail: Text nebyl nahrazen.
+    
+    command-eraseall: tototakynejde
+    command-eraseall-done: Obsah knihy byl smazan.
+    
+    command-chatmode: chat
+    command-chatmode-on: Vse co napises se ulozi do knihy. Zpet do chatu se prepnes prikazem /bw -chat.
+    command-chatmode-off: Nyni pises normalne do chatu.    
+    
+    read-divider: '--------------------------------------------------'
+    book: Kniha
+    by: od
+    page: stranka

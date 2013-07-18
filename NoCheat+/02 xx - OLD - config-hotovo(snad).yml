@@ -1,0 +1,242 @@
+# Main configuration file for NoCheatPlus. Read "Instructions.txt"
+logging:
+  active: true
+  debugmessages: false
+  prefix: '&4NCP&f: '
+  filename: nocheatplus.log
+  file: true
+  console: true
+  ingamechat: true
+miscellaneous:
+  allowclientmods: false
+  opbyconsoleonly: true
+  protectplugins: true
+checks:
+  blockbreak:
+    fastbreak:
+      active: true
+      intervalsurvival: 45
+      intervalcreative: 145
+      actions: cancel vl>100 log:bbfastbreak:3:5:cif cancel vl>1000 log:bbfastbreak:3:5:cif cmd:kick cancel
+    reach:
+      active: true
+      actions: cancel vl>5 log:bbreach:0:2:if cancel
+    direction:
+      active: true
+      precision: 50
+      penaltytime: 300
+      actions: cancel vl>10 log:bbdirection:0:5:if cancel
+    noswing:
+      active: true
+      actions: log:bbnoswing:3:2:if cancel
+  blockplace:
+    fastplace:
+      active: true
+      interval: 95
+      actions: cancel vl>100 log:bpfastplace:3:5:cif cancel vl>1000 log:bpfastplace:3:5:cif cmd:kick cancel
+    reach:
+      active: true
+      actions: cancel vl>5 log:bpreach:0:2:if cancel
+    direction:
+      active: true
+      precision: 75
+      penaltytime: 100
+      actions: cancel vl>10 log:bpdirection:0:3:if cancel
+    projectile:
+      active: true
+      interval: 150
+      actions: cancel vl>150 log:bpprojectile:3:5:if cancel vl>1000 log:bpprojectile:3:5:cif cancel vl>4000 log:bpprojectile:3:5:cif cancel cmd:kick
+    fastsign:
+      exclusions:
+      - '[public]'
+      - '[private]'
+      - '[protection]'
+      - '[mail]'
+      - '[free]'
+      - '[kit]'
+      - '[disposal]'
+      - '[heal]'
+      - '[time]'
+      - '[weather]'
+      - '[warp]'
+      - '[spawnmob]'
+      - '[enchant]'
+      - '[trade]'
+      - '[buy]'
+      - '[sell]'
+      - '[balance]'
+      - '[gate]'
+      - '[bridge]'
+      - '[door]'
+  chat:
+    nopwnage:
+      active: true
+      warnplayers: false
+      warnothers: false
+      warnlevel: 400
+      warntimeout: 30000
+      banlevel: 800
+      otheractions: cancel log:nopwnage:2:5:cf cmd:ban cmd:ban-ip
+      move:
+        active: true
+        weightbonus: 200
+        weightmalus: 200
+        timeout: 30000
+      repeat:
+        active: true
+        weight: 150
+        timeout: 5000
+      speed:
+        active: true
+        weight: 200
+        timeout: 500
+      first:
+        active: true
+        weight: 200
+        timeout: 3000
+      global:
+        active: true
+        weight: 100
+        timeout: 5000
+      banned:
+        active: true
+        weight: 200
+        timeout: 2000
+      relog:
+        active: true
+        time: 1500
+        warnings: 1
+        timeout: 60000
+      captcha:
+        active: true
+        tries: 20
+        length: 4
+        characters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
+      messages:
+        kick: Na tomto serveru nesmis spamovat!
+        captchaquestion: '&cPro dalsi psani opis ''&6[captcha]&c''.'
+        captchasuccess: '&aDobre, vypada to, ze nejsi spambot.'
+        warnplayer: '&cNas system ma podezreni, ze u sebe mas bota. Prosim davej si pozor na to, co pises. Neopakuj to, co jsi psal pred chvili, muzes dostat ban.'
+        warnothers: '&cProsime nepiste to same, jako [player]!'
+        warnrelog: '&cPrihlasil ses dost rychle. Pokud v tom budes pokracovat, dostanes ban'
+    arrivalslimit:
+      active: false
+      playerslimit: 3
+      timeframe: 5000
+      cooldowndelay: 5000
+      newtime: 600000
+      kickmessage: Prosim zkuste to pozdeji!
+      actions: cancel
+    color:
+      active: true
+      actions: log:color:0:1:if cancel
+  fight:
+    direction:
+      active: true
+      precision: 75
+      penaltytime: 500
+      actions: cancel vl>5 log:fdirection:3:5:f cancel vl>20 log:fdirection:0:5:if cancel vl>50 log:fdirection:0:5:cif cancel
+    noswing:
+      active: true
+      actions: log:fnoswing:0:5:cif cancel
+    reach:
+      active: true
+      distance: 400
+      penaltytime: 500
+      actions: cancel vl>10 log:freach:2:5:if cancel
+    speed:
+      active: true
+      attacklimit: 15
+      actions: log:fspeed:0:5:if cancel
+    godmode:
+      active: true
+      actions: log:fgod:2:5:if cancel
+    instantheal:
+      active: true
+      actions: log:fheal:1:1:if cancel
+    knockback:
+      active: true
+      interval: 50
+      actions: cancel vl>50 log:fknock:0:5:cif cancel
+    critical:
+      active: true
+      falldistance: 0.01
+      velocity: 0.1
+      actions: cancel vl>50 log:fcritical:0:5:cif cancel
+    angle:
+      active: true
+      threshold: 50.0
+      actions: cancel vl>100 log:fangle:3:5:f cancel vl>250 log:fangle:0:5:cif cancel
+  inventory:
+    drop:
+      active: true
+      time: 20
+      limit: 100
+      actions: log:drop:0:1:cif cmd:kick
+    instantbow:
+      active: true
+      actions: log:ibow:2:5:if cancel
+    instanteat:
+      active: true
+      actions: log:ieat:2:5:if cancel
+  moving:
+    runfly:
+      active: true
+      allowfastsneaking: false
+      allowfastblocking: false
+      actions: log:moveshort:3:5:f cancel vl>100 log:moveshort:0:5:if cancel vl>400 log:movelong:0:5:cif cancel
+      nofall:
+        active: true
+        aggressivemode: true
+        actions: log:nofall:0:5:cif cancel
+      flying:
+        allowflyingalways: false
+        allowflyingincreative: true
+        flyingspeedlimitvertical: 100
+        flyingspeedlimithorizontal: 60
+        flyingheightlimit: 128
+        actions: log:moveshort:3:5:f cancel vl>100 log:moveshort:0:5:if cancel vl>400 log:movelong:0:5:cif cancel
+      bedflying:
+        active: true
+        actions: log:bedfly:3:5:f cancel vl>1 log:bedfly:0:5:if cancel vl>4 log:bedfly:0:5:cif cancel
+    morepackets:
+      active: true
+      actions: log:morepackets:3:2:if cancel vl>20 log:morepackets:0:2:if cancel
+    morepacketsvehicle:
+      active: true
+      actions: log:morepackets:0:2:if cancel
+    waterwalk:
+      active: true
+      actions: log:waterwalk:3:5:f vl>100 log:waterwalk:0:5:if cancel vl>400 log:waterwalk:0:5:cif cancel
+strings:
+  drop: '[player] neprosel [check]: Odhodil vic predmetu, nez je dovoleno. VL [violations].'
+  moveshort: '[player] neprosel [check]. VL [violations].'
+  movelong: '[player] v [world] pohybujici se z [location] do [locationto] na vzdalenost [movedistance] neprosel zkouskou [check]. Total violation level so far [violations].'
+  bedfly: '[player] neprosel [check]: tried to fly by sending bed leaving packets. VL [violations].'
+  nofall: '[player] neprosel [check]: prezil skok z vysky ~[falldistance] kostek. VL [violations].'
+  morepackets: '[player] neprosel [check]: poslal [packets] vic paketu, nez se ocekava. Total violation level [violations].'
+  waterwalk: '[player] neprosel [check]: Chodil po vode. Total violation level [violations].'
+  bbfastbreak: '[player] neprosel [check]: Se snazil rozbijet moc [blocktype]. Total violation level [violations].'
+  bbreach: '[player] neprosel [check]: Sahal na kostku ve vzdalenosti [reachdistance]. VL [violations].'
+  bbdirection: '[player] neprosel [check]: Snazil se dosahnout na kostku, kterou nevidel. VL [violations].'
+  bbnoswing: '[player] neprosel [check]: Didn''t swing arm. VL [violations].'
+  bpfastplace: '[player] neprosel [check]: Pokladal prilis mnoho kostek. Total violation level [violations].'
+  bpreach: '[player] neprosel [check]: Snazil se dosahnout na kostku ve vzdalenosti [reachdistance]. VL [violations].'
+  bpdirection: '[player] neprosel [check]: Snazil se dosahnout na kostku, kterou nevidel. VL [violations].'
+  bpprojectile: '[player] neprosel [check]: Vyhazoval predmety prilis rychle. VL [violations].'
+  nopwnage: '[player] ([ip]) neprosel chat.nopwnage: [reason].'
+  color: '[player] neprosel [check]: Poslal barevnou zpravu ''[text]''. VL [violations].'
+  fdirection: '[player] neprosel [check]: Snazil se dosahnout na kostku, kterou nevidel. VL [violations].'
+  freach: '[player] neprosel [check]: Snazil se utocit dal, nez dosahne. VL [violations].'
+  fspeed: '[player] neprosel [check]: Zautocil vic nez [limit] krat za sekundu. VL [violations].'
+  fnoswing: '[player] neprosel [check]: Didn''t swing arm. VL [violations].'
+  fgod: '[player] neprosel [check]: Avoided taking damage or lagging. VL [violations].'
+  fheal: '[player] neprosel [check]: Snazil se uzdravit rychleji, nez je bezne. VL [violations].'
+  fknock: '[player] neprosel [check]: tried to do a knockback but wasn''t technically sprinting. VL [violations].'
+  fcritical: '[player] neprosel [check]: tried to do a critical hit but wasn''t technically jumping. VL [violations].'
+  fangle: '[player] neprosel [check]: tried to fight multiple entities at the same time. VL [violations].'
+  ibow: '[player] neprosel [check]: Stili z luku prilis rychle. VL [violations].'
+  ieat: '[player] neprosel [check]: Ji jidlo [food] prilis rychle. VL [violations].'
+  kick: kick [player]
+  ban: ban [player]
+  ban-ip: ban-ip [ip]

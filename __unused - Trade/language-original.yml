@@ -1,0 +1,44 @@
+request:
+  new:
+    self: "You requested &other_player to trade!"
+    other: "&other_player request you to trade!"
+  in_trade: "&other_player is in trade!"
+  ignoring:
+    is_ignoring: "&other_player is ignoring all incoming requests!"
+    enabled: "You are now ignoring all incoming requests!"
+    disabled: "You are now listening to all incoming request!"
+  please_wait: "Please wait until &other_player accepts your trade request!"
+  no_permission: "You don't have the permission to send a trade request!"
+  no_response: "&other_player didn't respond to your trade request!"
+  no_cross_world: "You cannot trade with players in other worlds!"
+  no_cross_gamemode: "You cannot trade with player that are in other gamemodes!"
+  must_see: "You have to see the other player to be able to trade!"
+  refused: "&other_player refused your trade request!"
+  player_not_requested: "Nobody requested you to trade. Use /trade <player> to request someone."
+  player_not_found: "Player is not found."
+trade:
+  start: "You are trading with &other_player!"
+  help: "Click the green wool to accept the trade. Click the red wool to refuse the trade."
+  accept:
+    self: "You accepted the trade!"
+    other: "&other_player accepted the trade!"
+  deny:
+    self: "You denied the trade!"
+    other: "&other_player denied the trade!"
+  refuse:
+    self: "You refused the trade."
+    other: "&other_player refused the trade!"
+  offer_changed: "&other_player changed their offer."
+  cannot_use_slot: "You cannot use this slot. Use the left side!"
+  currency:
+    add:
+      self: "You added &amount to the trade! Current balance: &balance"
+      other: "&other_player added &amount to the trade!"
+      cant: "You cannot add &amount to the trade!"
+    remove:
+      self: "You removed &amount from the trade! Current balance: &balance"
+      other: "&other_player removed &amount from the trade!"
+      cant: "You cannot remove &amount from the trade!"
+    no_ballance: "You don't have &amount!"
+  error: "An error occured while trading. Please contact the serveradmin. You items and currency are restored." 
+    

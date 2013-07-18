@@ -1,0 +1,15 @@
+<a> A když to vydržíš až do večera, nepapat, tak uvidíš zlatý prasátko.
+<b> A tati?
+<a> No?
+<b> A bude mít ty velký zahnutý zuby nahoru?
+<a> Zahnutý zuby.. Musíš vydržet a budou i zuby
+<b> Nene, já nemusím, já už ho vidím!
+
+<a> If you don't eat all day long, you might see a golden pig this evening.
+<b> Daddy?
+<a> Yes?
+<b> Would it have those[:dííííz:] big teeth pointing up?
+<a> Teeth.. You just have to wait and it will have the teeth, too.
+<b> No, I don't have to, I can see (it right there) -> (him)!
+
+#Není to ono, ale nějak nemám nápad, co s tím. dr_

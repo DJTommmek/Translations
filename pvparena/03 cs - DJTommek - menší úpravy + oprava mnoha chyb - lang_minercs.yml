@@ -1,0 +1,526 @@
+nulang:
+  announce:
+    arena: Arena zacina! Pro pripojeni napis /pa %1%!
+  arena:
+    create:
+      done: Arena '%1%' vytvorena!
+    disable:
+      done: Arena zakazana!
+    edit:
+      disabled: 'Rezim uprav pro arenu %1% byl vypnut'
+      enabled: 'Rezim uprav pro arenu %1% byl zapnut'
+    enable:
+      done: Arena povolena!
+    arenalist: 'Areny: &a%1%&r'
+    regionshapeunknown: 'Tebou zadany tvar areny ''%1%'' neni znam, radu hledej na forech: http://goo.gl/IfLOh'
+    reload:
+      done: Arena byla reloadnuta!
+    remove:
+      done: 'Arena odstranena: &e%1%&r'
+    startingin: Uz je dost hracu, arena zacne za %1%!
+    start:
+      done: Vynucene spusteni areny!
+    stop:
+      done: Vynucene ukonceni areny!
+  autosetup:
+    automanual: Chcete, aby nastaveni bylo &a%1%&r nebo &a%2%&r?
+    automatic: automaticky
+    manual: manualni
+    modeselected: 'Vybran mod: &a%1%&r'
+    welcome: 'Vitejte v nastaveni areny!
+
+      Pis do chatu pouze odpovedi, zde se nepouzivaji prikazy'
+  blacklist:
+    added: 'Na blacklist &e%2%&r bylo pridano: &a%1%&r!'
+    allcleared: Vsechny blacklisty smazany!
+    cleared: Blacklist &e%1%&r smazan!
+    help: 'Pouziti: blacklist clear | blacklist [type] [clear|add|remove] [id]'
+    removed: 'Z blacklistu &e%2%&r bylo odstraneno: &a%1%&r!'
+    show: 'Blacklist &e%1%&r:'
+  check:
+    done: Kontrola hotova, zadne chyby nebyly nalezeny!
+  class:
+    preview: Prohlizis si postavu %1%
+    removed: 'Postava odstranena: %1%'
+    saved: 'Postava ulozena: %1%'
+    selected: Prepnul jsi na postavu &e%1%&e
+  deathcause:
+    BLOCK_EXPLOSION: vybuch
+    CONTACT: kaktus
+    CUSTOM: Herobrine
+    DROWNING: nedostatek kysliku pod vodou
+    ENTITY_EXPLOSION: vybuch
+    FALL: pad z vysky
+    FIRE_TICK: ohen
+    FIRE: ohen
+    LAVA: bazenek s lavou
+    LIGHTNING: blesk
+    MAGIC: asi nejaky kouzelnik
+    POISON: jed
+    PROJECTILE: temer neviditelny rychle se priblizujici predmet
+    STARVATION: hlad
+    SUFFOCATION: nedostatek vzdychu ve zdi
+    SUICIDE: on sam
+    VOID: void
+    CREEPER: creeper
+    SKELETON: skeleton
+    SPIDER: pavoucek
+    GIANT: obr
+    ZOMBIE: zombie
+    SLIME: slime
+    GHAST: ghast
+    PIG_ZOMBIE: pig zombie
+    ENDERMAN: enderman
+    CAVE_SPIDER: jeskynni pavoucek
+    SILVERFISH: silverfish
+    BLAZE: blaze
+    MAGMA_CUBE: magma cube
+    ENDER_DRAGON: ender dragon
+    WITHER: wither boss
+    WITCH: carodejnice
+    WOLF: vlk
+    IRON_GOLEM: iron golem
+    SPLASH_POTION: hazeci lektvar
+  error:
+    arena:
+      alreadyplaying: Uz hrajes v arene &a%1%&r
+    arenaexists: Tahle arena uz existuje!
+    arenanotexists: 'Arena %1% neexistuje'
+    arenaconfig: 'Chyba pri nacitani configu areny %1%'
+    argumenttype: '&cInvalid argument type:&r &e%1%&r is no proper &a%2%&r'
+    argument: '&cArgument nerozpoznan:&r %1% - dostupne argumenty: &a%2%&r'
+    autosetup:
+      running: 'Autosetup uz je spusteny! Hrac: %1%'
+    blacklist:
+      disallowed: Akce %1% je na blacklistu, tudiz to nemuzes udelat!
+      unknownsubcommand: 'Neplatny prikaz. Pouzij: &a%1%&r'
+      unknowntype: 'Neznamy typ. Zname typy: &e%1%&r'
+    class:
+      full: Uz nemuzes byt dalsi &a%1%&r!
+      notenoughexp: Nemas dost EXPU na vybrani &a%1%&r!
+      notfound: 'Postava &a%1%&r nenalezena'
+    cmdblocked: '&cPrikaz %1% je blokovany'
+    invalidcmd: 'Neplatny prikaz: %1%'
+    unknowncmd: Neznamy prikaz
+    arenadisabled: Arena je vypnuta, zkus to jindy.
+    error: '&cChyba: %1%'
+    fightinprogress: Boj v teto arene uz bezi!
+    goal:
+      legacyunknown: 'Legacy goal &a%1%&r unknown! You will want to add goals: &a/pa
+        [arena] goal [goalname]'
+      goalnotfound: 'Goal &a%1%&r unknown. Valid goals: &a%2%&r'
+    install: Chyba pri instalaci &a%1%&r
+    invalid_argument_count: '&cSpatny pocet argumentu&r (%1% instead of %2%)!'
+    invalidstattype: 'Invalid statistics type: %1%'
+    valuenotfound: 'Neplatna hodnota: &a%1%&r!'
+    invfull: Tvuj nventar byl plny a proto jsi nemohl dostat vsechny odmeny.
+    arenafull: Arena je plna!
+    joinrange: Pro vstup do teto areny jsi od ni moc daleko.
+    notjoinregion: You are not in the join region! Move there to join!
+    teamfull: Tym %1% je plny!
+    insidevehicle: Nemuzes se pripoji, kdyz jedes!
+    errorloungefree: Error! Arena is not of type free. Use '[teamname]lounge'
+    log:
+      matnotfound: 'Neznamy material: %1%'
+    missingspawn: 'Chybi spawn: &f%1%'
+    noarenas: Zadne areny nebyly nalezeny!
+    valueneg: 'Negative values: &c%1%&r'
+    nofight: Prave neprobiha zadny boj.
+    nogoal: You did not add a goal! &a/pa [arena] goal [goalname]
+    classperms: Nemas dostatecna prava na postavu &a%1%&r
+    permjoin: Nemas prava na vstup do areny.
+    noperm: '&cNemas prava na %1%.'
+    noplayerfound: Hrac nenalezen!
+    notinarena: Nejsi v arene!
+    notnumeric: '&cArgument musi byt cislo:&r %1%'
+    notsameworld: Jsi v jinem svete nez arena (%1%)!
+    noteamfound: Tym nenalezen!
+    onlyplayers: '&cTento prikaz mohou pouzit pouze hraci'
+    playernotfound: '&cHrac nenalezen: &f%1%&c!'
+    positives: 'Positive values: &b%1%&r'
+    potioneffecttypenotfound: 'PotionEffectType not found: &e%1%&r'
+    ready:
+      notready0: Nektery z hracu jeste neni pripraveny!
+      notready1: Jsi v arene sam!
+      notready2: Tvuj tym nema v arene soupere!
+      notready3: V tymu je malo hracu!
+      notready4: V arene je malo hracu!
+      notready5: Nektery z hracu si jeste nevybral postavu!
+      noclass: Nejdriv si vyber postavu!
+      error: Arena %1% neni pripravena.
+    region:
+      beingcreated: 'A region is already being created: %1%'
+      flagnotfound: 'RegionFlag &a%1%&r unknown! Valid values: %2%'
+      notfound: Region &a%1%&r not found!
+      protectionnotfound: RegionProtection &a%1%&r unknown!
+      typenotfound: 'RegionType &a%1%&r unknown! Valid values: %2%'
+      youselect: You are already selecting a region for an arena!
+      youselect2: Type the command again to cancel selection mode!
+      youselectexit: Region selection cancelled!
+    regionnotbeingcreated: A region is not being created!
+    regionnotremoved: There is no region setup.
+    select2: Select two points before trying to save.
+    spawn:
+      unknown: 'Neznamy spawn: &a%1%&r'
+    spawnfree: Error! Arena is of type free. Use 'spawnX' where X is a digit or letter!
+    statsfile: Error while reading the stats file!
+    teamnotfound: 'Tym %a%1%&r nenalezen'
+    uninstall: Chyba pri odinstalaci &a%1%&r
+    unknownmodule: 'Modul %1% nenalezen'
+    whitelist:
+      disallowed: You may not %1% this! (not whitelisted)
+      unknownsubcommand: 'Neznamy prikaz. Dostupne prikazy: &a%1%&r'
+      unknowntype: 'Neznamy typ. Dostupne typy: &e%1%&r'
+  nopermto:
+    madmin: administraci aren
+    create: vytvoreni areny
+    disable: vypnuti areny
+    edit: upravu areny
+    enable: zapnuti areny
+    nopermjoin: pripojeni do areny
+    reload: reload areny
+    remove: odstraneni areny
+    set: zmenu config nodu
+    setup: nastaveni areny
+    teleport: teleport na spawn areny
+    user: pouzivani PVP Areny
+  fight:
+    begins: Boj zacina!
+    draw: Remiza, nikdo nevyhral!
+    killedbyremaining: 'Hrace %1% zabil %2%! Zbyvajici zivoty: %3%.'
+    killedbyremainingfrags: 'Hrace %1% zabil %2%! Zbyvajici zivoty: %3%.'
+    killedbyremainingteam: 'Hrace %1% zabil %2%! Zbyvajici zivoty: %3% pro %4%.'
+    killedbyremainingteamfrags: 'Hrace %1% zabil %2%! Zbyvajici zivoty: %3% pro
+      %4%.'
+    killedby: 'Hrace %1% zabil %2%!'
+    playerleft: '%1% odesel z boje!'
+  forcestop: Zastavil jsi bitvu.
+  gamemode:
+    free: Game mode &afree for all&r set for arena &a%1%&r!
+    team: Game mode &ateam&r set for arena &a%1%&r!
+  general:
+    break: break
+    place: place
+    use: use
+  goal:
+    added: 'Goal added: &a%1%&r'
+    installing: 'Install goals by command: &a/pa install [goalname]&r'
+    removed: 'Goal removed: &a%1%&r'
+    blockdestroy:
+      typeset: 'Blocktype set to: &e%1%'
+      setflag: 'Block set: %1%'
+      tosetflag: 'Block to set: %1%'
+    dom:
+      claiming: '&eTym %1% odnasi vlajku!'
+      claimed: '&eTym %1% si odnesl vlajku!'
+      score: '&eTym %1% ziskal za drzeni vlajky body: %2%'
+      unclaiming: '&eTeam %1% is being unclaimed!'
+      unclaimingby: '&eA flag claimed by Team %1% is being unclaimed by Team %2%!'
+    infected:
+      lost: '&6Nakazeni hraci byli zabiti!'
+      player: '&c%1% je nakazeny!'
+      you: '&cJsi nakazeny!'
+      won: '&6Nakazeni hraci vyhrali hru!'
+    killreward:
+      added: 'Zvysena odmena za zabiti: &e%1%&f->&a%2%'
+      removed: 'Odmena za zabiti odstranena: &e%1%'
+    liberation:
+      liberated: Team %1% has been liberated!
+      setbutton: 'Button set: %1%'
+      tosetbutton: 'Button to set: %1%'
+    physicalflags:
+      holdflag: Vlajku musis drzet, abys ji mohl odnest!
+    sabotage:
+      tntignite: '%1% zapalil TNT tymu %2%!'
+      set: 'TNT nastaveno: %1%'
+      toset: 'TNT k nastaveni: %1%'
+      youtnt: You now carry the sabotage materials!'
+    tank:
+      tankdown: Tank byl znicen!
+      tankmode: TANK MODE! Tankem je %1%, zabijte ho!
+      tankwon: Tank %1% vyhralposition %! Vyborne!
+    pillars:
+      msg:
+        block_broken: '[%1%] %2% zboril blok!'
+        lower: '[%1%] %2% zkratil sloup!'
+        block_placed: '[%1%] %2% polozil blok!'
+        higher: '[%1%] %2% prodlouzil sloup!'
+        claimed: '[%1%] %2% obsadil sloup!'
+        unclaimed: '[%1%] %2% opustil sloup!'
+        score: '%1% ziskal %2% body'
+  help:
+    head: '&e--- &aNapoveda PVP Areny&e %1% &e---'
+    admin: '&c%1% - napoveda s administraci'
+    setup: '&e%1% - napoveda s nastavenim'
+    custom: '&e%1% - napoveda s prizpusobenim'
+    game: '&a%1% - napoveda pro hru'
+    info: '&9%1% - dalsi informace'
+  import:
+    done: Arena &e%1%&r byla uspesne naimportovana!
+  info:
+    classes: 'Postavy: &a%1%&r'
+    goal_active: 'Goal: &a%1%&r'
+    goal_inactive: 'Goal: &b%1%&r &7== INACTIVE =='
+    head_headlin: 'Arena Information about: &a%1%&r | [&a%2%&r]'
+    head_teams: 'Teams: &a%1%&r'
+    mod_active: 'Module: &a%1%&r'
+    mod_inactive: 'Module: &b%1%&r &7== INACTIVE =='
+    owner: 'Owner: &a%1%&r'
+    regions: 'Regions: &a%1%&r'
+    section: '----- &a%1%&r -----'
+  install:
+    installed: 'installed: &a%1%&r'
+  list:
+    arenas: 'Dostupne areny: %1%'
+    dead: 'Mrtvi: %1%'
+    fighting: 'Bojujici: %1%'
+    lost: 'Ztraceni: %1%'
+    lounge: 'Lounge: %1%'
+    'null': 'Glitched: %1%'
+    players: 'Hraci: %1%'
+    team: 'Tym %1%: %2%'
+    ready: 'Pripraveni: %1%'
+    warm: 'Warm: %1%'
+    watching: 'Divaci: %1%'
+  log:
+    plugindisabled: disabled (version %1%)
+    pluginenabled: enabled (version %1%)
+    trickerdisabled: Plugin tracking disabled. See you soon?
+    trackingenabled: 'Plugin tracking enabled. Set tracker: false inside the main
+      config to disable.'
+    updatedisabled: Updates deactivated. Please check dev.bukkit for updates.
+    updateenabled: Checking for updates...
+    warning: '%1%'
+  messages:
+    toArena: Nyni pises hracum v arene!
+    toPublic: Nyni pises verejne do chatu!
+    toTeam: Nyni pises svemu tymu!
+  noplayer: V PVP arene nikdo neni.
+  notice:
+    awarded: Vyhral jsi %1%
+    nodropitem: Zadne podvadeni!
+    noteleport: Pro opusteni areny pouzij prikaz '/pa leave'
+    notice: 'Notice: %1%'
+    playerawarded: '%1% vyhral %2%'
+    remove: '&cChystas se nenavratne smazat arenu &a%1%&c. Pokud chces pokracovat, napis prikaz znovu.
+      &f Tato zprava se da vypnout v ''safeadmin'' v config.yml'
+    waitingequal: Cekam, az budou mit oba tymy shodny pocet hracu
+    waitingforarena: Cekam na konec hry v bezici arene
+    welcomespec: Vitej v pozorovatelne!
+    welcomespec2: Pro sazky muzes pouzit /pa bet [nick/tym] [castka]
+    youdeath: Dostal jsi se na uzemi pro mrtve. Sbohem!
+    youescaped: Opustil jsi bitvu. Sbohem!
+    youleft: Odesel jsi z areny!
+    younocamp: Na tomto miste nemuzes dlouho postavat, hni sebou!
+  playerhaswon: '%1% je champion!'
+  playerready: '%1%&e je pripraveny!'
+  notreadyplayers: Hraci jeste nejsou pripraveni
+  players: Hraci
+  ready:
+    list: 'Hraci: %1%'
+    done: Jsi pripraven k boji!
+  region:
+    flag:
+      added: 'Region flag added: &a%1%&r'
+      removed: 'Region flag removed: &a%1%&r'
+    height: 'Region height set to: &a%1%&r'
+    pos1: First position set.
+    pos2: Second position set.
+    protection_added: 'RegionProtection added: &a%1%&r'
+    protection_removed: 'RegionProtection removed: &a%1%&r'
+    radius: 'Region radius set to: &a%1%&r'
+    removed: 'Region removed: %1%'
+    saved: Region saved.
+    select: Select two points with your wand item, left click first and then right click!
+    setting: Setting region enabled.
+    typeset: 'Region Type set: &e%1%'
+    youselect: You are now selecting a region for arena &a%1%&r!
+  regions:
+    flags: 'Region Flags: &a%1%&r'
+    head: '--- &aArena Region&r [&e%1%&r]---'
+    listhead: '--- &aArena Regions&r [&e%1%&r]---'
+    listvalue: '&a%1%&r: %2%, %3%'
+    protections: 'Region Protections: &a%1%&r'
+    shape: 'Region Shape: &a%1%&r'
+    type: 'Region Type: &a%1%&r'
+  reloaded: Konfiguracni soubor byl znovunacten!
+  round:
+    display: 'Kolo #%1%: %2%'
+    added: 'Added goal to round: &e%1%'
+    removed: 'Removed goal from round: &e%1%'
+  set:
+    done: '&a%1%&r set to &e%2%&r!'
+    help: use /pa {arenaname} set [page] to get a node list
+    unknown: 'Unknown node: &e%1%&r!'
+  setowner:
+    done: '&a%1%&r se stal vlastnikem areny &a%2%&r!'
+  spawn:
+    freelounge: Lounge set
+    teamlounge: 'Lounge set: %1%'
+    notset: 'Spawn not set: &a%1%&r'
+    removed: 'Spawn removed: &a%1%&r'
+    set: 'Spawn set: &a%1%&r'
+    setdone: 'Spawn setting done: &a%1%&r'
+    setstart: 'Spawn setting started: &a%1%&r'
+  stats:
+    filedone: Statistiky nacteny!
+    head: Statistiky TOP %1% (%2%)
+    typenotfound: 'Neplatny typ statistik. Zkus: &e%1%&r'
+  stattype:
+    DAMAGE: zpusobena zraneni
+    DAMAGETAKE: vlastni zraneni
+    DEATHS: smrti
+    KILLS: pocet zabitych
+    LOSSES: prohrane zapasy
+    MAXDAMAGE: nejvetsi zpusobene zraneni
+    MAXDAMAGETAKE: nejvetsi vlastni zraneni
+    'NULL': nick hrace
+    WINS: vyhrane zapasy
+  team:
+    haswon: 'Tym %1% vyhral!'
+    ready: 'Tym %1% je pripraveny!'
+  teams:
+    list: 'Dostupne tymy: %1%'
+    add: 'Pridan tym: %1%'
+    set: 'Nastaveny tym: %1%'
+    remove: 'Tym odstranen: %1%'
+  time:
+    minutes: minut
+    seconds: vterin
+  timer:
+    countdowninterrupt: Odpocet zastaven, kliknete znovu na Iron block!
+    ending: Zapas skonci za %1%!
+    resetting: Arena se resetuje za %1%!
+    starting: Zacne se za %1%!
+    warmingup: Warming up... %1%!
+    pvpactivating: PVP bude aktivovano za %1%!
+    walls: Zdi spadnou za %1%!
+  uninstall:
+    done: 'uninstalled: &a%1%&r'
+  whitelist:
+    added: Added &a%1%&r to &e%2%&r whitelist!
+    allcleared: All whitelist cleared!
+    cleared: Whitelist &e%1%&r cleared!
+    help: 'Usage: blacklist clear | blacklist [type] [clear|add|remove] [id]'
+    removed: Removed &a%1%&r from &e%2%&r whitelist!
+    show: 'Whitelist &e%1%&r:'
+  mod:
+    aftermatch:
+      aftermatch: The aftermatch has begun!
+      startingin: AfterMatch in %1%!
+      spawnnotset: Spawn 'after' not set!
+    announcements:
+      ignoreon: You are now ignoring announcements!
+      ignoreoff: You are now receiving announcements!
+    arenaboards:
+      createarenaboard: create an ArenaBoard
+      arenaboarddestroyed: ArenaBoard destroyed!
+      boardexists: ArenaBoard already exists!'
+      sortingby: ArenaBoard now sorted by %1%
+    autovote:
+      arenarunning: 'Arena spustena: %1%'
+      autojoin: Arena auto join started!
+      playervoted: '%2% hlasoval pro arenu %1%!'
+      youvoted: Hlasoval jsi pro arenu %1%!
+    duel:
+      accepted: '%1% &eprijal vyzvu. Hra zacina.'
+      announce: '%1% &ete vyzval na souboj! Muzes prijmout prikazem &f/pa %2% accept.'
+      starting: Duel zacina!
+    fixinventorylos:
+      gamemode: Pred vstupem do areny musis mit gamemode survival!
+      invenory: Pred vstupem do areny musis mit prazdny inventar!
+    latelounge:
+      llannounce: Arena %1% se spousti! Hrac %2% chce zacit. Pridej se /pa %1%
+      llposition: Jsi ve fronte na pozici 1%!
+      llrejoin: Z nejakeho duvodu se ted nemuzes pripojit do areny, zkus to za chvili!
+      llwait: Arena brzy zacne, pockejte prosim!
+    playerfinder:
+      near: 'Nejblizsi hrac: %1% bloku!'
+      point: Kompas ukazuje k nejblizsimu hraci!
+    powerups:
+      invalidpowerupeffect: 'Invalid PowerupEffect: %1%'
+      puplayer: '%1% has collected PowerUp %2%!'
+      puserver: PowerUp deployed!
+    skins:
+      dc: Hooking into DisguiseCraft!
+      md: Hooking into MobDisguise!
+      nomod: No disguise plugin found, Skins module is inactive!
+      showclass: Class &e%1%&r will be disguised to &a%2%
+      showteam: Team %1% will be disguised to %2%
+    specialjoin:
+      done: Join block set here - %1%
+      start: Setting join block!
+      stop: Aborted join block selection!
+    startfreeze:
+      announce: Hra zacne za %1% vterin!
+    tempperms:
+      noperms: 'Plugin s pravy nenalezen, vychozi opravneni: OP'
+      head: 'Temporary permissions of &e%1%&r:'
+      added: Temporary permissions &e%1%&r added to &a%2%&r
+      removed: Temporary permissions &e%1%&r removed from &a%2%&r
+    vault:
+      'on': <3 eConomy
+      'off': </3 eConomy
+      notenough: Nemas %1%.
+      betnotyours: Nemuzes sazet na svuj vlastni zapas!
+      betoptions: Muzes sazet pouze na tym nebo nick hrace!
+      wrongamount: Sazena castka musi byt mezi %1% a %2%!
+      invalidamount: 'Neplatna castka: %1%'
+      betplaced: Vsadil jsi na %1%.
+      youwon: Vyhral jsi %1%
+      joinpay: Za vstup do areny jsi zaplatil %1%
+      killreward: Dostal jsi %1% za zabiti %2%!
+      refunding: Refunding %1%!
+    worldedit:
+      created: 'Region created: &e%1%'
+      loaded: 'Region loaded: &e%1%'
+      saved: 'Region saved: &e%1%'
+  banvote:
+    lang:
+      playerbanned: 'Player banned: %1%'
+      playerkicked: 'Player kicked: %1%'
+      playernotkicked: 'Player not kicked: %1%'
+      playernotonline: 'Player is not online: %1%'
+      playerunbanned: 'Player unbanned: %1%'
+      youwerebanned: You are banned from arena %1%
+      youwerekicked: You were kicked from arena %1%
+      youwereunbanned: You are unbanned from arena %1%
+  betterclasses:
+    add: PotionEffect &e%2%&r added to ArenaClass &e%1%&r!
+    clear: ArenaClass &e%1%&r cleared!
+    listhead: '--- Potion Effects for class &e%1%&r ---'
+    remove: PotionEffect &e%2%&r removed from ArenaClass &e%1%&r!
+  bettergears:
+    classdone: Class &e%1%&r now has Protection Level &a%2%
+    showclass: Class &e%1%&r has Protection Level &a%2%
+    showteam: Team %1% has Color %2%
+    teamdone: Team %1% now has Color %2%
+  blockrestore:
+    clearinvdone: Inventories cleared! Expect lag on next arena start!
+lang:
+  goal:
+    blockdestroy:
+      score: '%1% znicil blok tymu %2%! Zbyvajici bloky: %3%'
+  flaghomeleft: '%1% prinesl na zakladnu vlajku tymu %2%! Zbyvajici vlajky: %3%'
+  touchhomeleft: '%1% prinesl vlajku na zakladnu! Zbyvajici vlajky: %2%'
+  flagsave: '%1% pustil vlajku tymu %2%!'
+  flagsavetouch: '%1% pustil vlajku!'
+  flaggrab: '%1% sebral vlajku tymu %2%!'
+  flaggrabtouch: '%1% sebral vlajku!'
+  flagnotsafe: Nekdo vam vzal vlajku, nemuzes si prinest vlajku nepritele!'
+  setflag: 'Flag set: %1%'
+  tosetflag: 'Flag to set: %1%'
+  typeset: 'Flag type set to: &e%1%'
+  notyourfood: Tohle neni tvoje pec!
+  setfood: 'Food chest set: %1%'
+  tosetfood: 'Food chest to set: %1%'
+  setfoodfurnace: 'Furnace set: %1%'
+  tosetfoodfurnace: 'Furnace to set: %1%'
+  votenow: 'Hlasujte pro arenu! Zbyva %1%!
+
+    Prikaz: /pa [arenaname] vote
+
+    Dostupne areny: %2%'
+log:
+  tagapi: Hooking into TagAPI!
+version: 0.9.0.0

@@ -1,0 +1,43 @@
+mech.use-permission:[CB] Na toto nemas pravo.
+mech.lift.target-sign-created:[CB] Vytvoril jsi konecnou stanici vytahu.
+mech.lift.down-sign-created:[CB] Vytvoril jsi vytah dolu.
+mech.lift.up-sign-created:[CB] Vytvoril jsi vytah nahoru.
+mech.lift.obstruct:[CB] Na miste, kde stojis, nelze vytah pouzit!
+mech.lift.no-floor:[CB] Dal uz vytah nevede!
+mech.lift.floor:[CB] Podlazi:
+mech.lift.up:[CB] Premistil jsi se o patro vyse!
+mech.lift.down:[CB] Premistil jsi se o patro nize!
+mech.gate.create:[CB] Vytvoril jsi branu!
+mech.dgate.create:[CB] Vytvoril jsi malou branu!
+mech.gate.toggle:[CB] Prepnul jsi branu!
+mech.gate.not-found:[CB] Brana nenalezena!
+mech.door.create:[CB] Vytvoril jsi dvere!
+mech.door.toggle:[CB] Prepnul jsi dvere!
+mech.door.other-sign:[CB] Na druhe strane musi byt cedulka [door] , mozna je jen prilis daleko.
+mech.door.unusable:[CB] Z tohoto materialu nemuzes udelat dvere!
+mech.door.material:[CB] Dvere musi byt cele z jednoho materialu!
+mech.bridge.create:[CB] Vytvoril jsi most!
+mech.bridge.toggle:[CB] Prepnul jsi most!
+mech.bridge.end-create:[CB] vytvoril jsi konec mostu!
+mech.bridge.unusable:[CB] Z tohoto materialu nemuzes udelat most!
+mech.bridge.material:[CB] Most musi byt cely z jednoho materialu!
+mech.bridge.other-sign:[CB] Na druhe strane musi byt cedulka [bridge] , mozna je jen prilis daleko.
+mech.pay.create:[CB] Pay Created!
+mech.teleport.create:[CB] Vytvoril jsi teleport!
+mech.teleport.alert:[CB] Teleportoval ses!
+mech.cauldron.too-small:[CB] Mas moc maly kotlik!
+mech.cauldron.leaky:[CB] V kotliku je dira!
+mech.cauldron.no-lava:[CB] V kotliku chybi lava!
+mech.cauldron.stir:[CB] Michas, michas, ale nic se nedeje.
+mech.command.create:[CB] Vytvoril jsi cedulku s prikazem!
+mech.cook.create:[CB] Vytvoril jsi pec!
+mech.cook.ouch:[CB] Au! To pali!
+mech.hiddenswitch.key:[CB] Klic nesedi!
+mech.group:[CB] Nejsi clenem vyzadovane skupiny!
+mech.restock:[CB] Mechanismus doplnen!
+mech.anchor.create:[CB] Chunk Anchor Created!
+mech.lightswitch.create:[CB] Vytvoril jsi vypinac!
+mech.painting.editing:[CB] Nyni muzes upravovat obraz!
+mech.painting.stop:[CB] Prestal jsi upravovat obraz!
+mech.painting.used:[CB] Tenhle obraz uz upravuje hrac:
+area.permissions:[CB] V teto oblastni na toto nemas pravo!

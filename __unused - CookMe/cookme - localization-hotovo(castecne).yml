@@ -1,0 +1,35 @@
+# The underscores are used for the different lines!
+damage: '&4Chvili ti budou ubyvat zivoty! Snez nejake pecene jidlo!'
+hungervenom: '&4Jsi na chvili otraveny! Snez nejake pecene jidlo!'
+death: '&4Zabilo te syrove jidlo! :('
+venom: '&4Jsi na chvili otraveny! Snez nejake pecene jidlo!'
+hungerdecrease: '&4Mas velky hlad! Snez nejake pecene jidlo!'
+confusion: '&4Jsi na chvili zmateny! Snez nejake pecene jidlo!'
+blindness: '&4Jsi na chvili oslepeny! Snez nejake pecene jidlo!'
+weakness: '&4Jsi na chvili oslabeny! Snez nejake pecene jidlo!'
+slowness: '&4Jsi na chvili zpomaleny! Snez nejake pecene jidlo!'
+slowness_blocks: '&4Chvili ted budes tezit pomaleji! Snez nejake pecene jidlo!'
+instant_damage: '&4Kouzlem ti ubyvaji zivoty! Snez nejake pecene jidlo!'
+refusing: '&4Nesnedl jsi toto jidlo a usetril tak zivoty!'
+permission_denied: '&4Na tuto cinnost nemas pravo!'
+enable_messages: '&2Hlasky z &4CookMe &2povoleny!'
+enable_permissions_1: '&2Prava pro &4CookMe &2povolena! Jen OP'
+enable_permissions_2: '&2a hraci s prislusnymi pravy mohou pouzivat tento plugin!'
+disable_messages: '&2Hlasky z &4CookMe &2vypnuty!'
+disable_permissions_1: '&2Prava pro &4CookMe &4vypnuta!'
+disable_permissions_2: '&2Vsichni hraci  mohou pouzivat plugin!'
+reload: '&2Verze &4% CookMe &2nactena!'
+changed_effect: '&2Procenta pro &e%effect &4 byla zmenena na &e%percentage%'
+changed_cooldown: '&2Cas cooldown byl zmenen na &e%value!'
+changed_duration_max: '&2Maximalni doba trvani byla zmenena na &e%value!'
+changed_duration_min: '&2Minimalni doba trvani byla zmenena na  &e%value!'
+help_1: '&2Vitejne v napovede pro CookkMe, verzi &4%'
+help_2: Pro napovedu napis &4/cookme help
+help_3: Pro restart napis &4/cookme reload
+help_4: Pro zmenu dob trvani a cooldown napis:
+help_5: '&4/cookme set cooldown <doba>'
+help_6: '&4/cookme set duration min <doba> &2nebo &4/cookme set duration max <doba>'
+help_7: Pro nastaveni rozsahu napis: &4/cookme set &e<obor> <procenta>
+help_8: '&eObory: &fpermissions, messages, damage, death, venom,'
+help_9: hungervenom, hungerdecrease, confusion, blindness, weakness
+help_10: slowness, slowness_blocks, instant_damage, refusing

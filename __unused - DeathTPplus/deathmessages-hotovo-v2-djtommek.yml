@@ -1,0 +1,269 @@
+# DeathTpPlus 3.9.11.2149 by Don Redhorse and mung3r
+#
+# Deathmessage File for DeathTpPlus.
+#
+# DeathMessages Version
+deathMessagesVer: "3.5"
+
+#--------- Messages  for DeathTpPlus
+
+# Colors
+#
+# &0 Black
+# &1 Navy
+# &2 Green
+# &3 Blue
+# &4 Red
+# &5 Purple
+# &6 Gold
+# &7 LightGray
+# &8 Gray
+# &9 DarkPurple
+# &a LightGreen
+# &3 LightBlue
+# &c Rose
+# &d LightPurple
+# &e Yellow
+# &f White
+#
+# Make sure you enclose the messages in "
+#
+
+#--------- Streaks
+
+# Kill Streak Messages
+# format <#of kills>: <text to display> %n: = player getting the message (in this case, the one on a killStreakMessages).
+killstreak:
+    - "5:&2[%n] 5 zabito!"
+    - "10:&2[%n] 10 zabito! Parada!"
+    - "15:&2[%n] 15! [%n] v tom zabijeni teda jede!"
+    - "20:&2[%n] 20 zabito! Ostatni te asi nebudou mit radi!"
+    - "25:&2[%n] Jedna vrazda za druhou!"
+#
+# Death Streak Messages
+# format <#of kills>: <text to display> %n: = player getting the message (in this case, the one on a deathStreakMessages)
+deathstreak:
+    - "5:&5%n&c umrel, uz asi 5krat."
+    - "10:&5%n&c, vyrob si mec, nebo tak neco."
+    - "15:&5%n&c je vic mrtvy nez zivy."
+    - "20:&5%n&c, tohle uz je dojemne"
+    - "30:&5%n&c si zrejme chce precist vsechny posmrtne hlasky."
+#
+# Multi Killl Messages
+# format <#of kills>: <text to display> 
+multikill:
+    - "2:&cDouble Kill!"
+    - "3:&cMulti Kill!"
+    - "4:&cMega Kill!"
+    - "5:&cUltra Kill!"
+    - "6:&cMonster Kill!"
+    - "7:&cLudicrous Kill!"
+    - "8:&cHoly S**t!"
+#
+#--------- Deathmessages
+# Must contain at least 1 line. If there are more, it will appear randomly when a person dies.
+# %n for player who died
+# %a name of player who attacked in pvp deaths
+# %i for item a player was using to kill someone else
+#
+block_explosion:
+    - "Davej pozor &5%n&7, TNT boucha!"
+    - "Nevsiml si nekdo, ze si &5%n&7 hraje s dynamitem?."
+    - "&5%n&7 se rozprskl!"
+    - "&5%n&7 mel radsi prestrihnout cerveny dratek!"
+    - "&5%n&7 se (krvave) zacervenal."
+    - "&5%n&7 plasil kurata rachejtlemi!"
+    - "&5%n&7 skakal panaka na minovem poli!"
+    - "Hraci &5%n&7 se zasekla hlava v mikrovlnce!"
+    - "&5%n&7 objevil prskavky Chucka Norrise"
+    - "&5%n&7 objimal dynamit"
+entity-explosion:
+    - "Ehm... &5%n&7 vybouchl!"
+cavespider:
+    - "&5%n&7 narazil(a) v jeskyni na pavoucka"
+    - "&5%n&7 bude vecne spat v siti."
+    - "&5%n&7 potkal(a) Aragoga!"
+    - "&5%n&7 byl(a) zaskocen jeskynnim pavoukem!"
+    - "&5%n&7 zapomnel(a), kam az muze pavouk skocit!"
+contact:
+    - "&5%n&7 se tulil(a) ke kaktusu!"
+    - "&5%n&7 zabloudil(a) ve skleniku se sukulenty"
+    - "&5%n&7 objimal(a) kaktus."
+    - "&5%n&7 mas kaktusy rad(a), ale trosku to prehani..."
+    - "&5%n&7 by se mel(a) chovat u kaktusu opatrneji!"
+    - "&5%n&7 se osklive popichal(a)!"
+    - "&5%n&7 zjistil(a), ze kaktus neni kamarad!"
+    - "&5%n&7 se pichl o trn a upadl(a) do vecneho spanku!"
+    - "&5%n&7 putuje po pousti a najednou..."
+    - "&5%n&7 natrefil(a) na neco zeleneho, ale trava to nebyla."
+creeper:
+    - "Tssssssssss, &5%n&7!"
+    - "&5%n&7 objevil(a) maleho, zeleneho.... Bum."
+drowning:
+    - "&5%n&7 se utopil(a)"
+    - "&5%n&7 splynul(a) s morem!"
+    - "&5%n&7 je 20 000 mil pod morem."
+    - "&5%n&7 klesl(a) az na samotne dno"
+    - "&5%n&7 se potapel(a) bez potapeciho pristroje!"
+    - "&5%n&7 nejspis zatahoval(a) kurzy plavani."
+    - "Plice hrace &5%n&7 byly uspesne naplneny H20."
+    - "&5%n&7 zapomenel(a) na svou denni davku vzduchu!"
+    - "&5%n&7 si prohlizi rybicky zblizka!"
+    - "&5%n&7 spadl(a) ze surfu!"
+    - "&5%n&7 (ne)chodil po vode."
+    - "&5%n&7 ma novy rekord pro zadrzovani dechu pod vodou."
+enderman:
+    - "&5%n&7 se krive podival na endermana."
+    - "&5%n&7 vrhl dlouhy pohled na toho dlouheho!"
+fall:
+    - "&5%n&7 zakopl(a) a spadl(a)... z utesu."
+    - "&5%n&7 letel(a) velice dlooouho..."
+    - "&5%n&7 skocil(a) Bungee bez lana."
+    - "&5%n&7 nerozepnul(a) padak."
+    - "&5%n&7 se naucil(a) letat... tedy skoro..."
+    - "Ano, &5%n&7, gravitace funguje."
+    - "&5%n&7 overoval Isaacuv objev."
+    - "&5%n&7 polibil zem."
+    - "&5%n&7 na nas z vysky."
+    - "&5%n&7 se priblizil k zemi!"
+    - "&5%n&7 sletel dolu."
+    - "&5%n&7 mel zebrik az k nebeske vysi."
+    - "Nahoru vylezes, dole te najdem, ze, &5%n&7?"
+    - "&5%n&7: Bansaaaiii!"
+fire:
+    - "&5%n&7 se pripekl(a)."
+    - "&5%n&7 byl(a) zapalen!"
+    - "&5%n&7 za nekoho strcil(a) ruku do ohne"
+    - "&5%n&7 - novy, krupavejsi!"
+    - "Kdo pujcil &5%n&7 zapalky?"
+    - "&5%n&7 strcil(a) ruce do topinkovace!"
+    - "&5%n&7 uhorel(a)!"
+    - "&5%n&7 skakal(a) pres ohen az si propalil(a) mokasiny!"
+fire_tick:
+    - "&5%n&7 se pripekl(a)."
+    - "&5%n&7 byl(a) zapalen!"
+    - "&5%n&7 za nekoho strcil(a) ruku do ohne"
+    - "&5%n&7 - novy, krupavejsi!"
+    - "Kdo pujcil &5%n&7 zapalky?"
+    - "&5%n&7 strcil(a) ruce do topinkovace!"
+    - "&5%n&7 uhorel(a)!"
+    - "&5%n&7 skakal(a) pres ohen az si propalil mokasiny!"
+ghast:
+    - "&5%n&7, to, co slysis, nejsou deti."
+    - "Hrace &5%n&7 zabil ghast!"
+    - "&5%n&7 neodpalil(a) ohnivou kouli pryc!"
+    - "&5%n&7 byl(a) v netheru neopatrny!"
+giant:
+    - "&5%n&7 byl(a) zadupan(a) do zeme!"
+    - "&5%n&7 je na placicku"
+lava:
+    - "&5%n&7 chtel(a) byt obsidanem."
+    - "&5%n&7 pozoroval(a) sopku zblizka."
+    - "No tak, &5%n&7, neprehanis ty horky koupele?"
+    - "&5%n&7 si dal(a) horkou koupel!"
+    - "&5%n&7 se smocil(a) ve spatnem bazenu."
+    - "&5%n&7! Tohle byla lava!"
+lightning:
+    - "Hrace &5%n&7 sezehl(a) paprsek smrti."
+    - "&5%n&7 byl(a) nabit(a) elektrinou."
+    - "&5%n&7 poznal(a) Diuv hnev."
+pigzombie:
+    - "Hrace &5%n&7 porazilo mrtve prase."
+    - "&5%n&7, sahani na pigzombie neni dobry napad."
+pvp:
+    - "&f%a&7 zabil(a) &5%n&7 pomoci &3%i&7!"
+    - "&f%a&7 sejmul(a) &5%n&7 pomoci &3%i&7!"
+    - "&f%a&7 dorazil(a) &5%n&7 s &3%i&7!"
+    - "&f%a&7 rozmasiroval(a) &5%n&7 svym &3%i&7!"
+pvp-fists:
+    - "&f%a&7 ufackoval(a) &5%n&7 k smrti."
+pvp-tamed:
+    - "&5%n&7 was mauled by &f%a's&7 &3%i"
+    - "&5%n's&7 hand was bitten by &f%a's&7 &3%i"
+silverfish:
+    - "Hrace &5%n&7 zabil silverfish!"
+    - "Hrace &5%n&7 zakocilo to, co vylezlo z kamene"
+    - "&5%n&7 se zadusil(a) silverfishy."
+    - "Oni jsou ve zdech, vykrikl(a) &5%n&7 a zemrel"
+    - "&5%n&7 nema rad(a) zlate (stribrne) rybky."
+skeleton:
+    - "Hrac &5%n&7 byl(a) zastrelen skeletonem!"
+    - "&5%n&7 byl(a) na spatne strane luku."
+    - "&5%n&7 mel(a) kostru ve skrini..."
+    - "&5%n&7 se nevyhnul(a) sipu!"
+    - "&7Skeleton: Headshot, &5%n&7!"
+slime:
+    - "Slime objevil(a) hrace &5%n&7. A slime vyhral."
+    - "&5%n&7 si hral(a) se slimem. Ale slimovi se to nelibilo."
+    - "&5%n&7 se stal(a) soucasti slizu."
+spider:
+    - "&5%n&7 narazil(a) na pavoucka"
+    - "&5%n&7 bude vecne spat v siti."
+    - "&5%n&7 potkal(a) Aragoga!"
+    - "&5%n&7 zapomnel(a), kam az muze pavouk skocit!"
+    - "&5%n&7 je jako moucha v pavucincce."
+    - "&5%n&7 byl(a) zaskocen pavoukem!"
+starvation:
+    - "&5%n&7 umrel(a) hlady."
+    - "&5%n&7 si zapomnel(a) zabalit svacinu."
+    - "&5%n&7 asi nemel(a) na jidlo."
+    - "&5%n&7 se stal(a) kostlivcem."
+suffocation:
+    - "&5%n&7 se zasekl(a) ve zdi."
+    - "&5%n&7 zkamenel(a)"
+    - "&5%n&7 je pod drnem (doslova)."
+    - "&5%n&7 vytvari fosilie."
+suicide:
+    - "&5%n&7 vzal veci do vlastnich rukou."
+    - "&5%n&7: Nashledanou, kruty svete!"
+unknown:
+    - "&5%n&7 zemrel(a) z neznamych duvodu."
+    - "&5%n&7 zemrel(a) na seslost vekem"
+    - "&5%n&7 se vyparil(a)"
+    - "&5%n&7 zemrel(a)"
+    - "&5%n&7 byl(a) zabit(a) Chuckem Norrisem"
+    - "&5%n&7 bezel(a) s nozem v ruce... Ted uz nebezi."
+    - "Hrace &5%n&7 zasahlo padajici piano."
+    - "&5%n&7 si zapomnel(a) oblect skafandr"
+void:
+    - "&5%n&7 spadl(a) mimo svet."
+    - "&5%n&7 prozkoumava bedrock zespodu."
+    - "&5%n&7 zemrel(a) ve Voidu."
+wolf:
+    - "&5%n&7 nakrmil(a) vlka."
+    - "&5%n&7 nevyl(a) s vlky."
+    - "&5%n&7 hladil(a) sviste proti srsti."
+zombie:
+    - "&5%n&7 dostal(a) pesti od zombie!"
+    - "Hrace &5%n&7 kousla zombie!"
+    - "Hrace &5%n&7 snedla mrtvola!"
+    - "&5%n&7 by mel(a) investovat do samopalu."
+blaze:
+    - "&5%n&7 byl(a) zapalen(a) blazem."
+magma-cube:
+    - "&5%n&7 byl(a) zaskocen(a) lavovou priserou"
+    - "Hrace &5%n&7 sezrala cervena krychle."
+enderdragon:
+    - "&5%n&7 skoncil(a) v Konci."
+    - "&5%n&7, podivat se nahoru by mozna pomohlo."
+    - "Ne, ty zadna vejce nedostanes, &5%n&7."
+    - "&5%n&7 se prave dostal(a) z Konce tou rychlejsi cestou."
+    - "&5%n&7 si nikdy neprecte zaverecne titulky!"
+dispenser:
+    - "&5%n&7 byl(a) zastrelen(a) dispenserem."
+    - "&5%n&7 si hral(a) na Indiana Jonese."
+    - "&5%n&7 se nechal(a) nachytat."
+poison:
+    - "&5%n&7 snedl, co nemel!"
+    - "Drahy &5%n&7, ta lebka na te lahvicce nebyla nadarmo..."
+magic:
+    - "&5%n&7 poznal(a) Silu."
+    - "&5%n&7 byl(a) zabit(a) magii."
+irongolem:
+    - "&5%n&7 dostal(a) ranu zeleznou pesti!"
+    - "&5%n&7 byl(a) zabit dyni"
+    - "Hrace &5%n&7 zabil(a) golem."
+    - "&5%n&7 si dovoloval(a) na vesnicany."
+    - "&5%n&7 by nemel(a) podcenovat mistni policejni jednotku."
+    - "&5%n&7 objevil(a) Ironmena."
+

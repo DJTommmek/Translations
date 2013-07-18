@@ -1,0 +1,423 @@
+# If you need help with this config, view the SignShop Quick Reference PDF located in the SignShop folder
+# You can also visit our Bukkit page at tiny.cc/SignShop
+
+MaxSellDistance: 0
+MaxShopsPerPerson: 1
+ShopCooldownMilliseconds: 0
+TransactionLog: true
+OPOverride: false
+AllowVariableAmounts: false
+AllowEnchantedRepair: true
+DisableEssentialsSigns: true
+AllowUnsafeEnchantments: true
+EnableSignStacking: true
+AllowMultiWorldShops: false
+EnablePermits: false
+PreventVillagerTrade: true
+ProtectShopsInCreative: false
+fixIncompleteOperations: true
+EnablePriceFromWorth: false
+Languages: english
+LinkMaterial: redstone
+UpdateMaterial: ink_sack
+DestroyMaterial: gold_axe
+Blacklisted_items:
+- 0
+signs:
+  Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
+  Sell: takePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
+  Donate: takePlayerItems,giveShopItems
+  DonateHand: takeItemInHand,giveShopItems
+  Slot: takePlayerMoney,giveOwnerMoney,givePlayerRandomItem
+  iSell: givePlayerMoney,takePlayerItems,playerIsOp
+  iBuy: takePlayerMoney,givePlayerItems,playerIsOp
+  gBuy: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
+  gSell: givePlayerMoney,takePlayerItems,giveShopItems,playerIsOp
+  Day: takePlayerMoney,setDayTime,playerIsOp
+  Night: takePlayerMoney,setNightTime,playerIsOp
+  Rain: takePlayerMoney,setRaining,playerIsOp
+  ClearSkies: takePlayerMoney,setClearSkies,playerIsOp
+  DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
+  DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
+  Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
+  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
+  Heal: takePlayerMoney,healPlayer,playerIsOp
+  Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
+  Dispose: takeItemInHand
+  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
+  iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
+  Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
+  iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
+  iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
+  iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
+  iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
+  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
+  Trade: Chest{1},takePlayerItems,giveShopItems,Chest{2},givePlayerItems,takeShopItems
+  TpToOwner: takePlayerMoney,playerIsOp,runCommand
+  Class: takePlayerInventory,takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
+  Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
+  Command: takePlayerMoney,playerIsOp,runCommand
+  Share: ShareSign
+  Restricted: RestrictedSign
+  Jukebox: playJukebox,takePlayerMoney
+  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
+  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
+  uVymena: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
+  Vymena: Chest{1},takePlayerItems,giveShopItems,Chest{2},givePlayerItems,takeShopItems
+  DeviceToggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
+  Koupit: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
+  Prodat: takePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
+  Darovat: takePlayerItems,giveShopItems
+  Odevzdat: takeItemInHand,giveShopItems
+  uProdat: givePlayerMoney,takePlayerItems,playerIsOp
+  uKoupit: takePlayerMoney,givePlayerItems,playerIsOp
+  gKoupit: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
+  gProdat: givePlayerMoney,takePlayerItems,giveShopItems,playerIsOp
+  Den: takePlayerMoney,setDayTime,playerIsOp
+  Noc: takePlayerMoney,setNightTime,playerIsOp
+  Zdravi: takePlayerMoney,healPlayer,playerIsOp
+  Opravit: takePlayerMoney,repairPlayerHeldItem,playerIsOp
+  Dest: takePlayerMoney,setRaining,playerIsOp
+  Kos: takeItemInHand
+  Kopanec: takePlayerMoney,runCommand
+  Arena: takePlayerMoney,runCommand
+  NEKLIKEJ!!!: takePlayerMoney,runCommand
+  Spleefreset: takePlayerMoney,runCommand
+messages:
+  setup:
+    Buy: You have put !items for sale at a price of !price!
+    Sell: You have put a bounty of !price for !items!
+    Donate: You have setup a donation box for !items!
+    DonateHand: You have setup a donation box for all item types
+    Slot: You have setup a !price slot machine offering !items!
+    iBuy: You have put !items infinitely for sale at a price of !price!
+    iSell: You have put an infinite bounty of !price for !items!
+    gBuy: You have setup a ghost shop selling !items for !price! (Note, you will not receive or lose money from this shop)
+    gSell: You have setup a ghost shop buying !items for !price! (Note, you will not receive or lose money from this shop)
+    Day: You have setup a time controller that costs !price!
+    Night: You have setup a time controller that costs !price!
+    Rain: You have setup a weather controller that costs !price!
+    ClearSkies: Nastavil jsi ovladac pocasi za !price!
+    DeviceOn: Vytvoril jsi zapinac pristroje za !price!
+    DeviceOff: Vytvoril jsi vypinac pristroje za !price!
+    Toggle: You have setup a device toggler that costs !price!
+    Device: Nastavil jsi docasny ovladac zarizeni za !price!
+    Heal: You have setup a healing station that costs !price!
+    Repair: You have setup a repair station that costs !price!
+    Dispose: You have setup a dispose sign
+    DeviceItem: You have setup a device temporary activator that costs !items!
+    iSlot: You have setup a !price slot machine offering infinite !items!
+    Enchant: You have setup an Enchanter that costs !price and enchants with !enchantments!
+    iSellXP: You have put a bounty of !price for !xp XP
+    iBuyXP: You have put !xp XP for sale at a price of !price!
+    iXPBuy: You have put !items for sale at the cost of !xp XP points!
+    iXPSell: You have put !items infinitely for sale at a price of !xp XP points!
+    iTrade: You have setup a trade shop that costs !chest1 for !chest2!
+    Trade: You have setup a trade shop that costs !chest1 for !chest2!
+    TpToOwner: You have setup a command example shop, selling teleports to !owner for !price!
+    Class: You have setup a shop to sell a class of items for !price!
+    Disenchant: You have setup a sign that removes enchantments for !price!
+    Command: You have created a sign that runs commands for !price!
+    Jukebox: You have set up a Jukebox that plays records from the chest for !price!
+    Kit: You have setup a one time use kit (!items) for !price!
+    ResetKit: You have setup a sign that resets !param signs!
+    uVymena: You have setup a trade shop that costs !chest1 for !chest2!
+    Vymena: You have setup a trade shop that costs !chest1 for !chest2!
+    DeviceToggle: Vytvoril jsi prepinac pristroje za !price!
+    Koupit: Dal jsi !items na prodej za !price!
+    Prodat: Vykupujes !items za !price!
+    Darovat: Otevrel jsi verejnou sbirku na !items!
+    uKoupit: Nyni prodavas nekonecne zasoby !items za !price!
+    uProdat: Nyni vykupujes !items za !price do svych nekonecnych zasob!
+    gKoupit: Nastavil jsi nezavisly prodej !items za !price! (V tomto obchode neziskas ani neztratis zadne penize)
+    gProdat: Nastavil jsi nezavisly vykup !items za !price! (V tomto obchode neziskas ani neztratis zadne penize)
+    Den: You have setup a time controller that costs !price!
+    Noc: Nastavil jsi ovladac casu za !price!
+    Zdravi: Vytvoril jsi lekarskou pohotovost za !price!
+    Opravit: Vytvoril jsi opravnu za !price!
+    Odevzdat: Vytvoril jsi darovaci bednu!
+    Dest: Nastavil jsi ovladac pocasi za !price!
+    Kos: Vytvoril jsi kos
+  confirm:
+    Buy: Buy !items for !price?
+    Sell: Sell !items for !price?
+    Donate: Donate !items?
+    DonateHand: Donate !items?
+    Slot: Chces si zahrat za !price?
+    Redstone: Zapnout pristroj za !price?
+    iBuy: Buy !items for !price?
+    iSell: Sell !items for !price?
+    gBuy: Buy !items for !price?
+    gSell: Sell !items for !price?
+    Day: Set the time to day for !price?
+    Night: Set the time to night for !price?
+    Rain: Set the weather to raining for !price?
+    ClearSkies: Set the weather to clear skies for !price?
+    DeviceOn: Chces zapnout tento pristroj za !price?
+    DeviceOff: Chces vypnout tento pristroj za !price?
+    Toggle: Toggle this device for !price?
+    Device: Chces docasne zapnout tento pristroj za !price?
+    Heal: Heal yourself for !price?
+    Repair: Repair the item held in your hand for !price?
+    Dispose: Dispose of !items?
+    DeviceItem: Temporarily activate this device for !items?
+    iSlot: Play this infinitely stocked slot machine for !price?
+    Enchant: Enchant your item with !enchantments for !price?
+    iSellXP: Sell !xp XP for !price?
+    iBuyXP: Buy !xp XP for !price?
+    iXPBuy: Buy !items for !xp XP points?
+    iXPSell: Sell !items for !xp XP points?
+    iTrade: Buy !chest2 with !chest1?
+    Trade: Buy !chest2 with !chest1?
+    TpToOwner: Teleport to !owner for !price?
+    Class: Buy the class containing !items for !price?
+    Disenchant: Remove enchantments on the item in your hand for !price?
+    Command: Run the commands on this sign for !price?
+    Jukebox: Play a record for !price?
+    Kit: Get this kit (!items) one time for !price?
+    ResetKit: Reset your !param signs for !price!
+    uVymena: Buy !chest2 with !chest1?
+    Vymena: Buy !chest2 with !chest1?
+    DeviceToggle: Chces prepnout tento pristroj za !price?
+    Koupit: Chces koupit !items za !price?
+    Prodat: Chces prodat !items za !price?
+    Darovat: Chces darovat !items?
+    Odevzdat: Chces darovat !items?
+    uKoupit: Chces koupit !items za !price?
+    uProdat: Chces prodat !items za !price?
+    iKoupit: Chces koupit !items za !price?
+    iProdat: Chces prodat !items za !price?
+    gKoupit: Chces koupit !items za !price?
+    gProdat: Chces prodat !items za !price?
+    Den: Chces nastavit den za !price?
+    Noc: Chces nastavit noc za !price?
+    Dest: Chces vyjasnit oblohu za !price?
+    Zdravi: Chces se vylecit za !price?
+    Opravit: Chces opravit to co drzis v ruce za !price?
+    Kos: Chces vyhodit !items drzici v ruce?
+    Spleefarena: Shces resetovat spleef arenu?
+  transaction:
+    Buy: You have bought !items for !price!
+    Sell: You have sold !items for !price!
+    Donate: You have donated !items!
+    DonateHand: You have donated !items!
+    Slot: Vyhral jsi !items!
+    Redstone: Device activated for !price!
+    iBuy: You have bought !items for !price!
+    iSell: You have sold !items for !price!
+    gBuy: You have bought !items for !price!
+    gSell: You have sold !items for !price!
+    Day: You set the time to day for !price!
+    Night: You set the time to night for !price!
+    Rain: You set the weather to raining for !price!
+    ClearSkies: You set the weather to clear skies for !price!
+    DeviceOn: You activated this device for !price!
+    DeviceOff: You deactivated this !price!
+    Toggle: You toggled this device for !price!
+    Device: You temporarily activated this device for !price!
+    Heal: You healed yourself for !price!
+    Repair: You repaired an item for !price!
+    Dispose: You have disposed of !items!
+    DeviceItem: You temporarily activated this device for !items!
+    iSlot: You won !items!
+    Enchant: Enchanted your item with !enchantments for !price!
+    iSellXP: Sold !xp XP for !price!
+    iBuyXP: Added !xp XP for !price!
+    iXPBuy: You have bought !items for !xp XP points!
+    iXPSell: You have sold !items for !xp XP points!
+    iTrade: Traded !chest1 for !chest2!
+    Trade: Traded !chest1 for !chest2!
+    TpToOwner: You teleported to !owner for !price!
+    Class: You bought the class containing !items for !price!
+    Disenchant: You removed the enchantments on the item in your hand for !price!
+    Command: You run the commands in the sign for !price!
+    Jukebox: You've made the Jukebox play a record for !price!
+    Kit: You acquired !items for !price!
+    ResetKit: You reset !param signs for !price!
+    uVymena: Traded !chest1 for !chest2!
+    Vymena: Traded !chest1 for !chest2!
+    DeviceToggle: You toggled this device for !price!
+    Koupit: Prave jsi koupil !items za !price!
+    Prodat: Prodal jsi !items za !price!
+    Darovat: Daroval jsi !items!
+    Odevzdat: Daroval jsi !items!
+    uKoupit: Prave jsi koupil !items za !price!!
+    uProdat: Prodal jsi !items za !price!
+    iKoupit: Prave jsi koupil !items za !price!!
+    iProdat: Prodal jsi !items za !price!
+    gKoupit: You have bought !items for !price!
+    gProdat: Prodal jsi !items za !price!
+    Den: Nastavil jsi den za !price!
+    Noc: Nastavil jsi noc za !price!
+    Dest: You set the weather to raining for !price!
+    Zdravi: You healed yourself for !price!
+    Opravit: You repaired an item for !price!
+    Kos: You have disposed of !items!
+    Spleefarena: Arena byla uspesne obnovena.
+  transaction_owner:
+    Buy: \!customer bought !items for !price from you!
+    Sell: \!customer sold you !items for !price!
+    Donate: \!customer donated !items to you!
+    DonateHand: \!customer donated !items to you!
+    Slot: \!customer played a slot machine for !price and won !items!
+    Redstone: \!customer activated your redstone device for !price!
+    iBuy: \!customer bought !items for !price from your infinite store!
+    iSell: \!customer sold !items to your infinite store!
+    gBuy: \!customer bought !items from your ghost store!
+    gSell: \!customer sold !items to your ghost store!
+    Day: \!customer set the time to day for !price!
+    Night: \!customer set the time to night for !price!
+    Rain: \!customer set the weather to raining for !price!
+    ClearSkies: \!customer vycistil oblohu za !price!
+    DeviceOn: \!customer aktivoval zarizeni za !price!
+    DeviceOff: \!customer deaktivoval zarizeni !price!
+    Toggle: \!customer toggled your device for !price!
+    Device: \!customer temporarily activated your device for !price!
+    Heal: \!customer healed at your station for !price!
+    Repair: \!customer repaired an item at your station for !price!
+    Dispose: \!customer disposed of !items!
+    DeviceItem: \!customer temporarily activated your device for !items!
+    iSlot: ''
+    Enchant: \!customer enchanted his item with !enchantments for !price!
+    iSellXP: ''
+    iBuyXP: ''
+    iXPBuy: ''
+    iXPSell: ''
+    iTrade: ''
+    Trade: \!customer traded !chest1 for your !chest2!
+    TpToOwner: \!customer teleported to you for !price!
+    Class: ''
+    Disenchant: ''
+    Command: ''
+    Jukebox: \!customer played a record on your jukebox for !price!
+    Kit: ''
+    ResetKit: ''
+    uVymena: ''
+    Vymena: \!customer traded !chest1 for your !chest2!
+    DeviceToggle: \!customer prepnul zarizeni za !price!
+    Koupit: \!customer si od tebe koupil !items za !price!
+    Prodat: \!customer tobe prodal !items za !price!
+    Darovat: \!customer ti daroval !items!
+    Odevzdat: \!customer ti daroval !items!
+    uKoupit: \!customer si od tebe koupil !items za !price!
+    uProdat: \!customer tobe prodal !items za !price!
+    gKoupit: \!customer si od tebe koupil !items za !price!
+    gProdat: \!customer tobe prodal !items za !price!
+    Den: \!customer nastavil den za !price!
+    Noc: \!customer nastavil noc za !price!
+    Dest: \!customer nastavil destive pocasi za !price!
+    Zdravi: \!customer se vylecil za !price!
+    Opravit: \!customer opravil sve nastroje za !price!
+    Kos: \!customer vyhodil !items!
+errors:
+  no_permission: Nemas pravo vytvaret obchodni cedulky!
+  no_permission_use: Nemas pravo tyto obchodni cedulky pouzivat!
+  no_permission_changeowner: You don't have permission to change to the owner of this shop!
+  invalid_operation: Cedulka kterou jsi oznacil neni platna!
+  chest_empty: Obchod je prazdny!
+  chest_missing: Pro tento typ obchodu musis predem oznacit nejakou bednu!
+  lever_missing: Pro tento typ obchodu musis predem oznacit nejakou paku!
+  no_player_money: Nemas !price pro zaplaceni!
+  no_shop_money: Obchod nema !price aby ti zaplatil!
+  out_of_business: This shop appears to have gone out of business!
+  out_of_stock: V tomto obchode dosel material!
+  overstocked: Tento obchod je jiz plny!
+  player_doesnt_have_items: Nemas dostatek predmetu na prodej! (!items)
+  no_item_in_hand: Musis v ruce drzet nejaky predmet!
+  player_overstocked: Mas plny inventar!
+  sign_location_stored: Pozice cedulky byla ulozena, nyni oznac nejakou truhlu!
+  made_day: '!player prepnul na den!'
+  made_night: '!player prepnul na noc!'
+  made_rain: '!player prepnul na destive pocasi!'
+  made_clear_skies: '!player vycistil oblohu!'
+  already_on: Device is already on
+  already_off: Device is already off
+  link_notallowed: Nemas pravo oznacit tuto bednu.
+  item_already_repair: Nastroj je jiz opraven!
+  already_raining: Jiz je destive pocasi!
+  already_clear_skies: Jiz neprsi!
+  already_full_health: Jiz jsi uzdraveny!
+  saving: Ukladani obchodu
+  saved: Obchody uspesne ulozeny!
+  shop_removed: Odstranen neplatny obchod.
+  invalid_item_to_repair: Tento predmet nemuze byt opraven!
+  no_item_to_repair: V ruce musis mit platny nastroj pro opraveni!
+  backup_fail: Failed to backup Storage!
+  too_far: The distance between the sign and chest is too big. Maximum is !max.
+  too_many_shops: Dosahl jsi maximalni vzdalenosti mezi obchody, maximum je !max. Pokud chces dalsi obchody, porid si VIP.
+  enchanted_not_allowed: Nemas pravo opravovat si enchantovane predmety.
+  enchantment_missing: At least one enchanted item is needed, please put one in the chest(s)!
+  item_not_enchantable: The item in your hand is not enchantable!
+  no_player_xp: You do not have enough XP to sell (!xp)!
+  no_item_to_disenchant: You need to be holding the item you want to disenchant!
+  nothing_to_disenchant: That item can not be disenchanted!
+  multiworld_not_allowed: MultiWorld shops are not allowed on this server!
+  no_permit_owner: The owner of this shop no longer has a permit!
+  need_permit: Pro tento obchod musis mit urcita vyssi prava!
+  villager_trading_disabled: Trading with Villagers is not enabled on this server!
+  not_allowed_to_link_sharesigns: You are not allowed to link Share signs to this shop!
+  no_shop_linked_to_sharesign: This Share sign has not been linked to any shops.
+  share_sign_splits_profit: This Share sign splits profits between !profits for the Shop(s) at !profitshops
+  registered_share_sign: Registered a Share sign, please click the Shop sign next.
+  unlinked_share_sign: Unlinked Share sign from Shop.
+  linked_share_sign: Succesfully linked Share sign to Shop.
+  not_allowed_to_link_restrictedsigns: You are not allowed to link Restricted signs to this shop!
+  no_shop_linked_to_restrictedsign: This Restricted sign has not been linked to any shops.
+  registered_restricted_sign: Registered a Restricted sign, please click the Shop sign next.
+  unlinked_restricted_sign: Unlinked Restricted sign from Shop.
+  linked_restricted_sign: Succesfully linked Restricted sign to Shop.
+  restricted_sign_restricts: This Restricted sign restricts use of the Shop(s) at !restrictedshops
+  towny_insufficient_funds: Insufficient funds in shop account!
+  towny_owner_not_mayor_or_assistant: The shop owner isn't a mayor or assistant of a town.
+  towny_owner_not_belong_to_town: The shop owner likely doesn't belong to a town.
+  towny_bank_withdrawls_not_allowed: The current Towny setup does not allow bank withdrawls!
+  restricted_from_using: You are restricted from using this shop!
+  restricted_but_owner: You are not restricted to use this shop as you are the owner.
+  item_on_blacklist: The item !blacklisted_item is on the blacklist and can not be used with Shops.
+  item_on_blacklist_but_op: The item !blacklisted_item is on the blacklist but you're OP.
+  block_is_protected: This block is protected, you are not allowed to interact with it.
+  updated_shop: The shop has been succesfully updated.
+  failed_to_update_shop: Failed to update the shop due to the error above.
+  price_drawn_from_essentials: Please note that the price was drawn from Essentials and is thus variable.
+  only_one_time: You can only use this shop once.
+  nothing_to_reset_ontime: You are already allowed to use !param signs one time. So there's nothing to reset.
+  shop_on_cooldown: This shop is on cooldown, try again in !cooldownleft seconds.
+  damaged_items_shop_homogeneous: A shop accepting damaged items can only deal in one type of item! Damaged items are not accepted until the shop is fixed.
+  use_item_to_destroy_shop: This shop is protected and can only be destroyed with a(n) !destroymaterial.
+  no_items_defined_for_shop: There are no items defined for this shop, can not complete the operation.
+commands:
+  TpToOwner:
+  - tp !player !owner
+  Command:
+  - \!line2 !line3
+  WarpSign:
+  - warp ExampleWarp !player
+  Promote:
+  - promote !player
+  SmiteAll:
+  - lightning !owner
+  - lightning !player
+  Kopanec:
+  - sudo !player quit
+  Arena:
+  - sudo !player ma join !line2
+  NEKLIKEJ!!!:
+  - tempban !player -a 1 min Neposlechl... minutovy ban
+  Spleefreset:
+  - mine reset Spleef
+pricemultipliers:
+  VIPEx:
+    iBuy: 0.7
+    iSell: 1.2
+  BlacksmithEx:
+    Repair: 0.5
+  VIPexample:
+    iBuy: 0.7
+    iSell: 1.2
+  Blacksmith:
+    Repair: 0.5
+limits:
+  DefaultEx: 5
+  MemberEx: 10
+  Default: 1
+  VIP: 10

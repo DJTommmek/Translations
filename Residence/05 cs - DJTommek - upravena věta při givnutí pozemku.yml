@@ -1,0 +1,632 @@
+# NOTE: If you want to modify this file, it is HIGHLY recommended that you make a copy
+# of this file and modify that instead. This file will be updated automatically by Residence
+# when a newer version is detected, and your changes will be overwritten.  Once you 
+# have a copy of this file, change the Language: option under the Residence config.yml
+# to whatever you named your copy.
+Version: 20
+FieldsVersion: 20
+Language:
+    # The below lines represent various messages residence sends to the players.
+    # Note that some messages have variables such as %1 that are inserted at runtime.
+    #Version 1 Fields
+    InvalidResidence: (RES) Bud spatne zadany nazev residence nebo se v zadne nenachazis...
+    InvalidSubzone: (RES) Bud spatne zadany nazev subzony nebo se v zadne nenachazis...
+    InvalidDirection: (RES) Spatny smer...
+    InvalidChannel: (RES) Spatny kanal...
+    InvalidAmount: (RES) Nespravne zadane mnozstvi...
+    InvalidCost: (RES) Nespravne zadana cena...
+    InvalidDays: (RES) Nespravne zadany pocet dni...
+    InvalidMaterial: (RES) Nespravne zadany material...
+    InvalidBoolean: (RES) Nespravna hodnota, musi byt true(t) nebo false(f)
+    InvalidArea: (RES) Bud spatne zadany nazev oblasti nebo se v zadne nenachazis...
+    InvalidGroup: (RES) Nespravna skupina...
+    InvalidMessageType: (RES) Typ zpravy muze byt pouze enter, leave nebo remove..
+    InvalidList: (RES) Nespravne zadany seznam...
+    InvalidFlag: (RES) Nespravne zadany flag...
+    InvalidFlagState: (RES) Nespravne zadany stav flagu, musi byt true(t), false(f), nebo remove(r)
+    AreaExists: (RES) Arena jiz existuje.
+    AreaCreate: '(RES) Oblast byla vytvorena, ID %1'
+    AreaDiffWorld: (RES) Oblast je v jinem svete nez rezidence.
+    AreaCollision: '(RES) Oblast se prekryva s rezidenci %1'
+    AreaSubzoneCollision: '(RES) Oblast se prekryva s subzonou %1'
+    AreaNonExist: (RES) Oblast neexistuje.
+    AreaInvalidName: (RES) Spatny nazev oblasti...
+    AreaRename: '(RES) Prejmenovano %1 na %2'
+    AreaRemove: '(RES) Oblast %1 byla prave uspesne odstranena...'
+    AreaRemoveLast: (RES) Nelze odstranit posledni oblast rezidence.
+    AreaNotWithinParent: (RES) Area is not within parent area.
+    AreaUpdate: (RES) Oblast obnovena...
+    AreaMaxPhysical: (RES) Dosahl jsi maximalniho poctu oblasti v tve residenci.
+    AreaSizeLimit: (RES) Velikost oblasti presahuje limit.
+    AreaHighLimit: '(RES) Nemuzes oznacit tak nizko, tvuj limit je %1'
+    AreaLowLimit: '(RES) Nemuzes oznacit tak vysoko, tvuj limit je %1'
+    NotInResidence: (RES) Nejsi v zadne residenci.
+    InResidence: '(RES) Stojis v residenci s nazvem %1'
+    ResidenceOwnerChange: '(RES) %2 je nyni vlastnikem Residence %1'
+    NonAdmin: (RES) Nejsi admin teto residence.
+    AdminOnly: (RES) Pouze admini maji pristup k tomuto prikazu.
+    ChatDisabled: (RES) Residence Chat Disabled...
+    SubzoneRename: '(RES) Subzona byla prejmenovana z %1 na %2'
+    SubzoneRemove: '(RES) Subzona %1 odstranena.'
+    SubzoneCreate: '(RES) Byla vytvorena subzona s nazvem %1'
+    SubzoneCreateFail: '(RES) Subzonu %1 se nepodarilo vytvorit'
+    SubzoneExists: '(RES) Subzona %1 jiz existuje.'
+    SubzoneCollide: '(RES) Subzona se prekryva se subzonou %1'
+    SubzoneMaxDepth: (RES) Dosahl jsi maximalni mozne hloubky subzon.
+    SubzoneSelectInside: (RES) Oba body vyberu musi byt uvnitr residence.
+    SelectPoints: (RES) Nejdrive musis vybrat dva body a pote muzes psat prikaz!
+    SelectionSuccess: (RES) Vyber byl uspesny!
+    SelectionFail: (RES) Nespravny prikaz pro vyber...
+    SelectionBedrock: (RES) Vyber byl rozsiren az k bedrocku.
+    SelectionSky: (RES) Vyber byl rozsiren az k obloze.
+    SelectionArea: '(RES) Prave byla vybrana oblast %1 v residenci %2'
+    SelectDiabled: (RES) Nemas pristup k prikazum vyberu.
+    NoPermission: (RES) Pro tuto cinnost nemas pravo.
+    OwnerNoPermission: (RES) Vlastnik pro toto nema pravo.
+    ParentNoPermission: (RES) Nemas pravo delat jakekoli zmeny v nadrazene oblasti.
+    MessageChange: (RES) Zprava byla uspesne nastavena...
+    FlagSet: (RES) Flag byl uspesne nastaven...
+    FlagCheckTrue: '(RES) Flag %1 byl nastaven hraci %2 pro residenci %3, hodnota = %4'
+    FlagCheckFalse: '(RES) Flag %1 nebyl nastaven hraci %2 pro residenci.'
+    FlagsCleared: (RES) Flagy byly procisteny.
+    FlagsDefault: (RES) Flagy byly nastaveny na default.
+    Pouziti: (RES) Spravne pouziti prikazu
+    InvalidHelp: (RES) Nespravna stranka napovedy...
+    SubCommands: (RES) Sub prikazy
+    InvalidList: (RES) Spatny typ listu, musi byt blacklist nebo ignorelist.
+    MaterialGet: '(RES) The material name for ID %1 is %2'
+    MarketDisabled: (RES) Economika zakazana!
+    MarketList: (RES) Market List
+    SelectionTool: (RES) Nastroj pro vyber
+    InfoTool: (RES) Nastroj pro informaci
+    NoBankAccess: (RES) Nemas pristup do banky.
+    NotEnoughMoney: (RES) Nemas dostatek slimeballu.
+    BankNoMoney: (RES) V bance neni dost slimeballu.
+    BankDeposit: '(RES) You deposit %1 into the residence bank.'
+    BankWithdraw: '(RES) You withdraw %1 from the residence bank.'
+    MoneyCharged: '(RES) Odebrano %1 na %2 account.'
+    MoneyCredit: '(RES) Pripsano %1 na %2 account.'
+    RentDisabled: (RES) System najmu je povolen.
+    RentReleaseInvalid: '(RES) Residence %1 neni na pronajem.'
+    RentSellFail: (RES) Nemuzes prodat residenci pokud je v pronajmu .
+    SellRentFail: (RES) Nemuzes pronajmout residenci pokud je v prodeji.
+    OwnerBuyFail: (RES) Nemuzes si koupit vlastni residenci!
+    OwnerRentFail: (RES) Nemuzes si najmout vlastni residenci!
+    AlreadySellFail: (RES) Residence jiz je na prodej!
+    ResidenceBought: '(RES) Prave jsi koupil residenci s nazvem %1'
+    ResidenceBuy: '(RES) Residence %1 has bought residence %2 from you.'
+    ResidenceBuyTooBig: (RES) Tato residence ma nad oblast nad povolene limity.
+    ResidenceNotForSale: (RES) Residence neni na prodej.
+    ResidenceForSale: '(RES) Residence %1 je na prodej za %2'
+    ResidenceStopSelling: (RES) Residence jiz neni naprodej.
+    ResidenceTooMany: (RES) Jiz mas maximalni pocet residenci ktere muzes vlastnit.
+    ResidenceMaxRent: (RES) You already are renting the maximum number of residences your allowed to.
+    ResidenceAlreadyRent: (RES) Residence is already for rent...
+    ResidenceNotForRent: (RES) Residence not for rent...
+    ResidenceNotRented: (RES) Residence not rented.
+    ResidenceUnrent: '(RES) Residence %1 has been unrented.'
+    ResidenceRemoveRentable: '(RES) Residence %1 is no longer rentable.'
+    ResidenceForRentSuccess: '(RES) Residence %1 is now for rent for %2 every %3 days.'
+    ResidenceRentSuccess: '(RES) You have rented Residence %1 for %2 days.'
+    ResidenceAlreadyRented: '(RES) Residence %1 has currently been rented to %2'
+    ResidenceAlreadyExists: '(RES) Rezidence se jmenem %1 jiz existuje.'
+    ResidenceCreate: '(RES) Vytvoril jsi residenci s nazvem %1!'
+    ResidenceRename: '(RES) Zmena nazvu residence z %1 na %2'
+    ResidenceRemove: '(RES) Residence %1 prave byla odstranena...'
+    RentDisabled: (RES) Pronajmy jsou zruseny...
+    RentDisableRenew: '(RES) Residence %1 will now no longer re-rent upon expire.'
+    RentEnableRenew: '(RES) Residence %1 will now automatically re-rent upon expire.'
+    RentableDisableRenew: '(RES) %1 se po vyprseni lhuty vypujcky automaticky NEobnovi .'
+    RentableEnableRenew: '(RES) %1 se po vyprseni vypujcky automaticky obnovi.'
+    LandForSale: Pozemek na prodej
+    SellAmount: Prodejni cena
+    LeaseExpire: Doba vyprseni pronajmu
+    RentExpire: Doba vyprseni najmu
+    RentableAutoRenew: Rentable Auto Renew
+    RentAutoRenew: Rent Auto Renew
+    RentableLand: Residence k pronajmu
+    ListMaterialAdd: '(RES) %1 added to the residence %2'
+    ListMaterialRemove: '(RES) %1 removed from the residence %2'
+    ItemBlacklisted: (RES) Nemas pravo pouzit prave tuto vec v teto residenci.
+    RentedModifyDeny: (RES) Nemuzes upravovat najmutou residenci.
+    WorldPVPDisabled: (RES) PVP bylo vsude mimo residence vypnuto.
+    NoPVPZone: (RES) Toto neni PVP zona.
+    FlagDeny: '(RES) Nemas pravo: %1.'
+    FlagSetDeny: '(RES) Vlastnik nema pravo na %1'
+    SelectPoint: '(RES) Umisten %1 bod vyberu '
+    ResidenceChat: '(RES) Residence chat toggled %1'
+    ResidenceMoveDeny: '(RES) V residenci %1 nemas pravo pro pohyb'
+    TeleportDeny: (RES) Nemas pravo pro teleport do residence.
+    TeleportSuccess: '(RES) Teleportovan!'
+    TeleportNear: (RES) Teleportovan do jednoho z rohu residence.
+    TeleportNoFlag: (RES) Nemas pristup pro teleport do residence.
+    SetTeleportLocation: (RES) Byl nastaven bod pro teleportaci do residence...
+    HelpPageHeader: '(RES) NAPOVEDA - %1 - strana <%2 of %3>'
+    ListExists: (RES) List already exists...
+    ListRemoved: (RES) List removed...
+    ListCreate: '(RES) Created list %1'
+    LeaseRenew: '(RES) Pronajem je platny do %1'
+    LeaseRenewMax: (RES) Doba pronajmu byla prodlouzena na maximalne povolenou dobu
+    LeaseNotExpire: (RES) Doba pronajmu nevyprsi.
+    LeaseRenewalCost: '(RES) Renewal cost for area %1 is %2'
+    LeaseInfinite: (RES) Doba pronajmu byla nastavena na nekonecne dlouhou dobu...
+    PermissionsApply: (RES) Prava byla na tuto residenci uspesne nastavena.
+    PhysicalAreas: (RES) Oblasti
+    CurrentArea: Vybrana oblast
+    LeaseExpire: Expirace pronajmu
+    NotOnline: (RES) Hrac musi byt online.
+    ResidenceGiveLimits: (RES) Nemuzes tomuto hraci dat residenci, protoze je prilis daleko.
+    ResidenceGive: '(RES) Prave jsi daroval residenci %1 hraci s nickem %2'
+    ResidenceRecieve: '(RES) Prave ti byl pridelen pozemek s cislem %2 v residenci %1'
+    #Version 4 New Fields
+    #ResidenceListAll: '(RES) Residence - <Page %1 of %2>' - removed, use GenericPage now
+    ResidenceListAllEmpty: (RES) Na tomto svete neni zadna residence...
+    InvalidPage: (RES) Nespravne cislo stranky...
+    NextPage: (RES) Dalsi stranka
+    #Version 10 New Fields
+    RemovePlayersResidences: '(RES) Byly odstraneny vsechny residence patrici hraci s nickem %1'
+    GenericPage: '(RES) Strana %1 z %2'
+    #Version 11 New Fields
+    ResidenceRentedBy: '(RES) Pronajmuto: %1'
+    #Version 14 New Fields
+    InvalidCharacters: (RES) Objeveny nepovolene znaky...
+    InvalidNameCharacters: (RES) Nazev obsahoval nepovolene znaky...
+    #Version 15 New Fields
+    DeleteConfirm: '(RES) Opravdu chces smazat residenci s nazvem %1? Pro potvrzeni napis "/res confirm".'
+    #Version 18 New Fields
+    SelectTooHigh: (RES) Vyber presahl vrcholek mapy, automaticky omezeno.
+    SelectTooLow: (RES) Vyber presahl dno mapy, automaticky omezeno.
+    WorldEditNotFound: (RES) WorldEdit nebyl nalezen.
+    #Version 19 New Fields
+    NoResHere: (RES) Zde neni zadna residence
+    DeleteSubzoneConfirm: '(RES) Opravdu chces smazat subzonu s nazvem %1? Pro potvrzeni napis "/res confirm" to confirm.'
+    #Version 20 New Fields
+    SubzoneOwnerChange: '(RES) Majitel subzony %1 byl zmenen na %2'
+    CoordsTop: 'X:%1 Y:%2 Z:%3'
+    CoordsBottom: 'X:%1 Y:%2 Z:%3'
+    #Version 21 New Fields
+    AdminToggle: '(RES) Automatic resadmin toggle turned %1'
+
+    #Version 22 New Fields
+    NoSpawn: '(RES) Na tomto miste nemas pravo se pohybovat. Presouvam te'
+    CompassTargetReset: '(RES) Tvuj kompas byl resetovani'
+    CompassTargetSet: '(RES) Tvuj kompas nyni ukazuje na %1'
+    
+    #The below lines are mostly a word bank for various uses.
+    #Version 1 Fields
+    Description: Popis
+    Land: Pozemek
+    Cost: Cena
+    Selection: Vyber
+    Total: Celkem
+    Size: Velikost
+    Expanding: Rozsirovani
+    Shifting: Posouvani
+    Up: Nahoru
+    Down: Dolu
+    Error: Chyba
+    Flags: Flagy
+    Your: Tvoje
+    Group: Skupina
+    Others: Ostatni
+    Primary: Prvni
+    Secondary: Druhy
+    Selection: Vyber
+    Moved: Presunut
+    Status: Status
+    Available: Dostupny
+    On: Zapnut
+    Off: Vypnut
+    Name: Jmeno
+    Lists: Seznam
+    Residences: Residence
+    Residence: Residence
+    Count: Count
+    Owner: Vlastnik
+    #Version 4 Fields
+    World: Svet
+    #Version 12 Fields
+    Subzones: Subzony
+    #Version 20 Fields
+    CoordsT: Souradnice vrcholu
+    CoordsB: Souradnice dna
+    #Version 22 Fields
+    TurnOn: 'zap'
+    TurnOff: 'vyp'
+
+    
+# This is the help / usage messages for each command.
+# It follows this format:
+# <Command>
+#     Description: <general description of command, one line of text>
+#     Info: <extra info lines to describe the command, list of text>
+#     SubCommands:
+#           <SubCommands> - these follow the same format, and each sub command can have its own subcommands
+# When a user gets help for a command (adds a ? mark on the end), first its Info lines are printed, then its sub commands are printed below that
+# Pages are automatically generated if the total lines of text exceeds 6 (will be configurable later).
+# Add a page number after the ? mark to see that page.
+
+HelpLinesPerPage: 7
+CommandHelp: #this is just a holder node, that holds the entire help
+    Description: Napoveda pro plugin Residence
+    SubCommands: #this is the actual beginning of all commands
+        res: #main residence command
+            Description: Hlavni prikazy
+            Info:
+                - 'Precti si residence wiki pro podrobnejsi napovedu.'
+                - 'Wiki: residencebukkitmod.wikispaces.com'
+                - 'Pouzij /[prikaz] ? <stranka> Pro vice informaci.'
+            SubCommands:
+                select: #selection commands
+                    Description: Prikazy pro vyber
+                    Info:
+                        - 'Tento prikaz vybere oblast pro vytvoreni residenci nebo subzon.'
+                        - '/res select [x] [y] [z] - Vybere bloky v danem radiusu kolem tebe.'
+                    SubCommands:
+                        coords:
+                            Description: Ukaze vybrane souradnice
+                            Info:
+                                - 'Pouziti: /res select coords'
+                        size:
+                            Description: Zobrazi velikost vybrane oblasti
+                            Info:
+                                - 'Pouziti: /res select size'
+                        cost:
+                            Description: Zobrazi cenu vybrane oblasti
+                            Info:
+                                - 'Pouziti: /res select cost'
+                        vert:
+                            Description: Rozsizeni vyberu az k bedrocku a obloze
+                            Info:
+                                - 'Pouziti: /res select vert'
+                                - 'Rozsiri vyber vertikalne jak to jen pujde.'
+                        sky:
+                            Description: Rozsireni vyberu az k obloze
+                            Info:
+                                - 'Pouziti: /res select sky'
+                                - 'Rozsiri vyber do vysky jak to jen pujde.'
+                        bedrock:
+                            Description: Rozsireni vyberu az k bedrocku
+                            Info:
+                                - 'Pouziti: /res select bedrock'
+                                - 'Rozsiri vyber do hloubky jak to jen pujde'
+                        expand:
+                            Description: Rozsireni vyberu ve smeru pohledu.
+                            Info:
+                                - 'Pouziti: /res select expand <hodnota>'
+                                - 'Rozsiri uzemi o cislo ve smeru pohledu.'
+                        shift:
+                            Description: Shift selection in a direction
+                            Info:
+                                - 'Pouziti: /res select shift <pocet>'
+                                - 'Presune vybranou oblast o pocet do smeru, kam se divas.'
+                        chunk:
+                            Description: Vybere chunk ve kterem se nachazis
+                            Info:
+                                - 'Pouziti: /res select chunk'
+                                - 'Vybere chunk ve kterem se prave nachazis.'
+                        residence:
+                            Description: Vyber existujici areny v residenci.
+                            Info:
+                                - 'Pouziti /res select <Residence> <AreaID>'
+                                - 'Vyber existujici areny v residenci.'
+                create: #creation command
+                    Description: Vytvoreni residence
+                    Info:
+                        - 'Pouziti: /res create <residence name>'
+                remove: #remove command
+                    Description: Odstraneni residence.
+                    Info:
+                        - 'Pouziti: /res remove <residence name>'
+                removeall:
+                    Description: Odstraneni vsech residenci urciteho hrace.
+                    Info:
+                    Info:
+                        - 'Pouziti: /res remove <residence name>'
+                removeall:
+                    Description: Odstraneni vsech residenci, patrici urcitemu hraci.
+                    Info:
+                        - 'Pouziti: /res removeall [hrac]'
+                        - 'Odstraneni vsech residenci urciteho hrace..'
+                        - 'Vyzaduje /resadmin pokud ho pouzijes na nekoho dalsiho.'
+                confirm:
+                    - 'Pouziti: /res confirm'
+                    - 'Potvrzeni smazani residence.'
+                subzone:
+                    Description: Vytvoreni subzon v residenci.
+                    Info:
+                        - 'Pouziti: /res subzone <jmeno residence> [jmeno subzony]'
+                        - 'Pokud nazev residence vynechas, automaticky se subzona vytvori v residenci kde stojis.'
+                area:
+                    Description: Manage physical areas for a residence.
+                    SubCommands:
+                        list:
+                            Description: List physical areas in a residence
+                            Info:
+                                - 'Pouziti: /res area list [residence] <stranka>'
+                        listall:
+                            Description: List coordinates and other info for areas
+                            Info:
+                                - 'Pouziti: /res area listall [residence] <stranka>'
+                        add:
+                            Description: Add physical areas to a residence
+                            Info:
+                                - 'Pouziti: /res area add [residence] [areaID]'
+                                - 'You must first select two points first.'
+                        remove:
+                            Description: Remove physical areas from a residence
+                            Info:
+                                - 'Pouziti: /res area remove [residence] [areaID]'
+                        replace:
+                            Description: Replace physical areas in a residence
+                            Info:
+                                - 'Pouziti: /res area replace [residence] [areaID]'
+                                - 'You must first select two points first.'
+                                - 'Replacing a area will charge the difference in size if the new area is bigger.'
+                info:
+                    Description: Zobrazi podrobne informace o residenci.
+                    Info:
+                        - 'Pouziti: /res info <residence>'
+                        - 'Pokud vynechas <residence> automaticky se zobrazi informace o residenci ve ktere stojis.'
+                limits:
+                    Description: Zobrazeni moznosti co muzes delat s residencemi.
+                    Info:
+                        - 'Pouziti: /res limits'
+                        - 'Zobrazeni vsech moznosti ohledne residence, na ktere mas pravo.'
+                message:
+                    Description: Sprava zprav pri vstupu / odchodu z residence
+                    Info:
+                        - 'Pouziti: /res message <residence> [enter/leave] [zprava]'
+                        - 'Pridani zprav pri vstupu / odchodu z residence.'
+                        - 'Pouziti: /res message <residence> remove [enter/leave]'
+                        - 'Odstraneni zprav pri vstupu / odchodu z residence.'
+                lease:
+                    Description: Spravuje najmy rezidenci
+                    Info:
+                        - 'Pouziti: /res lease [renew/cost] [residence]'
+                        - '/res lease cost Ukaze cenu za obnoveni najmu residence.'
+                        - '/res lease renew Obnovi najem rezidence, pokud mas dost penez.'
+                    SubCommands:
+                        set:
+                            Description: Nastaveni delky najmu (pouze admin)
+                            Info:
+                                - 'Pouziti: /resadmin lease set [residence] [#days/infinite]'
+                                - 'Nastavi pronajem na dany pocet dni nebo donekonecna.'
+                bank:
+                    Description: Manage money in a Residence
+                    Info:
+                        - 'Pouziti: /res bank [deposit/withdraw] [hodnota]'
+                        - 'Musis stat uvnitr residence'
+                        - 'Musis nastavit flag bank na true.'
+                tp:
+                    Description: Teleport do residence
+                    Info:
+                        - 'Pouziti: /res tp [residence]'
+                        - 'Pro teleport do residence musis mit +tp flag na danou residenci a nebo byt majitelem.'
+                        - 'Musis dostat prava na teleport do residence.'
+                tpset:
+                    Description: Nastaveni mista pro teleportovani do residence
+                    Info:
+                        - 'Pouziti: /res tpset'
+                        - 'Nastavi misto pro teleport do tve residence.'
+                        - 'Musis byt v dane residenci.'
+                        - 'Musis byt v dane residenci a mit +admin flag.'
+                    Description: Set general flags on a Residence
+                    Info:
+                        - 'Pouziti: /res set <residence> [flag] [true/false/remove]'
+                        - 'To see a list of flags, use /res flags ?'
+                        - 'These flags apply to any players who do not have the flag applied specifically to them. (see /res pset ?)'
+                set:
+                    Description: Nastaveni hlavnich (obecnych) flagu na residenci
+                    Info:
+                        - 'Pouziti: /res set <residence> [flag] [true/false/remove]'
+                        - 'Pro seznam flagu napis /res flags ?'
+                        - 'Tyto flagy jsou pro vsechny, kteri nemaji nastaveni zvlast, vice /res pset ?)'
+                pset:
+                    Description: Nastaveni flagu na urcite hrace.
+                    Info:
+                        - 'Pouziti: /res pset <residence> [player] [flag] [true/false/remove]'
+                        - 'Pouziti: /res pset <residence> [player] removeall'
+                        - 'Pro seznam vsech flagu napis /res flags ?'
+                gset:
+                    Description: Nastaveni flagu pro urcite skupiny.
+                    Info:
+                        - 'Pouziti: /res gset <residence> [group] [flag] [true/false/remove]'
+                        - 'Pro seznam vsech flagu napis /res flags ?'
+                lset:
+                    Description: Zmena nastaveni blacklist/ignorelist
+                    Info:
+                        - 'Pouziti: /res lset <residence> [blacklist/ignorelist] [material]'
+                        - 'Pouziti: /res lset <residence> info'
+                        - 'Materialy na blacklistu nesmeji byt v residenci pouzity.'
+                        - 'Materialy na ignorelistu nebudou chraneny rezidenci.'
+                flags:
+                    Description: Seznam flagu
+                    Info:
+                        - 'Obvykle se pouziva true pro povoleni a false pro zakazani urcite cinnosti.'
+                        - 'build - uprava budovani'
+                        - 'use - uprava pouzivani dveri, pacek, tlacitek atd...'
+                        - 'move - uprava pohybu.'
+                        - 'container - uprava pristupu do truhel, dispenseru, peci apod...'
+                        - 'trusted - vklada zakladni prava predevsim pro pristehovalce'
+                        - 'place - allows or denys only placement of blocks, overrides the build flag.'
+                        - 'destroy - uprava niceni bloku (prepisuje flag build).'
+                        - 'pvp - uprava souboju hrac proti hraci'
+                        - 'tp - povoleni nebo zakazani teleportu do residence.'
+                        - 'admin - povoli nebo zakaze urcitemu hraci menit flagy a nastaveni residence.'
+                        - 'subzone - povoli nebo zakaze urcitemu hraci vytvaret subzony.'
+                        - 'monsters - uprava spawnu zlych mobu'
+                        - 'animals - uprava spawnu ostatnich mobu.'
+                        - 'healing - uprava jestli se bude v residenci lecit'
+                        - 'tnt - uprava vybuchu TNT v residenci'
+                        - 'creeper - uprava vybuchu od creepera v residenci'
+                        - 'ignite - uprava zapaleni.'
+                        - 'firespread - uprava sireni ohne.'
+                        - 'bucket - uprava pouzivani kybliku (neplati pro piva).'
+                        - 'flow - uprava proudeni vody a lavy (false zpusobi nesireni).'
+                        - 'lavaflow - uprava proudeni lavy (prepisuje flag flow)'
+                        - 'waterflow - uprava proudeni vody (prepisuje flag flow)'
+                        - 'damage - povoli nebo zakaze ubirani zivota v residenci.'
+                        - 'piston - uprava pouziti pistonu.'
+                        - 'hidden - schova residenci pred vyhledavanim v seznamu.'
+                        - 'cake - povoli nebo zakaze jist dort'
+                        - 'lever - povoli nebo zakaze pouziti paky'
+                        - 'button - povoli nebo zakaze pouziti tlacitka'
+                        - 'diode - povoli nebo zakaze manipulaci s repeatry'
+                        - 'door - povoli nebo zakaze manipulaci se dvermi'
+                        - 'table - povoli nebo zakaze pouzitim crafting table'
+                        - 'enchant - povoli nebo zakaze pouzitim enchanting'
+                        - 'brew - povoli nebo zakaze pouzivanim lektvaru'
+                        - 'bed - povoli nebo zakaze pouzivanim postele'
+                        - 'pressure - povoli nebo zakaze pouzivanim stavby s naslapnou deskou'
+                        - 'note - povoli nebo zakaze manipulace s noteblockem '
+                        - 'redstone - ovlivni nekolik flagu, tykajici se redstonu (hromadne)'
+                        - 'craft - ovlivni crafting table, enchant a brew flags'
+                list:
+                    Description: Zobrazeni residenci
+                    Info:
+                        - 'Pouziti: /res list <hrac> <strana>'
+                        - 'Zobrazeni seznamu vsech residenci ktere hrac vlastni (krome tech skrytych)'
+                        - 'Kdyz si zobrazujes seznam tvych vlastnich rezidenci, ukazuje skryte taky.'
+                        - 'Pro zobrazeni vsech residenci pouzij /listall'
+                listhidden:
+                    Description: Zobrazeni skrytych residenci (POUZE ADMIN)
+                    Info:
+                        - 'Pouziti: /res listhidden <hrac> <strana>'
+                        - 'Zobrazeni skrytych residenci hraci'
+                listall:
+                    Description: Zobrazeni vsech residenci
+                    Info:
+                        - 'Pouziti: /res listall <strana>'
+                        - 'Zobrazeni vsech residenci na serveru (krome skrytych ktere nevlastnis)'
+                listallhidden:
+                    Description: Zobrazeni vsech skrytych residenci (POUZE ADMIN)
+                    Info:
+                        - 'Pouziti: /res listhidden <strana>'
+                        - 'Zobrazeni vsech skrytych residenci na serveru'
+                sublist:
+                    Description: Zobrazeni vsech subzon v residenci'
+                    Info:
+                        - 'Pouziti: /res sublist <residence> <strana>'
+                        - 'Seznam subzon v residenci'
+                default:
+                    Description: Nastaveni residence na zakladni nastaveni
+                    Info:
+                        - 'Pouziti: /res default <residence>'
+                        - 'Nastaveni vseho na zakladni nastaveni(musite byt majitel nebo admin).'
+                rename:
+                    Description: Prejmenuje residenci.
+                    Info:
+                        - 'Pouziti: /res rename [stare jmeno] [nove jmeno]'
+                        - 'Musis byt majitelem nebo adminem teto residence.'
+                        - 'Jmeno nesmi byt stejne jako jmeno jine residence.'
+                mirror:
+                    Description: Kopirovani flagu
+                    Info:
+                        - 'Pouziti: /res mirror [Vychozi Residence] [Cilova Residence]'
+                        - 'Kopiruje flagy z jedne rezidence na druhou. Kopirovat muze jen vlastnik obou rezidenci nebo admin.'
+                market:
+                    Description: Nakup, prodej, nebo pronajem Residence
+                    Info:
+                        - 'Pouziti: /res market ? pro dalsi informace'
+                    SubCommands:
+                        info:
+                            Description: Zjisteni ekonomicke situace teto residence
+                            Info:
+                                - 'Pouziti: /res market info [residence]'
+                                - 'Zobrazi jestli je residence na prodej, na pronajem a cenu.'
+                        list:
+                            Description: Zobrazi pronajimatelne a prodejne residence.
+                            Info:
+                                - 'Pouziti: /res market list'
+                        sell:
+                            Description: Prodej residence
+                            Info:
+                                - 'Pouziti: /res market sell [residence] [hodnota]'
+                                - 'Zahajeni prodeje residence za [hodnota] Slimeballu.'
+                                - 'Jiny hrac si ji muze koupit prikazem /res market buy'
+                        buy:
+                            Description: Nakup residence
+                            Info:
+                                - 'Pouziti: /res market buy [residence]'
+                                - 'Nakoupeni residence pokud je na prodej.'
+                        unsell:
+                            Description: Zastaveni prodeje residence
+                            Info:
+                                - 'Pouziti: /res market unsell [residence]'
+                        rent:
+                            Description: Najem residence
+                            Info:
+                                - 'Pouziti: /res market rent [residence] <automaticke obnoveni>'
+                                - 'Najmuti residence.  Automaticke obnoveni muze byt true(residence se automaticky prodlouzi doba najmu) nebo false.'
+                        rentable:
+                            Description: Vytvoreni najmu residence.
+                            Info:
+                                - 'Pouziti: /res market rentable [residence] [cost] [days] <opakovani>'
+                                - 'Urci residenci k najmu za [cost] SB jednou za [days] dni.  Pokud  <opakovani> je true, najem se automaticky prodlouzi.'
+                        release:
+                            Description: Odstrani residenci ze seznamu pronajimatelnych..
+                            Info:
+                                - 'Pouziti: /res market release [residence]'
+                                - 'Zruseni pronajmu dane residence.'
+                                - 'Pokud jsi majitel, tato residence uz nebude moci byt znovu pronajmuta.'
+                current:
+                    Description: Napise residenci, ve ktere zrovna jsi.
+                    Info:
+                        - 'Pouziti: /res current'
+                lists:
+                    Description: Nadefinovany seznam
+                    Info:
+                        - 'Jiz predem urceny seznam.'
+                    SubCommands:
+                        add:
+                            Description: Pridat seznam
+                            Info:
+                                - 'Pouziti: /res lists add <Nazev_seznamu>'
+                        remove:
+                            Description: Odebrat seznam
+                            Info:
+                                - 'Pouziti: /res lists remove <Nazev_seznamu>'
+                        apply:
+                            Description: Aplikovat seznam na residenci
+                            Info:
+                                - 'Pouziti: /res lists apply <Nazev_seznamu> <residence>'
+                        set:
+                            Description: Nastaveni flagu
+                            Info:
+                                - 'Pouziti: /res lists set <Nazev_seznamu> <flag> <value>'
+                        pset:
+                            Description: Nastaveni  flagu na hrace
+                            Info:
+                                - 'Pouziti: /res lists pset <Nazev_seznamu> <player> <flag> <value>'
+                        gset:
+                            Description: Nastaveni skupinoveho flagu
+                            Info:
+                                - 'Pouziti: /res lists gset <Nazev_seznamu> <group> <flag> <value>'
+                        view:
+                            Description: Prohlednuti seznamu
+                            Info:
+                                - 'Pouziti: /res lists view <Nazev_seznamu'
+                server:
+                    Description: Odevzdani residence serveru (POUZE ADMIN).
+                    Info:
+                        - 'Pouziti: /resadmin server [residence]'
+                        - 'Odevzdani residence serveru.'
+                setowner:
+                    Description: Zmena vlastnika residence (POUZE ADMIN).
+                    Info:
+                        - 'Pouziti: /resadmin setowner [residence] [hrac]'
+                resreload:
+                    Description: Znovu nacteni residence (POUZE ADMIN).
+                    Info:
+                        - 'Pouziti: /resreload'
+                resload:
+                    Description: Pouze nacteni residenci (neulozi se aktualni, POUZE ADMIN).
+                    Info:
+                        - 'Pouziti: /resload'
+                        - 'NEBEZPECNY prikaz. Neuklada rezidence.'
+                        - 'Po provedeni zmen nacte slozku residence save.'
+                version:
+                    Description: Zobrazeni verze pluginu
+                    Info:
+                        - 'Pouziti: /res version'

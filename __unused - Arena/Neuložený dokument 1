@@ -1,0 +1,155 @@
+log:
+  matnotfound: 'Unrecognized material: %1%'
+  iconomyon: <3 eConomy
+  iconomyoff: </3 eConomy
+  enabled: enabled (version %1%)
+  disabled: disabled (version %1%)
+  noperms: Permissions plugin not found, defaulting to OP.
+  nospout: Spout not found, you are missing some features ;)
+  spout: Hooking into Spout!
+  warn: '%1%'
+lang:
+  playerleave: '%1% has left the fight!'
+  youleave: You have left the fight!
+  dropitem: Not so fast! No Cheating!
+  usepatoexit: Please use '/pa leave' to exit the fight!
+  pos1: First position set.
+  pos2: Second position set.
+  classperms: You don't have permission for that class.
+  waitequal: Waiting for the teams to have equal player number!
+  ready: '%1% team is ready!'
+  begin: Let the fight begin!
+  killedby: '%1% has been killed by %2%!'
+  killedbylives: '%1% has been killed by %2%! %3% lives remaining.'
+  onlyplayers: Only players may access this command!
+  arenadisabled: Arena disabled, please try again later!
+  arenanotsetup: All waypoints must be set up first. %1%
+  permjoin: You don't have permission to join the arena!
+  alreadyjoined: You already joined!
+  fightinprogress: A fight is already in progress!
+  notenough: You don't have %1%.
+  youjoined: Welcome! You are on team %1%
+  playerjoined: '%1% has joined team %2%'
+  nopermto: You don't have permission to %1%
+  enable: enable
+  disable: disable
+  reload: reload
+  enabled: Enabled!
+  disabled: Disabled!
+  admin: administrate
+  reloaded: Config reloaded!
+  noplayer: No player in the PVP arena.
+  players: Players
+  specwelcome: Welcome to the spectator's area! /pa bet [name] [amount] to bet on team or player
+  setspectator: Spectator spawn set.
+  setexit: Exit spawn set.
+  forcestop: You have forced the fight to stop.
+  nofight: There is no fight in progress.
+  invalidcmd: Invalid command (%1%)
+  betnotyours: Cannot place bets on your own match!
+  betoptions: You can only bet on team name or arena player!
+  wrongamount: Bet amount must be between %1% and %2%!
+  invalidamount: 'Invalid amount: %1%'
+  betplaced: Your bet on %1% has been placed.
+  regionset: Setting region enabled.
+  regionsaved: Region saved.
+  regionremoved: Region removed.
+  regionnotremoved: There is no region setup.
+  youwon: You won %1%
+  awarded: You have been awarded %1%
+  invfull: Your inventory was full. You did not receive all rewards!
+  arenaexists: Arena already exists!
+  arenanotexists: 'Arena does not exist: %1%'
+  regionalreadybeingset: 'A region is already being created: %1%'
+  regionnotbeingset: A region is not being created!
+  notinarena: You are not part of an arena!
+  arenas: 'Available arenas: %1%'
+  setup: setup an arena
+  create: create an arena
+  created: arena '%1%' created!
+  remove: remove an arena
+  removed: arena '%1%' removed!
+  youjoinedfree: Welcome to the FreeFight Arena
+  playerjoinedfree: '%1% has joined the FreeFight Arena'
+  setspawn: 'Spawn set: %1%'
+  setflag: 'Flag set: %1%'
+  setlounge: Lounge set.
+  selectteam: You must select a team to join! /pa [arenaname] [team]
+  notselectteam: You cannot select a team to join! /pa [arenaname]
+  joinrange: You are too far away to join this arena!
+  playerpowerup: Player %1% receives powerup %2%!
+  serverpowerup: Powerup %1% deployed!
+  flaggrab: Player %1% grabbed the flag of team %2%!
+  flaghomeleft: 'Player %1% brought home the flag of team %2%! Lives left: %3%'
+  flagsave: Player %1% dropped the flag of team %2%!
+  teamhaswon: '%1% are the Champions!'
+  playerhaswon: '%1% is the Champion!'
+  notsameworld: Not in the same world as the arena (%1%)!
+  checkregionerror: Waiting for a running arena to finish!
+  pumpkinhomeleft: 'Player %1% brought home the pumpkin of team %2%! Lives left: %3%'
+  pumpkingrab: Player %1% grabbed the pumpkin of team %2%!
+  pumpkinsave: Player %1% dropped the pumpkin of team %2%!
+  setpumpkin: 'Pumpkin set: %1%'
+  tosetpumpkin: 'Pumpkin to set: %1%'
+  tosetflag: 'Flag to set: %1%'
+  notready: At least one player is not ready!
+  notready1: You are alone in the arena!
+  notready2: Your team is alone in the arena!
+  notready3: A team is missing players!
+  notready4: The arena is missing players!
+  notready5: At least one player has not chosen a class!
+  teamfull: team %1% is full!
+  arenafull: arena is full!
+  classfull: class is full!
+  errorcustomflag: Error! Arena is not of type ctf.
+  errorcustompumpkin: Error! Arena is not of type pumpkin.
+  errorspawnfree: Error! Arena is of type free. Use 'spawnX' where X is a digit or letter!
+  errorloungefree: Error! Arena is not of type free. Use '[teamname]lounge'
+  createleaderboard: create a leaderboard
+  boardexists: Leaderboard already exists!'
+  flagnotsafe: Your flag is taken! Cannot bring back an enemy flag!'
+  pumpkinnotsafe: Your pumpkin is taken! Cannot bring back an enemy pumpkin!'
+  frag: '%1% killed another player! Total frags: %2%.'
+  notjoinregion: You are not in the join region! Move there to join!
+  edit: edit an arena
+  edittrue: 'Enabled edit mode for arena: %1%'
+  editfalse: 'Disabled edit mode for arena: %1%'
+  joinpay: You paid %1% to join the arena!
+  insidevehicle: You cannot join while on a vehicle!
+  starting: Enough players ready. Starting in 5 seconds!
+  sortingby: Arena Board now sorted by %1%
+  invalidstattype: 'Invalid statistics type: %1%'
+  WINS: matches won
+  LOSSES: matches lost
+  KILLS: kills
+  DEATHS: deaths
+  MAXDAMAGE: max damage dealt
+  MAXDAMAGETAKE: max damage taken
+  DAMAGE: full damage dealt
+  DAMAGETAKE: full damage taken
+  'NULL': player name
+  block_explosion: an explosion
+  contact: a cactus
+  custom: Herobrine
+  drowning: water
+  entity_explosion: a creeper
+  fall: gravity
+  fire: a fire
+  fire_tick: fire
+  lava: lava
+  lightning: Thor
+  magic: Magical Powers
+  poison: Poison
+  projectile: something he didn't see coming
+  starvation: hunger
+  suffocation: lack of air
+  suicide: self
+  void: the Void
+  domscore: Team %1% scored a point by holding a flag!
+  domclaiming: Team %1% is claiming a flag!
+  domunclaiming: A flag claimed by Team %1% is being unclaimed!
+  domunclaimingby: A flag claimed by Team %1% is being unclaimed by %2%!
+  spawnremoved: 'Spawn removed: %1%'
+  select2: Select two points before trying to save.
+  joinarena: Arena is starting! Type /pa %1% to join!
+  arenatypeunknown: Arena Type '%1%' unknown. Please add the corresponding arena jar file!

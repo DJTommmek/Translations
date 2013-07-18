@@ -1,0 +1,52 @@
+﻿area.permissions:[CB] V teto oblastni na toto nemas pravo!
+mech.anchor.create:[CB] Chunk Anchor Created!
+mech.bridge.create:[CB] Vytvoril jsi most!
+mech.bridge.end-create:[CB] vytvoril jsi konec mostu!
+mech.bridge.material:[CB] Most musi byt cely z jednoho materialu!
+mech.bridge.other-sign:[CB] Na druhe strane musi byt cedulka [bridge], mozna je jen prilis daleko.
+mech.bridge.toggle:[CB] Prepnul jsi most!
+mech.bridge.unusable:[CB] Z tohoto materialu nemuzes udelat most!
+mech.cauldron.leaky:[CB] V kotliku je dira!
+mech.cauldron.no-lava:[CB] V kotliku chybi lava!
+mech.cauldron.stir:[CB] Michas, michas, ale nic se nedeje.
+mech.cauldron.too-small:[CB] Mas moc maly kotlik!
+mech.command.create:[CB] Vytvoril jsi cedulku s prikazem!
+mech.cook.create:[CB] Vytvoril jsi pec!
+mech.cook.ouch:[CB] Au! To pali!
+mech.dgate.create:[CB] Vytvoril jsi malou branu!
+mech.door.create:[CB] Vytvoril jsi dvere!
+mech.door.material:[CB] Dvere musi byt cele z jednoho materialu!
+mech.door.other-sign:[CB] Na druhe strane musi byt cedulka [door], mozna je jen prilis daleko.
+mech.door.toggle:[CB] Prepnul jsi dvere!
+mech.door.unusable:[CB] Z tohoto materialu nemuzes udelat dvere!
+mech.gate.create:[CB] Vytvoril jsi branu!
+mech.gate.not-found:[CB] Brana nenalezena!
+mech.gate.toggle:[CB] Prepnul jsi branu!
+mech.group:[CB] Nejsi clenem vyzadovane skupiny!
+mech.hiddenswitch.key:[CB] Klic nesedi!
+mech.lift.down: [CB] Premistil ses o patro nize.
+mech.lift.down-sign-created:[CB] Vytvoril jsi vytah dolu.
+mech.lift.floor:[CB] Podlazi:
+mech.lift.no-floor:[CB] Dal uz vytah nevede!
+mech.lift.obstruct:[CB] Na miste, kde stojis, nelze vytah pouzit!
+mech.lift.target-sign-created:[CB] Vytvoril jsi konecnou stanici vytahu.
+mech.lift.up: [CB] Premistil ses o patro nize.
+mech.lift.up-sign-created:[CB] Vytvoril jsi vytah nahoru.
+mech.lightswitch.create:[CB] Vytvoril jsi vypinac!
+mech.not-enough-blocks: [CB] Není dostatek bloku pro prepnuti tohoto zarizeni!
+mech.painting.editing:[CB] Nyni muzes upravovat obraz!
+mech.painting.stop:[CB] Prestal jsi upravovat obraz!
+mech.painting.used:[CB] Tenhle obraz uz upravuje hrac:
+mech.pay.create:[CB] Pay Created!
+mech.pistons.bounce.created:[CB] Piston Bounce Mechanic Created!
+mech.pistons.crush.created:[CB] Piston Crush Mechanic Created!
+mech.pistons.superpush.created:[CB] Piston Super-Push Mechanic Created!
+mech.pistons.supersticky.created:[CB] Piston Super-Sticky Mechanic Created!
+mech.restock:[CB] Mechanismus doplnen!
+mech.teleport.alert:[CB] Teleportoval ses!
+mech.teleport.create:[CB] Vytvoril jsi teleport!
+mech.use-permission:[CB] Na toto nemas pravo.
+mech.teleport.range:[CB] Mimo rozsah!
+mech.teleport.sign:[CB] Na tve pozici není cedule!
+mech.use-permission:[CB] Nemas prava pro pouziti tohoto mechanismu.
+vehicles.create-permission:[CB] Nemas pravo na vytvoreni tohoto mechanismu (vehicle)!

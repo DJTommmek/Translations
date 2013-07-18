@@ -1,0 +1,98 @@
+Použil jsem /rp a postavil jsem si dům, ale když jsem přišel znovu, zjistil jsem, že ho někdo rozkradl. Co udělám? (radio)
+  a) nahlásím adminovi
+  b) nic
+  c) začnu nadávat všem okolo a zjistím kdo to byl  
+  d) přestanu hrát
+
+Uvidím někoho, kdo si cheatuje věci nebo nějak podvádí. Co udělám? (radio)
+  a) nic
+  b) nahlásím ho někomu z vedení
+  c) zeptám se ho, jestli mi něco nedá
+
+Co to je IRC? (radio)
+  a) chat
+  b) OP hráč
+  c) speciální cheat pro VIP hráče
+
+Jak se dostanu do Netheru? (radio)
+  a) /warp nether
+  b) jakoukoliv nether branou
+  c) pouze vlastní nether branou
+  d) nijak, Nether je vypnutý
+
+Kde seženu Nether Brick/Nether wart/Quartz Ore/Soul sand? (radio)
+  a) v Netheru
+  b) požádám admina
+  c) použiji příkaz /give
+  d) koupím v shopu na spawnu
+  e) koupím od hráčů na trhu
+
+Můžu zapálit Nether portal? (radio)
+  a) ne
+  b) ano, ale maximálně dva
+  c) ano, neomezeně
+
+Co platí o pozemcích? (radio)
+  a) každý hráč má nárok na 1 pozemek v každém městě
+  b) nováčci si mohou vytvořit pozemek v přírodě, do měst nesmí
+  c) jediný, kdo může přidělovat pozemky, je admin
+  d) pozemek má velikost 20x20 bloků a je vysoký od bedrocku po nebe
+
+Co mám udělat, když jsem hráč a chci změnit čas? (radio)
+  a) Čas měnit nemůžu, proto se zeptám admina
+  b) Použiju vlastnost modu TooManyItems a změním si čas v něm                  #Tak mě napadlo, jde to?
+  c) Požádám nějakého VIP
+  d) Hráči čas měnit nemohou, mám smůlu
+
+Jaký je nejlepší způsob, jak zakázat hráči Gigla otevírat truhly na mém pozemku ve městě? (radio)
+  a) Postavím si kolem domu obrovský plot
+  b) Použiju příkaz /res pset Gigla use false
+  c) Nemusím dělat nic, na mém pozemku nikdo kromě mě truhly otevírat nemůže.
+  d) Všechny truhly si pečlivě zamknu příkazem /cprivate
+
+Které z těchto příkazů slouží k vypsání nějakých informací? (checkbox)
+  a) /sethome
+  b) /dotest navod                                                              #Chci vedet, jestli to budou zkouset psat, tak aby se to lepe hledalo.. :D
+  c) /faq
+  d) /warps
+  e) /help
+  d) /informace
+
+Kolik slotů má server? (text)
+  [---]
+
+Jakým příkazem nastavím kamaráda nickem Gigla jako dalšího člena na svém Skyblock ostrově? (text)
+  [---]
+
+  a) 
+  b) 
+  c) 
+  d) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Budu vymýšlet další...

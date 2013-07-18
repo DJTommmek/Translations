@@ -1,0 +1,95 @@
+msgs:
+  skyblock: Napis "/sb help" pro dalsi informace.
+  stopping: Zastavuji SkyBlock...
+  playersInSb: Na SkyBlocku jsou hraci. SkyBlock nemuze byt zastaven!
+  isNowOffline: SkyBlock je prave vypnuty.
+  isOffline: SkyBlock je vypnuty.
+  errorOccured: Chyba...
+  starting: Spoustim SkyBlock...
+  isNowOnline: SkyBlock je zapnuty.
+  mustBeOffline: SkyBlock musi byt pred restartem vypnuty.
+  reseting: Resetuji SkyBlock...
+  isNowReseted: SkyBlock byl resetovan.
+  configReloaded: Config byl znovu nacten.
+  languageReloaded: Jazyk byl znovu nacten.
+  languageChanged: Jazyk byl zmenen.
+  languageNotChanged: Jazyk nebyl zmenen.
+  languageFileNotExists: Jazykovy soubor neexistuje.
+  notAuthorized: Nemas pravo!
+  statusOffline: Je Offline
+  statusOnline: Je Online.
+  numberOfIslands: 'Pocet ostrovu: '
+  numberOfPlayers: 'Pocet hracu: '
+  commands:
+    join: §6/skyblock join§7 - pripojeni na SkyBlock (hlavni vez)
+    start: §6/skyblock start§7 - ziskani ostrovu a teleport na nej (pote pouze teleport na nej)
+    leave: §6/skyblock leave§7 - opusteni SkyBlock sveta
+    tower: §6/skyblock tower§7 - teleport na hlavni vez
+    newIsland: §6/skyblock newIsland §a[nick]§7 - zadost o novy ostrov nebo pro nejakeho hrace
+    setOffline: §6/skyblock set offline§7 - deaktivuje SkyBlock
+    setOnline: §6/skyblock set online§7 - aktivuje SkyBlock
+    towerReCreate: §6/skyblock tower recreate§7 - obnovi vez na defaultni vzhled
+    setLanguage: §6/skyblock set language §c<jazyk>§7 - zmeni jazyk
+    setGameMode: §6/skyblock set gamemode §c<option>§7 - <build> nebo <pvp>
+    setClosed: §6/skyblock set closed§7 - uzavre SkyBlock (ostatni se nebudou moci teleportovat)
+    setOpened: §6/skyblock set opened§7 - otevre SkyBlock
+    setOwner: §6/skyblock setOwner §c<cislo ostrova> <nick>§7 - zmeni majitele ostrova
+    reset: §6/skyblock reset§7 - resetuje SkyBlock
+    reloadConfig: §6/skyblock reload config§7 - znovunacte konfiguracni soubory
+    reloadLanguage: §6/skyblock reload language§7 - znovunacte jazykove preklady
+    status: §6/skyblock status§7 - zobrazi status
+    home: §6/skyblock xxx§7 - kde jsou krizky, jsou prikazy nefunkcni \/
+    homeAdd: §6/skyblock xxx §c<player>§7 - prida hrace na list se svymi prateli
+    homeRemove: §6/skyblock xxx §c<player>§7 - odstrani hrace ze seznamu svych pratel
+    homeJoin: §6/skyblock xxx §c<player>§7 - teleport na ostrov z listu pratel
+    homeList: §6/skyblock xxx §7 - zobrazi cely seznam tvych pratel
+    homeSet: §6/skyblock xxx §7 - zmena domovske lokace SkyBlocku
+  wrongArgs: Nespravny nebo neuplny argument
+  welcome1: 'Vitej v zemi SkyBlocku pro multiplayer! Prave ted tady je '
+  welcome2: ' ostrovu a  '
+  welcome3: ' hracu. Pouzij "/sb start" pro ziskani vlastniho ostruvku.'
+  welcomeBack: 'Vitej zpet '
+  welcomeBroadcast1: 'Hrac '
+  welcomeBroadcast2: ' has joined the SkyBlock game.'
+  toNewPlayer: Nepadej a nevytvarej obsidian :-).
+  showIslandNumber: 'Jsi na ostrove cislo '
+  leftSkyblock: Opustil jsi skyblock.
+  wrongPlayerName: Neni tady hrac s timto nickem. 
+  newIslandPlayer1: 'Hrac '
+  newIslandPlayer2: ' ziskal novy ostrov.'
+  gotNewIsland1: 'Hrac '
+  gotNewIsland2: ' ti daroval ostrov.'
+  sign1Line1: Vitej na
+  sign1Line2: multiplayerovem
+  sign1Line3: SkyBlocku!
+  sign2Line1: Pro dalsi
+  sign2Line2: informace
+  sign2Line3: napis prikaz
+  sign2Line4: /sb help
+  playerDied1: 'Jeden hrac zemrel. zbyva '
+  playerDied2: ' hracu.'
+  playerWinBroadcast1: 'Hrac '
+  playerWinBroadcast2: ' vyhral hru. Gratulujeme!'
+  betterSpecify: Existuje vic hracu s podobnym jmenem.
+  gameModeChanged: Tvuj herni mod byl zmenen.
+  friendRemoved: Tento hrac byl odstranen ze seznamu pratel.
+  friendAdded: Tento hrac byl pridan na seznam pratel.
+  notFriendFromYou: Na toto nemas pravo, nejsi na seznamu pratel!
+  playerAddedYou: ' si te pridal na svuj seznam pratel.'
+  isNowClosed: SkyBlock je zavreny.
+  isNowOpened: SkyBlock je otevreny.
+  isClosed: SkyBlock je zavreny.
+  areaBorders: Chranena oblast nebo hranice.
+  onlyInBuildMode: Tohle muzes udelat jen ve stavebnim rezimu!
+  backOnTower: Vratil jsi se zpet na hlavni vez.
+  spawnTowerReCreated: Hlavni vez byla znovu vytvorena.
+  noMoreLivesAndIslands: KONEC HRY!!!. Nezbyvaji hraci ani ostrovy!
+  invalidIslandNumber: Neplatne cislo ostrovu!
+  changedOwnerTo: 'Novy majitel ostrvova je '
+  spawnLocationChanged: Tva domovska lokace byla zmenena.
+  changeOfHomeLocationOnlyInOwnArea: Svuj spawn nemuzes zmenit na cizi oblasti.
+  noIslandTeleportImpossible: Nemas ostrov, nemuzes se teleportovat k pratelum.
+  areaOfSpawnTower: Zona hlavni veze.
+  onlyOnTower: Tento prikaz funguje pouze na hlavni vezi.
+  onlyOutsideOfSb: Tento prikaz funguje pouze mimo tvuj SkyBlock ostrov.
+  onlyInsideOfSb: Tento prikaz funguje pouze na tvem SkyBlock ostrove.

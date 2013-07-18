@@ -1,0 +1,367 @@
+# Pokud optrebujete s nastavenim pomoct, prectete si pdfko prilozene ve slozce SignShop
+# nebo navstivte nase webove stranky tiny.cc/SignShop
+#  --------------------------------------------  #
+# |              Preklad by                    | #
+# |            drali_, DJTommek                | #
+# |           http://mc-minres.eu              | #
+# | cesky tutorial na pouzivani techto cedulek | #
+# |        a jejich zakladni pouziti           | #
+# |       http://mc-miners.eu/tutorial         | #
+# |--------------------------------------------| #
+# | toto je VOLNY preklad                      | #
+# | neotestovano: Restricted, banks            | #
+# | neprelozeno: banks                         | #
+#  --------------------------------------------  #
+
+MaxSellDistance: 0
+MaxShopsPerPerson: 0
+ShopCooldownMilliseconds: 0
+MessageCooldownSeconds: 0
+ChunkLoadRadius: 2
+TransactionLog: false
+OPOverride: true
+AllowVariableAmounts: false
+AllowEnchantedRepair: true
+DisableEssentialsSigns: true
+AllowUnsafeEnchantments: false
+AllowMultiWorldShops: false
+EnablePermits: false
+PreventVillagerTrade: false
+ProtectShopsInCreative: true
+fixIncompleteOperations: true
+EnablePriceFromWorth: false
+EnableDynmapSupport: true
+Languages: english
+LinkMaterial: redstone
+UpdateMaterial: ink_sack
+DestroyMaterial: gold_axe
+Blacklisted_items:
+- 0
+signs:
+  Buy: takePlayerMoney,takeShopItems,giveOwnerMoney,givePlayerItems
+  Sell: takeVariablePlayerItems,takeOwnerMoney,giveShopItems,givePlayerMoney
+  Donate: takeVariablePlayerItems,giveShopItems
+  DonateHand: takeItemInHand,giveShopItems{allowemptychest}
+  Slot: takePlayerMoney,giveOwnerMoney,RandomItem,givePlayerItems{oneslot},takeShopItems
+  iSell: takeVariablePlayerItems,givePlayerMoney,playerIsOp
+  iBuy: takePlayerMoney,givePlayerItems,playerIsOp
+  gBuy: takePlayerMoney,givePlayerItems,takeShopItems,playerIsOp
+  gSell: takeVariablePlayerItems,givePlayerMoney,giveShopItems,playerIsOp
+  Day: takePlayerMoney,setDayTime,playerIsOp
+  Night: takePlayerMoney,setNightTime,playerIsOp
+  Rain: takePlayerMoney,setRaining,playerIsOp
+  ClearSkies: takePlayerMoney,setClearSkies,playerIsOp
+  DeviceOn: takePlayerMoney,giveOwnerMoney,setRedstoneOn
+  DeviceOff: takePlayerMoney,giveOwnerMoney,setRedstoneOff
+  Toggle: takePlayerMoney,giveOwnerMoney,toggleRedstone
+  Device: takePlayerMoney,giveOwnerMoney,setRedStoneOnTemp
+  Heal: takePlayerMoney,healPlayer,playerIsOp
+  Repair: takePlayerMoney,repairPlayerHeldItem,playerIsOp
+  Dispose: takeItemInHand
+  DeviceItem: takePlayerItems,giveShopItems,setRedStoneOnTemp
+  iSlot: takePlayerMoney,RandomItem,givePlayerItems{oneslot},playerIsOp
+  Enchant: enchantItemInHand,takePlayerMoney,playerIsOp
+  iBuyXP: givePlayerXP,takePlayerMoney,playerIsOp
+  iSellXP: takePlayerXP,givePlayerMoney,playerIsOp
+  iTrade: Chest{1},takePlayerItems,Chest{2},givePlayerItems,playerIsOp
+  Trade: Chest{1},takePlayerItems,giveShopItems,Chest{2},givePlayerItems,takeShopItems
+  TpToOwner: takePlayerMoney,playerIsOp,runCommand
+  Class: takePlayerInventory{clearArmor},takePlayerMoney,givePlayerItems{ignorefull},playerIsOp
+  Disenchant: disenchantItemInHand,takePlayerMoney,playerIsOp
+  Command: takePlayerMoney, playerIsOp,runCommand
+  Share: ShareSign
+  Restricted: RestrictedSign
+  Bank: BankSign
+  Jukebox: playJukebox,takePlayerMoney
+  Kit: givePlayerItems, takePlayerMoney, oneTime, playerIsOp
+  ResetKit: takePlayerMoney, resetOneTime{Kit}, playerIsOp
+  iXPBuy: takePlayerXP{raw},givePlayerItems,playerIsOp
+  iXPSell: givePlayerXP{raw},takePlayerItems,playerIsOp
+messages:
+  setup:
+    Buy: Vytvoril jsi cedulku na prodej !items za !price.
+    Sell: Vytvoril jsi cedulku na vykup !items za !price.
+    Donate: Vytvoril jsi dotovaci cedulku na sbirani !items.
+    DonateHand: Vytvoril jsi dotovaci cedulku, ktera prijima cokoliv.
+    Slot: Vytvoril jsi loterii. Cena je !price a mozna vyhra !items!
+    iBuy: Vytvoril jsi bezedny obchod s !items za !price.
+    iSell: Vytvoril jsi bezedny vykup !items za !price.
+    gBuy: Vytvoril jsi cedulku na charitativni prodej !items za !price! (Pozor, v tomto obchode neziskas zadne penize)             
+    gSell: Vytvoril jsi cedulku na charitativni vykup !items za !price! (Pozor, v tomto obchode neztratis zadne penize)            
+    Day: Vytvoril jsi ovladac casu. Jeho pouziti stoji !price.
+    Night: Vytvoril jsi ovladac casu. Jeho pouziti stoji !price.
+    Rain: Vytvoril jsi ovladac pocasi. Jeho pouziti stoji !price.
+    ClearSkies: Vytvoril jsi ovladac pocasi. Jeho pouziti stoji !price.
+    DeviceOn: Vytvoril jsi cedulku na zapnuti obvodu. Jeji pouziti stoji !price.
+    DeviceOff: Vytvoril jsi cedulku na vypnuti obvodu. Jeji pouziti stoji !price.
+    Toggle: Vytvoril jsi prepinac obvodu. Jeho pouziti stoji !price.
+    Device: Vytvoril jsi cedulku na docasne zapnuti obvodu. Jeji pouziti stoji !price.
+    Heal: Vytvoril jsi lekarnu. Jeji pouziti stoji !price.                                                                       
+    Repair: Vytvoril jsi opravovaci cedulku. Jeji pouziti stoji !price.
+    Dispose: Vytvoril jsi odpadkovou ceduli.
+    DeviceItem: Vytvoril jsi cedulku na docasne zapnuti obvodu. Jeji pouziti stoji !items.
+    iSlot: Vytvoril jsi bezednou loterii. Cena je !price a mozna vyhra !items!
+    Enchant: Vytvoril jsi enchantovaci cedulku (!enchantments). Jeji pouziti stoji !price.
+    iSellXP: Vytvoril jsi cedulku na vykup !xp XP za !price.
+    iBuyXP: Vytvoril jsi cedulku na prodej !xp XP za !price.
+    iTrade: Vytvoril jsi bezedny vymenny obchod. Chces !chest1 a nabizis !chest2.
+    Trade: Vytvoril jsi vymenny obchod. Chces !chest1 a nabizis !chest2.
+    TpToOwner: Vytvoril jsi ukazkovou cedulku, ktera teleportuje zakazniky k !owner za !price.
+    Class: Vytvoril jsi obchod s urcitym inventarem za !price!                                                                             
+    Disenchant: Vytvoril jsi cedulku na odstraneni enchantu. Jeji pouziti stoji !price.
+    Command: Vytvoril jsi cedulku na spousteni prikazu. Jeji pouziti stoji !price.
+    Jukebox: Vytvoril jsi cedulku prehravajici CD nahravky. Jeji pouziti stoji !price.
+    Kit: Vytvoril jsi cedulku na prodej kitu (!items) za !price. Tuto cedulku muze kazdy pouzit pouze jednou.                      
+    ResetKit: Vytvoril jsi cedulku, ktera pomoci parametru !param vyresetuje Kit cedulky!                                                                      
+    iXPBuy: Vytvoril jsi bezedny prodej !items za !xp XP.
+    iXPSell: Vytvoril jsi bezedny vykup !items za !xp XP.
+  confirm:
+    Buy: Chces koupit !items za !price? Klepni pravym tlacitkem!
+    Sell: Chces prodat !items za !price? Klepni pravym tlacitkem!
+    Donate: Chces darovat !items? Klepni pravym tlacitkem!
+    DonateHand: Chces darovat !items? Klepni pravym tlacitkem!
+    Slot: Chces vsadit !price a zahrat si tento automat? Klepni pravym tlacitkem!
+    iBuy: Chces koupit !items za !price? Klepni pravym tlacitkem!
+    iSell: Chces prodat !items za !price? Klepni pravym tlacitkem!
+    gBuy: Chces koupit !items za !price? Klepni pravym tlacitkem!
+    gSell: Chces prodat !items za !price? Klepni pravym tlacitkem!
+    Day: Chces nastavit noc za !price? Klepni pravym tlacitkem!
+    Night: Chces nastavit den za !price? Klepni pravym tlacitkem!
+    Rain: Chces spustit dest za !price? Klepni pravym tlacitkem!
+    ClearSkies: Chces zastavit dest za !price? Klepni pravym tlacitkem!
+    DeviceOn: Chces spustit toto zarizeni za !price? Klepni pravym tlacitkem!
+    DeviceOff: Chces vypnout toto zarizeni za !price? Klepni pravym tlacitkem!
+    Toggle: Chces prepnout toto zarizeni za !price? Klepni pravym tlacitkem!
+    Device: Chces docasne spustit toto zarizeni za !price? Klepni pravym tlacitkem!
+    Heal: Chces se nechat uzdravit za !price? Klepni pravym tlacitkem!
+    Repair: Chces opravit to, co mas v ruce, za !price? Klepni pravym tlacitkem!
+    Dispose: Chces vyhodit !items?
+    DeviceItem: Chces spustit tnto obvod za !items? Klepni pravym tlacitkem!
+    iSlot: Chces vsadit !price a zahrat si tento neomezene doplnovany automat? Klepni pravym tlacitkem!
+    Enchant: Chces na svou zbran dat enchant !enchantments za !price? Klepni pravym tlacitkem!
+    iSellXP: Chces prodat !xp XP za !price? Klepni pravym tlacitkem!
+    iBuyXP: Chces koupit !xp XP za !price? Klepni pravym tlacitkem!
+    iTrade: Chces vymenit !chest2 za !chest1? Klepni pravym tlacitkem!
+    Trade: Chces vymenit !chest2 za !chest1? Klepni pravym tlacitkem!
+    TpToOwner: Chces se teleportovat k !owner za !price? Klepni pravym tlacitkem!
+    Class: Chces si koupit inventar (!items) za !price? Klepni pravym tlacitkem!
+    Disenchant: Chces odenchantovat vec kterou mas v ruce za !price? Klepni pravym tlacitkem!
+    Command: Chces spustit tyto prikazy za !price? Klepni pravym tlacitkem!
+    Jukebox: Chces si prehrat nahravku za !price? Klepni pravym tlacitkem!
+    Kit: Chces si koupit tento kit (!items) za !price? Klepni pravym tlacitkem! Pozor, kit si muzes koupit pouze jednou!
+    ResetKit: Chces vyresetovat Kity (!param) za !price? Klepni pravym tlacitkem!
+    iXPBuy: Chces si koupit !items za !xp XP? Klepni pravym tlacitkem!
+    iXPSell: Chces prodat !items za !xp XP? Klepni pravym tlacitkem!
+  transaction:
+    Buy: Koupil jsi !items za !price.
+    Sell: Prodal jsi !items za !price!
+    Donate: Daroval jsi !items.
+    DonateHand: Daroval jsi !items.
+    Slot: Vyhral jsi !items!
+    iBuy: Koupil jsi !items za !price.
+    iSell: Prodal jsi !items za !price.
+    gBuy: Koupil jsi !items za !price.
+    gSell: Prodal jsi !items za !price.
+    Day: Zmenil jsi cas na rano za !price.
+    Night: Zmenil jsi cas na noc za !price.
+    Rain: Spustil jsi dest za !price.
+    ClearSkies: Nastavil jsi jasnou oblohu za !price.
+    DeviceOn: Zapnul jsi tento obvod za !price.
+    DeviceOff: Vypnul jsi tento obvod za !price.
+    Toggle: Prepnul jsi tento obvod za !price.
+    Device: Docasne jsi zapnul tento obvod za !price.
+    Heal: Byl jsi uzdraven za !price.
+    Repair: Opravil sis nastroj za !price.
+    Dispose: Vyhodil jsi !items!
+    DeviceItem: Docasne jsi zapnul tento obvod za !items.
+    iSlot: Vyhral jsi !items!
+    Enchant: Koupil sis enchant !enchantments za !price.
+    iSellXP: Prodal jsi !xp XP za !price.
+    iBuyXP: Koupil sis !xp XP za !price.
+    iTrade: Vymenil jsi !chest1 za !chest2.
+    Trade: Vymenil jsi !chest1 za !chest2.
+    TpToOwner: Teleportoval jsi se k !owner za !price.
+    Class: Vybavil sis inventar (!items) za !price.
+    Disenchant: Odstranil jsi enchant na svem nastroji za !price.
+    Command: Spustil jsi prikaz za !price.
+    Jukebox: Zapnul jsi JukeBox za !price.
+    Kit: Koupil sis kit !items za !price. Pokud si ho budes chtit koupit znovu, musis nejprve pouzit cedulku ResetKit.
+    ResetKit: Vyresetoval jsi Kity (!param) za !price.
+    iXPBuy: Koupil sis !items za !xp XP.
+    iXPSell: Prodal jsi !items za !xp XP.
+  transaction_owner:
+    Buy: \!customer si od tebe koupil !items za !price.
+    Sell: \!customer ti prodal !items za !price.
+    Donate: \!customer ti daroval !items.
+    DonateHand: \!customer ti daroval !items.
+    Slot: \!customer hral na tvem automatu za !price a vyhral !items.
+    iBuy: ''
+    iSell: ''
+    gBuy: \!customer si koupil !items v tvem charitativnim obchode.
+    gSell: \!customer prodal tvemu charitativnimu obchodu !items.
+    Day: ''
+    Night: ''
+    Rain: ''
+    ClearSkies: ''
+    DeviceOn: \!customer zapnul tvuj obvod za !price.
+    DeviceOff: \!customer vypnul tvuj obvod za !price.
+    Toggle: \!customer prepnul tvuj obvod za !price.
+    Device: \!customer docasne zapnul tvuj obvod za !price.
+    Heal: ''
+    Repair: ''
+    Dispose: ''
+    DeviceItem: \!customer docasne zapnul tvuj obvod za !items.
+    iSlot: ''
+    Enchant: ''
+    iSellXP: ''
+    iBuyXP: ''
+    iTrade: ''
+    Trade: \!customer vymenil !chest1 za !chest2.
+    TpToOwner: ''
+    Class: ''
+    Disenchant: ''
+    Command: ''
+    Jukebox: \!customer si u tebe pustil nahravku za !price.
+    Kit: ''
+    ResetKit: ''
+    iXPBuy: ''
+    iXPSell: ''
+  help:
+    Buy: Cedulka Koupit (Buy) vezme penize zakaznikovi a preda mu prodavane veci z bedny.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu.  Do bedny dej tolik veci, kolik chces za danou cenu prodat. Vezmi si do ruky !linkmaterial, bouchni do bedny a potom na cedulku.
+    Sell: Cedulka Prodat (Sell) zaplati zakaznikovi a vezme z jeho inventare vykupovane predmety.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu.  Do bedny dej tolik veci, kolik chces za danou cenu prodat. Vezmi si do ruky !linkmaterial, bouchni do bedny a potom na cedulku.
+    Donate: Cedulka Darovat (Donate) bere hraci predem urcene predmety.  Na druhem, tretim i ctvrtem radku muze byt libovolny text.  Do bedny dej veci ktere chces vybirat.  Vezmi si do ruky !linkmaterial, bouchni do bedny a potom na cedulku.
+    DonateHand: Cedulka Odevzdat (DonateHand) bere hraci veci, ktere drzi v ruce.  Na druhem, tretim i ctvrtem radku muze byt libovolny text.  Postav prazdnou bednu, klikni na ni s !linkmaterial v ruce a pote klikni na cedulku.
+    Slot: Cedulka Automat (Slot) je sazeci automat. Hrac zaplati urcene penize a v bedne se pak nahodne vybere nektery z plnych slotu. Vsechny predmety v nem se hraci presunou do inventare.
+    iBuy: Cedulka iKoupit (iBuy) je bezedna varianta cedulky Koupit. Zakaznik zaplati a dostane predmety, ale v bedne predmety neubydou a zaplacene penize se neprictou na nici ucet (majitel z obchodu nema zadny vydelek, ale ani ho nemusi plnit predmety na prodej).  iKoupit se vytvari stejne jako cedulka Koupit.  Bedna muze byt po vytvoreni obchodu zborena.
+    iSell: Cedulka iProdat je bezedna varianta cedulky Prodat.  Zakaznik odevzda predmety a dostane zaplaceno, ale penize jdou z niciho uctu a v bedne se zadne predmety neobjevi (majitel obchodu nemusi zakaznikovi platit, ale nic z obchodu nedostane).  Vytvari se stejne jako cedulka Prodat. Bedna muze byt po vytvoreni obchodu znicena.
+    gBuy: Cedulka gKoupit (gBuy) vezme penize zakaznikovi a preda mu prodavane veci z bedny. Majitel sice do bedny musi dodavat predmety, ale zadne penize za prodane veci nedostane. gKoupit se vytvari stejne jako cedulka Koupit.
+    gSell: Cedulka gProdat (gSell) zaplati zakaznikovi a vezme z jeho inventare vykupovane predmety. Majitel sice bednu muze vybirat, ale penize se odecitaj z uctu nikoho. gProdat se vytvari stejne jako cedulka Prodat.
+    Day: Cedulka Den (Day) odecte zakaznikovi penize a nastavi cas na rano.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    Night: Cedulka Noc (Night) odecte zakaznikovi penize a nastavi cas na noc.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    Rain: Cedulka Dest (Rain) odecte zakaznikovi penize a spusti bourku.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    ClearSkies: Cedulka Sucho (ClearSkies) odecte zakaznikovi penize a nastavi slunecne pocasi.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    DeviceOn: Cedulka Zapnout (DeviceOn) odecte zakaznikovi penize a zapne redstone packu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Packu, kterou chces prepinat, urcis kliknutim s !linkmaterial.
+    DeviceOff: Cedulka Vypnout (DeviceOff) odecte zakaznikovi penize a vypne redstone packu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Packu, kterou chces prepinat, urcis kliknutim s !linkmaterial.
+    Toggle: Cedulka Prepnout (Toggle) odecte zakaznikovi penize a prepne redstone packu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Packu, kterou chces prepinat, urcis kliknutim s !linkmaterial.
+    Device: Cedulka Device odecte zakaznikovi penize a docasne zapne redstone packu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Packu, kterou chces prepinat, urcis kliknutim s !linkmaterial.
+    Heal: Cedulka Lekarna (Heal) odecte zakaznikovi penize a doplni mu maximalni zdravi.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    Repair: Cedulka Kovar (Repair) odecte zakaznikovi penize a oprai predmet, ktery ma v ruce.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    Dispose: Cedulka Zahodit (Dispose) vezme predmety z ruky zakaznika a znici je. Muze na ni byt libovolny text.
+    DeviceItem: Cedulka DeviceItem vezme zakaznikovi predmety a docasne zapne redstone packu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Pro nastaveni cedulky nejprve klikni s !linkmaterial v ruce na packu (packy). Pote klikni na bednu naplnenou vecmi, ktere pozadujes za jedno zapnuti.
+    iSlot: Cedulka iAutomat (iSlot) odecte zakaznikovi penize a vylosuje mu jeden ze slotu v bedne, podobne jako cedulka Automat (Slot). V iAutomat ale predmety neubyvaji a majitel neziskava ze sazek zadne penize. Bedna muze byt po spojeni s cedulkou znicena.
+    Enchant: Cedulka Enchant (Enchant) odecte zakaznikovi penize a da na predmet v jeho ruce enchant.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Uroven enchantu se urci vlozenim enchantovaneho predmetu do bedny. Majitel obchodu neziska zadne penize.
+    iSellXP: Cedulka iProdatXP (iSellXP) odecte zakaznikovi penize a da mu XP.
+    iBuyXP: Cedulka iKoupitXP (iBuyXP) odecte zakaznikovi XP a zaplati mu penize. Druhy radek muze byt libovolny, treti radek urcuje pocet XP a ctvrty radek musi obsahovat cislo urcujici cenu. Majitel obchodu do nej neplati zadne penize.
+    iTrade: Cedulka iVymena (iTrade) je bezedny vymenny obchod podobny cedulce Vymena (Trade). Cedulka vezme zakaznikovi predem urcene predmety a vymeni je za jine.  Na 2, 3 i 4 radku cedulky muze byt libovolny text. Pro nastaveni nejprvni klikni na bednu s vecmi na prodej s !linkmaterial v ruce, potom stejne klikni do bedny s vecmi, ktere chces vykupovat. Protoze jde o bezedny obchod kde majitel nic neziska, muzou byt obe bedny po spojeni zniceny.
+    Trade: Cedulka Vymena (Trade) vezme predmety z inventare zakaznika a vymeni je za jine. Na 2, 3 a 4 radku cedulky muze byt libovolny text.  Pro nastaveni nejprvni klikni na bednu s vecmi na prodej s !linkmaterial v ruce, potom stejne klikni do bedny s vecmi, ktere chces vykupovat. Nakonec klikni na cedulku.
+    TpToOwner: 'Cedulka TpToOwner odecte zakaznikovi penize a vymenou ho teleportuje k majiteli obchodu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.  Toto je priklad cedulky s vlastnim prikazem, vice info ve slozce: plugins/SignShop.'
+    Class:  Cedulka Class odecte zakaznikovi penize a vymeni jeho inventar za predmety v bedne.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu.  Do bedny dej tolik veci, kolik chces za danou cenu prodat. Vezmi si do ruky !linkmaterial, bouchni do bedny a potom na cedulku.  Majitel tohoto obchodu z nej nema zadny zisk.
+    Disenchant: Cedulka Disenchant odecte zakaznikovi penize a smaze enchant z predmetu, ktery drzi v ruce.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    Command: Cedulka Prikaz (Command) odecte zakaznikovi penize a spusti prikaz. Na druhem a tretim radku je prikaz, psany bez lomitka, na ctvrtem radku musi byt cislo urcujici cenu. Plugin Signshop nemuze overit, jestli doslo k spravnemu provedeni prikazu a proto zakaznikovi odecte penize, i kdyz se prikaz nespusti.
+    Jukebox: Cedulka Jukebox odecte zakaznikovi penize a prehraje mu nahravku z bedny. Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Pro vytvoreni cedulky klikni nejprve na bednu s musicdisky s !linkmaterial v ruce. Pri spousteni cedulky se prehraje vzdy ten music disk, ktery je na rade.
+    Kit:  Cedulka Kit odecte zakaznikovi penize, a da mu predmety z bedny.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu.  Do bedny dej tolik veci, kolik chces za danou cenu prodat. Vezmi si do ruky !linkmaterial, bouchni do bedny a potom na cedulku.  Kazdy hrac muze pouzit pouze jednu cedulku Kit, potom se musi resetovat pomoci cedulky ResetKit.
+    ResetKit: Cedulka ResetKit odecte zakaznikovi penize a vymaze jeho zaznamy o cedulkach Kit, aby je mohl pouzit znovu.  Na druhem a tretim radku muze byt libovolny text, na ctvrtem radku musi byt cislo urcujici cenu. Majitel tohoto obchodu z nej nema zadny zisk.
+    iXPBuy: Cedulka iXPKoupit (iXPBuy) je bezedny obchod, ktery odecte zakaznikovi XP body a da mu predmety.  
+    iXPSell: Cedulka iXPProdat (iXPSell) odebere zakaznikovi predmety a zaplati mu pomoci XP.  Na druhem a ctvrtem radku muze byt libovolny text, treti radek musi obsahovat pocet XP.  Pro vytvoreni obchodu klikni na bednu s predmety na prodej s !linkmaterial v ruce. Tento obchod je bezedny, predmety se tedy nebudou v bedne hromadit a bedna muze byt po vytvoreni obchodu znicena.
+errors:
+  no_permission: Nemas pravo na vytvoreni teto cedulky!
+  no_permission_use: Nemas pravo na pouziti teto cedulky!
+  no_permission_changeowner: Nemas pravo zmenit majitele tohoto obchodu!
+  invalid_operation: Cedulka, kterou chces pouzit, byla spatne vytvorena a je nefunkcni.
+  chest_empty: V obchode doslo zbozi!
+  chest_missing: Pri vytvareni tohoto obchodu potrebujes pripojit alespon jednu bednu!
+  lever_missing: Pri vytvareni tohoto obchodu potrebujes pripojit alespon jednu packu!
+  no_player_money: Nemas dost penez, abys zaplatil! (!price)
+  no_shop_money: Obchodnik uz nema penize, aby ti zaplatil! (!price)
+  out_of_business: Tento obchod skončil.
+  out_of_stock: V tomto obchode doslo zbozi!
+  overstocked: Tento obchod je plny a nemuze dal vykupovat!
+  player_doesnt_have_items: Nemas dost predmetu na zaplacenis! (!items)
+  no_item_in_hand: Pokud chces tuto cedulku pouzit, musis neco drzet v ruce!
+  player_overstocked: Mas plny inventar!
+  sign_location_stored: Cedulka oznacena.
+  made_day: '!player nastavil rano!'
+  made_night: '!player nastavil noc!'
+  made_rain: '!player spustil dest!'
+  made_clear_skies: '!player zastavil dest!'
+  already_on: Tato packa uz je zapnuta
+  already_off: Tato packa uz je vypnuta
+  link_notallowed: Toto nemuzes spojovat!
+  item_already_repair: Vzdyt uz to je opravene!
+  already_raining: Vzdyt uz prsi!
+  already_clear_skies: Vzdyt neprsi!
+  already_full_health: Nepotrebujes lecit!
+  saving: Ukladani obchodu...
+  saved: Obchody ulozeny!
+  shop_removed: Neplatny obchod byl smazan. Pravdepodobne se nachazi ve svete '!world' na souradnicich !x, !y, !z.
+  invalid_item_to_repair: Tato vec nejde opravit.
+  no_item_to_repair: Vec, kterou chces opravit, musis drzet v ruce.
+  backup_fail: Zaloha obchodu se nezdarila!                                                                                           
+  too_far: Bedna je od cedulky moc daleko. Maximalni vzdalenost je !max.
+  too_many_shops: Nemuzes zakladat dalsi obchody. Tvuj limit je !max.
+  enchanted_not_allowed: Nemas pravo na opravu enchantovanych veci.
+  enchantment_missing: V chestu musi byt alespon jeden enchantovany predmet!
+  item_not_enchantable: Na to, co mas v ruce, enchant dat nejde!
+  no_player_xp: Nemas dost XP na prodej! (!xp)
+  no_item_to_disenchant: Pokud chces z neceho odstranit enchant, vezmi to do ruky
+  nothing_to_disenchant: Z tohoto predmetu nejde smazat enchant!
+  multiworld_not_allowed: Nemuzes vytvaret obchody mezi dvema svety!
+  no_permit_owner: Majitel tohoto obchodu jiz nema prava ho nadale provozovat!                                                                  
+  need_permit: Potrebujes mit prava k vytvoreni tohoto obchodu!                                                                              
+  villager_trading_disabled: Na tomto serveru nemuzes obchodovat s villagery!
+  not_allowed_to_link_sharesigns: K tomuto obchodu nemuzes pripojovat dalsi bloky.                                           
+  no_shop_linked_to_sharesign: Tato cedulka pro sdileni (Share) nemuze byt dale sdilena pro dalsi obchody.
+  share_sign_splits_profit: Tato cedulka pro sdileni (Share)  cedulka rozdeluje profit mezi !profits pro obchody na !profitshops
+  registered_share_sign: Oznacena cedulka pro sdileni (share), nyni klikni na obchodni cedulku.
+  unlinked_share_sign: Cedulka pro sdileni (share) byla ze sdileni odstranena.
+  linked_share_sign: Cedulka pro sdileni (share) byla s obchodem uspesne propojena.
+  not_allowed_to_link_restrictedsigns: Nemas pravo propojit tuto Restricted cedulku s timto obchodem.
+  no_shop_linked_to_restrictedsign: Tato Restricted cedulka jeste nebyla s zadnym obchodem propojena.
+  registered_restricted_sign: Oznacena Restricted cedulka, nyni oznac nejaky z obchodu.
+  unlinked_restricted_sign: Spojeni cedulek Restricted a nejakeho obchodu bylo zruesno.
+  linked_restricted_sign: Cedulka Restricted byla s obchodem uspesne propojena.
+  restricted_sign_restricts: Tato cedulka pro filtraci obchodu (Restricted) zakazuje pouziti obchodu v !restrictedshops
+  towny_insufficient_funds: V obchode je nedostatek financnich prostredku!                                                                    
+  towny_owner_not_mayor_or_assistant: Majitel obchodu neni starostou mesta.
+  towny_owner_not_belong_to_town: Majitel obchodu nepatri do zadneho mesta.
+  towny_bank_withdrawls_not_allowed: Nastaveni pluginu Towny neumoznuje vybery z banky!
+  restricted_from_using: Tento obchod nemuzes pouzivat!
+  restricted_but_owner: Tento obchod nemuzes pouzivat, prestoze jsi jeho majitel.                                              
+  item_on_blacklist: Tento predmet (!blacklisted_item) je na blacklistu a proto v obchodech nemuze byt.
+  item_on_blacklist_but_op: Tento predmet (!blacklisted_item) je na blacklistu a proto v obchodech nemuze byt. Jako OP mas vyjimku.
+  block_is_protected: Tento blok je chraneny a nemuzes s nim nic delat.
+  updated_shop: Nastaveni obchodu bylo uspesne zmeneno.
+  failed_to_update_shop: Kvuli chybe nebylo mozne zmenit nastaveni obchodu.
+  price_drawn_from_essentials: Cena byla pouzita z cedulkovych obchodu Essentials.
+  only_one_time: Tento obchod muzes pouzit pouze jednou.
+  nothing_to_reset_ontime: Mas povoleni pouzit resetovaci cedulku (!param) pouze jednou.
+  shop_on_cooldown: Tento obchod nemuzes pouzivat tak casto, pockej par vterin (!cooldown).
+  damaged_items_shop_homogeneous: Poskozene veci se neprijimaji. Obchod musi byt opraven.
+  use_item_to_destroy_shop: Tento obchod je chraneny. K jeho zniceni musis pouzit !destroymaterial.
+  no_items_defined_for_shop: Operace nemuze byt dokoncena, protoze v bedne nejsou zadne predmety.
+  notifications_shop_built: \!player prave vytvoril cedulku !signtype na souradnicich (!x, !y, !z).
+  shop_contains: Tento obchod obsahuje !shopinventory @ !items za cenu !price.
+  not_allowed_to_link_banksigns: You are not allowed to link Bank signs to this shop!                                              # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  no_shop_linked_to_banksign: This Bank sign has not been linked to any shops.                                                     # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno          
+  bank_sign_linked_to_banks: This Bank sign communicates with bank called !bank in the name of the shops at !bankshops.            # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  registered_bank_sign: Registered a Bank sign, please click the Shop sign next.                                                   # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  unlinked_bank_sign: Unlinked Bank sign from Shop.                                                                                # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  linked_bank_sign: Succesfully linked Bank sign to Shop.                                                                          # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  not_allowed_to_use_bank: You are not the owner or a member of !bank Bank so the related Bank sign will be ignored.               # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  no_bank_available: There is no Bank available to process the request, please contact the shop owner.                             # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  no_bank_support: The Economy plugin installed on this server does not support Banks.                                             # Pravdedpodobne plugin BOSeconomy, bohuzel neprelozeno
+  repeated_x_times: (opakovano !times krat)
+commands:
+  TpToOwner:
+  - tp !player !owner
+  Command:
+  - \!line2 !line3
+pricemultipliers:
+  VIPEx:
+    iBuy: 0.7
+    iSell: 1.2
+  BlacksmithEx:
+    Repair: 0.5
+limits:
+  DefaultEx: 5
+  MemberEx: 10
