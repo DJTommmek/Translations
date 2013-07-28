@@ -1,0 +1,238 @@
++## LWC 4 Czech Locale
+ ## author: hofec
+ ## Translate new texts & fixed some bugs by AyACZE for CoolCraft.eu -czech mc servers
+ 
+ ##################
+ ##    General   ##
+@@ -19,13 +20,16 @@ no=%red%Ne
+ 
+ # Some generic responses and block names
+ you=-TVOJE!-
+ chest=Truhla
+ furnace=Kamna
+ dispenser=Dispenzer
+ sign=Cedule
+ wooden_door=Drevene dvere
+ iron_door=Zelezne dvere
+ trap_door=Poklop
+ fence_gate=Branka
+ trapped_chest= Truhla past
+ hopper=  Nasypka
+ 
+ # Internal LWC error (if this shows up, something went terribly wrong most likely)
+ protection.internalerror=%red%[LWC-ERROR] > Rekni toto prosim adminum.%white% :%id%
+@@ -113,7 +117,7 @@ protection.modes.dropxfer.on.finalize=\
+ protection.modes.dropxfer.off.finalize=%blue%Prenosy dropu jsou nyni vypnute.
+ protection.modes.dropxfer.status.off=%blue%Doposud jsi nezaregistroval bednu pro cil prenosu.
+ protection.modes.dropxfer.status.active=%blue%Prenosy dropu jsou momentalne%green% AKTIVNI.
+ protection.modes.dropxfer.status.inactive=%blue%Prenosy dropu jsou momentalne%red% NEAKTIVNI.
+ 
+ # Admin (large command set)
+ 
+@@ -177,7 +181,7 @@ protection.getlimits.group=%blue%%name% muze mit%green% %quota%%blue% zabezpecen
+ 
+ protection.interact.error.blocked=%red%Admin serveru zakazal otevreni tohoto objektu!
+ protection.interact.error.notregistered=%red%Tento objekt neni zaregistrovan.
+ protection.interact.error.alreadyregistered=%red%Jiz jsi tento objekt zaregistroval!
+ protection.interact.error.notowner=%red%Nejsi majitelem tohoto objektu!
+ 
+ # both /cprivate people and /cmodify
+@@ -253,14 +257,15 @@ help.basic=\
+ \n\
+ %blue%[%green%LWC - Ultimatni System Zabezpeceni%blue%]\n\
+ \n\
+ %white%/cprivate %blue%Vytvori soukrome zabezpeceni \n\
+ %white%/cpublic %blue%Vytvori verejne zabezpeceni \n\
+ %white%/cdonation %blue%Vytvori charitni truhlu \n\
+ %white%/lock %lightblue%<heslo> %blue%Vytvori zabezpeceni na heslo \n\
+ %white%/cmodify %blue%Modifikuje jiz existujici zabezpeceni \n\
+ %white%/unlock %lightblue%<heslo> %blue%Odemyka zabezpeceni na heslo \n\
+ %white%/cinfo  %blue%Zobrazi informace o zabezpeceni \n\
+ %white%/climits  %blue%Zobrazi max.pocet zabezpeceni \n\
+ %white%/cremove %blue%Odstrani zabezpeceni (!)\n\
+ %white%/lwc mode %lightblue%<persist|droptransfer> \n\
+ %white%/lwc flag %lightblue%<name> <on|off>%blue% Meni flagy zabezpeceni \n\
+ %white%/lwc menu %lightblue%<basic|advanced> %blue%Zmeni styl tohoto menu.
+@@ -278,11 +283,11 @@ help.creation=\
+ %blue%it (kdokoli jiny zna heslo, muze mit pristup!) \n\
+ \n\
+ %white%%cprivate% %gold%Vytvori soukrome zabezpeceni \n\
+ %blue%Soukrome znamena soukrome. Samozrejme je mozne pridat i ostatni hrace nebo skupiny a to tak, ze zadas jejich jmena za "/cprivate"\n\n\
+ %white%Priklad: \n\
+ %blue%%cprivate% Jmeno_kamarada g:Jmeno_skupiny \n\
+ \n\
+ %blue%Muzes specifikovat vice nez jednoho hrace/skupinu jednim prikazem!
+ 
+ # /lwc -m
+ help.modify=\
+@@ -291,18 +296,18 @@ help.modify=\
+ %cmodify% <Hraci/Skupiny>%gold% Modifikuje jiz existujici zabezpeceni, pridava nebo odebira hrace/skupiny \n\
+ %blue%Vice:%gold% /lwc create%blue%, priklad sourkomeho zabezpeceni \n\
+ \n\
+ %blue%Dalsi prefixy pro hrace/skupiny: \n\
+ %red%-%blue%: Odstrani hrace/skupinu ze zabezpeceni. \n\
+ %red%@%blue%: Hrac ci skupina bude mit pristup k modifikacim bedny a k pridavani pristupu dalsich hracu. Nemuzou ale zadnym zpusobem ovlivnit majitele zabezpeceni. \n\
+ \n\
+ Priklady: \n\
+ %gold%Odstrani pristup skupiny:%blue% %cmodify% -g:NazevSkupiny \n\
+ %gold%Odstrani pristup hrace a prida admina:%blue% %cmodify% -Nazev @AdminJmeno
+ 
+ # /lwc -a
+ help.admin=\
+ \n\
+ %red%LWC Administrace \n\n\
+ /lwc admin view%blue% Zobrazi inventar zabezpeceni jakoby jsi stal vedle nej s pouzitim ID zabezpeceni\n\
+ /lwc admin find%blue% Zobrazi veskeramzabezpeceni na mape \n\
+ /lwc admin forceowner%blue% Zmeni vlastnika zabezpeceni \n\
+@@ -333,28 +338,28 @@ help.flags.redstone.deny=%red%nemuze
+ 
+ # Commands used for menu styles, just so I don't hardcode them :-)
+ cprivate.advanced=/lwc -c private
+ cprivate.basic=/cprivate
+ 
+ cpublic.advanced=/lwc -c public
+ cpublic.basic=/cpublic
+ 
+ cpassword.advanced=/lwc -c password
+ cpassword.basic=/cpassword
+ 
+ cmodify.advanced=/lwc -m
+ cmodify.basic=/cmodify
+ 
+ cunlock.advanced=/lwc -u
+ cunlock.basic=/cunlock
+ 
+ cinfo.advanced=/lwc -i
+ cinfo.basic=/cinfo
+ 
+ cremove.advanced=/lwc -r
+ cremove.basic=/cremove
+ 
+ climits.advanced=/lwc -i limits
+ climits.basic=/climits
+ 
+ cstatus.advanced=/lwc -c status
+ cstatus.basic=/cstatus
+@@ -378,121 +383,120 @@ protection.create.status.notsign=%red%Je potreba cedule (sign) pro tento druh za
+ ## 4.0.0 ##
+ ###########
+ 
+ protection.interact.rights.register.towny=%green%Zapsano opravneni pro Town%gold% %name% %isadmin%
+ protection.interact.rights.remove.towny=%green%Odstraneno opravneni pro Town%gold% %name% %isadmin%
+ protection.interact.rights.register.item=%green%Zapsano opravneni pro Item%gold% %name% %isadmin%
+ protection.interact.rights.remove.item=%green%Odstraneno opravneni pro Item%gold% %name% %isadmin%
+ 
+ lwc.blockedmessage=%red%LWC zablokoval tvoji zpravu, ktera potencionalne obsahuje heslo k zabezpeceni!
+ lwc.pendingaction=%red%[LWC] Jiny plugin zastavil akci!
+ lwc.commandnotsupported=%red%Tento LWC prikaz neni podporovan s console :-)
+ lwc.protectionnotfound=%red%Ochrana nenalezena.
+ lwc.playernotfound=%red%Hrac nenalezen.
+ lwc.invalidprotectionid=%red%Nespravene ID ochrany.
+ lwc.playerloggedout=%red%Hrac se odhlasil!
+ lwc.onlyrealplayers=%red%Tento prikaz muze pouzit pouze realny hrac :-)
+ lwc.invalidworld=%red%Nspravny svet!
+ lwc.noresults=%red%Nebyly nalezeny zadne vysledky.
+ lwc.nolongerexists=%red%Ochrana jiz neexistuje!
+ lwc.invalidstyle=%red%NEspravny styl.
+ lwc.invalidtime=%red%NEspravny cas: %time%
+ lwc.noarguments=%red%Nebyly zadany zadne argumenty.
+ 
+ lwc.invalidjob=%red%Nespravna prace.
+ lwc.job.created=%green%Vytvoril jsi praci %name% s handlerem %handler%
+ lwc.job.run=%green%Nyni bezi prace: %name%
+ lwc.job.run.time=%green%Uspesne spusteni prace (%time% ms)
+ lwc.job.removed=%green%Uspesne odtraneni prace.
+ lwc.job.exists=%red%Prace %name% jiz existuje.
+ lwc.job.nohandler=%red%Toto neni job handler pro %name%
+ lwc.job.nojobs=%red%Zadne prace nebyly vytvoreny.
+ lwc.job.autorun=%green%Tato prace %name% bude znovu spustena v %time% \n\
+ v casu serveru, ktery nyni je %date%
+ lwc.job.autorun.notset=%red%Prace %name% nema nastaveno automaticke spousteni.
+ lwc.job.waiting=%green%Prace %name% ceka na vykonani.
+ lwc.job.nextrun=%green%Prace %name% bude vykonana za: %time%
+ lwc.job.setarguments=%green%Prace %name% mam nyni nastaveny argumenty: "%arguments"
+ lwc.setup.database.invalid=%red%Neplatna databaze k prepnuti.
+ lwc.setup.database.success=%green%Databaze uspesne prevedena na %type%
+ lwc.setup.database.failure=%red%Chyba pri prevodu databaze na %type%. Podrobnosti najdes v console.
+ 
+ lwc.worldguard.needbuildrights=%red%Nemas opravneni ke stavbe v regionu chraneneho pluginem LWC.
+ lwc.worldguard.notallowed=%red%LWC ochrana neni povolena mimo WorldGuard regiony!
+ lwc.worldguard.blacklisted=%red%LWC ochrana neni v tomto regionu povolena!
+ 
+ lwc.towny.blocked=%red%Muzes ochranit bloky pomoci LWC pouze uvnitr mesta!
+ 
+ lwc.dropxfer.chestfull=Do tve truhly se uz nic nevejde! Tady jsou zbyle itemy.
+ lwc.dropxfer.acrossworlds=%red%Nelze pouzit drop transfer mezi dvema svety!
+ 
+ lwc.unlock.noselection=%red%Neni nic vybrano. Nejdrive otevrete item zamceny heslem.
+ 
+ lwc.owners.results=Zabrazuji vysledky%yellow% %start%-%max%%white%. Celkem:%yellow% %total%
+ 
+ lwc.info=\n\
+-Owner:%green% %owner% \n\
+-Protection type:%green% %type% \n\
+ Vlastnik:%green% %owner% \n\
+ Typ ochrany:%green% %type% \n\
+ %green%
+ # bogus colour to guarantee a new line
+ lwc.acl=%red%Acces list%white% (%size%)
+ lwc.acl.empty=Nikdo! Pouzij /cmodify pro pridani hracu nebo skupin na access list sve ochrany.
+ lwc.acl.limitreached=Pokud chces zobrazit cely Acces list, pouzij%yellow% /lwc owners
+ 
+ lwc.history.list=\n\
+ Pro zobrazeni podrobnosti a historie itemu, pouzij%yellow% /lwc details <HistoryID> \n\
+ \n\
+ %yellow% %header% \n\
+ %yellow% Zobrazuji %size% vysledku na stranku: %page%/%totalpages% (%totalhistory% total)
+ 
+ # Note: these are mainly in sequential order while using /lwc details
+ lwc.history.details.header=%red%History ID: %id% \n\
+ Vytvoril:%yellow% %player% \n\
+ Souradnice:%yellow% %location% \n\
+ Stav:%yellow% %status% \n\
+ Typ:%yellow% %type% \n\
+ \n\
+ Ochrana:%yellow% %protection% \n\
+ Vytvoril:%yellow% %creator%
+ lwc.history.details.destroyer=Odstranil:%yellow% %player%
+ lwc.history.details.econcharge=Poplatek:%red% %charge% %currencyname% \n\
+ Sleva?: %discount%
+ lwc.history.details.dates=\n\
+ %red%Datum \n\
+ Vytvoreno v:%yellow% %date%
+ lwc.history.details.destroyed=%red%Odstraneno v: %date%
+ lwc.history.details.timeago=to je pred: %yellow%%time%
+ 
+ lwc.remove.allprotections=Chystas se%red% TRVALE ODTRANIT%white% vsechny tve LWC ochrany. \n\
+ Pokud jsi ses%red% ABSOLUTNE JISTY%white% zadej%yellow% /lwc confirm%white% pro potvrzeni.
+ lwc.remove.allprotections.success=%green%Vsechny tve LWC ochrany byly odstraneny.
+ 
+ lwc.debug.standard=%green%Standardni opravneni:
+ lwc.debug.mod=%yellow%Moderatorska opravneni:
+ lwc.debug.admin=%red%Adminska opravneni:
+ 
+ lwc.flags.available=Dostupne vlajky: %flags%
+
+ lwc.devmode.warning=Chystas se %red%zapnout vyvojarsky mod%white% hraci%red% %player% \n\
+ %white%Vyvojarsky mod dava%red% absolutni kontrolu nad LWC az do odhlaseni%white% nebo do pouziti prikazu%yellow% /lwc dev disable %player%%white%. \n\
+ Prosim potvrd ze to myslis vazne pomociprikazu \n\
+ %yellow%/lwc confirm
+ lwc.devmode.success=%green%Hraci %player% byl uspesne aktivovan vyvojarsky mod.
+ lwc.devmode.disabled=%green%Hraci %player% byl deaktivovan vyvojarsky mod.
+ lwc.devmode.received=%green%Byl ti aktivovan vyvojarsky mod.
+ lwc.devmode.lost=%green%Byl ti deaktivovan vyvojarsky mod.
+ lwc.devmode.nodevmode=%red%Hrac nema vyvojarsky mod povolen.
+ lwc.devmode.permissionsmode=%green%Permission mode nastaven na:%yellow% %mode%
+
+ lwc.easynotify.redstone=%red%Poznamka:%white% Redstone je nyni povolen. Pro vypnuti redstonu pouzij%green% /credstone on
+ 
+ lwc.fix.fixed=%green%Blok %block% byl opraven!
+ lwc.fix.clickblock=%green%Klikni na blok pro zahajeni opravy.
+ 
+ lwc.admin.caches.cleared=%green%Cache vycistena.
+ lwc.admin.dump.fileexists=%red%Soubor %file% jiz existuje. Prosim smaz nebo presun tento soubor!
+ lwc.admin.dump.filenotfound=%red%Nemuzu najit soubor s prekladem uvnitr jar souboru.
+ lwc.admin.dump.success=%green%Nastaveno na: %file%
+ 
+ # Donation protection type
+ donation=Charita
