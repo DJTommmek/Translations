@@ -103,8 +103,8 @@ admin:
           jej musis odstranit.'
         general: '{RED}Pri nastavovani mista pro prihlasovani doslo k chybe!'
       success:
-        regular: '{BRIGHTGREEN}Teleport na tento svet byl nastaven (tam, kde stojis)'
-        global: '{BRIGHTGREEN}Teleport byl nastaven (tam, kde stojis)'
+        regular: '{BRIGHTGREEN}Misto prihlasovani na tomto svete bylo prave nastaveno na aktualni pozici.'
+        global: '{BRIGHTGREEN}Misto prihlasovani pro vsechny svety bylo prave nastaveno na aktualni pozici.'
     remove:
       error:
         noglobal: '{RED}Globalni teleport neni vubec nastaven!'
